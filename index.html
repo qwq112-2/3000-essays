@@ -429,6 +429,43 @@
     .dict-card-en { font-size: 12px; }
   }
 
+  /* ===== Articles ===== */
+  .article-type-tag {
+    display: inline-block; padding: 4px 10px; border-radius: 999px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .tag-science { background: #dbe8fb; color: #2a5699; }
+  .tag-dialogue { background: #f5e0f0; color: #7a3a6a; }
+  .tag-technology { background: #d4e8e0; color: #1f5d4a; }
+  .tag-health { background: #fce0d8; color: #9a3a2a; }
+  .tag-lifestyle { background: #f9e8c8; color: #8a5a1f; }
+  .tag-career { background: #e0ddf5; color: #4a3a7a; }
+  [data-theme="dark"] .tag-science { background: #1d2e44; color: #7ab0f0; }
+  [data-theme="dark"] .tag-dialogue { background: #301d2a; color: #d090c0; }
+  [data-theme="dark"] .tag-technology { background: #1a2e26; color: #80c0a8; }
+  [data-theme="dark"] .tag-health { background: #381d18; color: #e09080; }
+  [data-theme="dark"] .tag-lifestyle { background: #382a18; color: #e0b870; }
+  [data-theme="dark"] .tag-career { background: #221d38; color: #a090d0; }
+
+  /* ===== Generate ===== */
+  .gen-card {
+    max-width: 560px; margin: 0 auto; padding: 36px;
+    background: var(--bg-card); border: 1px solid var(--line); border-radius: 12px;
+  }
+  .gen-card h3 { font-family: var(--serif); font-size: 20px; font-weight: 400; margin-bottom: 16px; }
+  .gen-card p { color: var(--ink-muted); margin-bottom: 20px; font-size: 14px; }
+  .gen-story {
+    background: var(--bg); border: 1px solid var(--line-soft); border-radius: 8px;
+    padding: 24px; margin-top: 24px;
+    font-family: var(--serif); font-size: 17px; line-height: 1.8;
+    color: var(--ink); font-variation-settings: 'opsz' 24;
+  }
+  .gen-story .gen-highlight {
+    background: var(--highlight); padding: 2px 4px; border-radius: 3px;
+    font-weight: 500; cursor: pointer;
+  }
+  .gen-story .gen-highlight:hover { background: var(--accent-soft); }
+
   /* ===== Quiz ===== */
   .quiz-setup { text-align: center; padding: 60px 32px; }
   .quiz-setup h2 { font-family: var(--serif); font-size: 32px; font-weight: 400; margin-bottom: 12px; font-variation-settings: 'opsz' 144; }
@@ -727,6 +764,8 @@
     <a class="tab" href="#/blog" data-tab="blog">Blog</a>
     <a class="tab" href="#/words" data-tab="words">Library</a>
     <a class="tab" href="#/dictionary" data-tab="dictionary">Dictionary</a>
+    <a class="tab" href="#/articles" data-tab="articles">Articles</a>
+    <a class="tab" href="#/generate" data-tab="generate">Generate</a>
     <a class="tab" href="#/quiz" data-tab="quiz">Quiz</a>
     <a class="tab" href="#/review" data-tab="review">Review</a>
     <a class="tab" href="#/settings" data-tab="settings">Settings</a>
@@ -799,6 +838,119 @@ const STORIES = [
   }
 ]
 ;
+const ARTICLES = [
+  {
+    "id": 1,
+    "title": "Why We Sleep",
+    "title_zh": "我们为什么要睡觉",
+    "level": "beginner",
+    "type": "science",
+    "description": "The science behind sleep and why it matters for your body and brain.",
+    "description_zh": "睡眠背后的科学：为什么它对身体和大脑很重要。",
+    "content": "Every night, all over the world, people close their eyes and go to sleep. But why do we need sleep? Scientists have found several important reasons. First, sleep helps your brain work better. While you sleep, your brain sorts through the information you learned during the day. It keeps important memories and lets go of things that do not matter. This is why students who get enough sleep usually do better on tests. Second, sleep gives your body time to repair itself. Your muscles grow and your cells fix damage while you rest. Third, sleep helps control your feelings. When you do not get enough sleep, you may feel angry or sad more easily. Most adults need between seven and nine hours of sleep each night. Children and young people need even more. If you want to stay healthy, feel happy, and think clearly, going to bed on time is one of the best things you can do.",
+    "translation_zh": "每天晚上，全世界的人们闭上眼睛入睡。但我们为什么需要睡眠？科学家发现了几个重要的原因。首先，睡眠有助于大脑更好地工作。当你睡觉时，大脑会整理白天学到的信息。它保留重要的记忆，丢弃不重要的东西。这就是为什么睡眠充足的学生通常在考试中表现更好。其次，睡眠给身体时间来自我修复。你的肌肉在生长，细胞在你休息时修复损伤。第三，睡眠有助于控制你的情绪。当你睡眠不足时，你可能更容易感到生气或悲伤。大多数成年人每晚需要七到九小时的睡眠。儿童和年轻人需要更多。如果你想保持健康、感到快乐、思维清晰，按时上床睡觉是你能做的最好的事情之一。"
+  },
+  {
+    "id": 2,
+    "title": "How Rainbows Form",
+    "title_zh": "彩虹是如何形成的",
+    "level": "beginner",
+    "type": "science",
+    "description": "The simple science of light, water drops, and colors in the sky.",
+    "description_zh": "光、水滴和天空中色彩的简单科学。",
+    "content": "Have you ever seen a rainbow after a rain shower and wondered how it gets there? A rainbow is made when sunlight meets water drops in the air. Sunlight looks white, but it is actually made of many different colors. When a ray of light enters a drop of water, it bends and splits into these colors: red, orange, yellow, green, blue, indigo, and violet. You always see red on the outside of the rainbow and violet on the inside. The water drops act like tiny prisms. To see a rainbow, you need two things: sunlight behind you and rain in front of you. That is why rainbows often appear in the morning or late afternoon, when the sun is low in the sky. Sometimes you can see a double rainbow. The second one is fainter and has its colors in the opposite order. Rainbows are not objects you can touch or reach — they are just light playing with water. But knowing the science only makes them more beautiful.",
+    "translation_zh": "你有没有在阵雨后看到彩虹，想知道它是怎么出现的？彩虹是阳光遇到空气中的水滴时形成的。阳光看起来是白色的，但它实际上由许多不同的颜色组成。当一束光线进入水滴时，它会弯曲并分解成这些颜色：红、橙、黄、绿、蓝、靛、紫。你总是看到红色在彩虹的外侧，紫色在内侧。水滴就像微小的棱镜。要看到彩虹，你需要两个条件：阳光在你身后，雨水在你前方。这就是为什么彩虹经常出现在早晨或傍晚，当太阳在天空中较低的时候。有时你可以看到双彩虹。第二条比较淡，颜色顺序相反。彩虹不是你可以触摸或到达的物体——它们只是光与水的嬉戏。但了解科学只会让它们更加美丽。"
+  },
+  {
+    "id": 3,
+    "title": "The Internet, Simply Explained",
+    "title_zh": "互联网，简单解释",
+    "level": "beginner",
+    "type": "technology",
+    "description": "What the Internet is and how it connects the world, in plain English.",
+    "description_zh": "什么是互联网以及它如何连接世界，用简单的英语解释。",
+    "content": "The Internet is a global network of computers that talk to each other. Imagine a huge spider web that covers the whole planet. Each point on the web is a computer or a phone. When you send a message to a friend, your device breaks the message into small pieces called packets. These packets travel through cables under the ocean, through the air as radio waves, or through fiber-optic lines underground. They may pass through many different countries in just a few seconds. When they reach your friend's device, they are put back together into the original message. All of this happens in less time than it takes to blink your eyes. The Internet lets us share information, watch videos, play games with people far away, and learn almost anything we want. It has changed the way we work, learn, and stay in touch with people we love. But like any powerful tool, it is important to use it wisely — to check if information is true, to be kind to others online, and to take breaks from screens.",
+    "translation_zh": "互联网是一个由相互通信的计算机组成的全球网络。想象一张覆盖整个地球的巨大蜘蛛网。网上的每个点都是一台电脑或一部手机。当你给朋友发消息时，你的设备把消息分解成称为数据包的小块。这些数据包通过海底电缆、空中无线电波或地下的光纤线路传输。它们可能在几秒钟内经过许多不同的国家。当它们到达你朋友的设备时，它们被重新组合成原始消息。这一切发生的时间比你眨一下眼睛还短。互联网让我们分享信息、观看视频、与远方的人玩游戏、学习几乎任何我们想学的东西。它改变了我们工作、学习和与所爱之人保持联系的方式。但像任何强大的工具一样，明智地使用它很重要——核实信息的真实性，在网上善待他人，并适时远离屏幕休息一下。"
+  },
+  {
+    "id": 4,
+    "title": "At the Doctor's Office",
+    "title_zh": "在诊所看病",
+    "level": "beginner",
+    "type": "dialogue",
+    "description": "A real-life dialogue: making an appointment, describing symptoms, and getting advice.",
+    "description_zh": "真实场景对话：预约、描述症状、获取建议。",
+    "content": "Receptionist: Good morning. How can I help you today?\nPatient: Good morning. I would like to see a doctor, please. I am not feeling well.\nReceptionist: I am sorry to hear that. What seems to be the problem?\nPatient: I have had a bad headache for three days, and I feel very tired all the time. Sometimes I also feel a little sick to my stomach.\nReceptionist: I see. Have you taken your temperature?\nPatient: Yes, I checked it this morning. It was thirty-seven point eight.\nReceptionist: That is a mild fever. Do you have any other problems, like a cough or a sore throat?\nPatient: No cough, but my throat does feel a bit dry.\nReceptionist: Alright. We have an opening at two thirty this afternoon. Can you come in then?\nPatient: Yes, that works for me. Thank you.\nReceptionist: Please bring your health card and arrive ten minutes early. The doctor will ask you about your medical history, so please be ready to answer a few questions.\nPatient: I understand. Thank you very much.\nReceptionist: You are welcome. I hope you feel better soon.",
+    "translation_zh": "前台：早上好。有什么可以帮您的？\n病人：早上好。我想看医生，我感觉不太舒服。\n前台：很抱歉听到这个。是什么问题呢？\n病人：我头疼得厉害，已经三天了，而且一直觉得很累。有时还有点恶心想吐。\n前台：明白了。您量过体温吗？\n病人：是的，今天早上量的。三十七度八。\n前台：那是轻微发烧。您有其他问题吗，比如咳嗽或喉咙痛？\n病人：不咳嗽，但喉咙确实有点干。\n前台：好的。今天下午两点半有一个空位。您能来吗？\n病人：可以，没问题。谢谢。\n前台：请带上您的健康卡，提前十分钟到。医生会询问您的病史，请准备好回答几个问题。\n病人：我明白了。非常感谢。\n前台：不客气。希望您早日康复。"
+  },
+  {
+    "id": 5,
+    "title": "Ordering at a Restaurant",
+    "title_zh": "在餐厅点餐",
+    "level": "beginner",
+    "type": "dialogue",
+    "description": "From being seated to paying the bill — a complete restaurant conversation.",
+    "description_zh": "从入座到买单——完整的餐厅对话。",
+    "content": "Waiter: Good evening. Welcome to our restaurant. Do you have a reservation?\nCustomer: Yes, I booked a table for two under the name Chen.\nWaiter: Right this way, please. Here is your table by the window. Would you like to start with something to drink?\nCustomer: I will have a glass of water, and my friend would like a cup of hot tea, please.\nWaiter: Of course. Here are your menus. The special today is grilled fish with vegetables and rice. I will be back in a moment to take your order.\n---\nWaiter: Are you ready to order?\nCustomer: Yes. For the starter, we would like to share a bowl of tomato soup. Then for the main course, I will have the grilled chicken with potatoes, and my friend will try the special — the grilled fish.\nWaiter: Excellent choices. Would you like any side dishes? We have a fresh garden salad and steamed green beans.\nCustomer: We will have the salad, please.\nWaiter: Very good. Your food will be ready in about fifteen minutes.\n---\nWaiter: How was everything?\nCustomer: It was delicious, thank you. Could we have the bill, please?\nWaiter: Certainly. Here you are. The total is forty-eight dollars. Will you be paying by card or cash?\nCustomer: Card, please. And please keep the change — the service was wonderful.\nWaiter: Thank you so much. Have a lovely evening!",
+    "translation_zh": "服务员：晚上好。欢迎光临我们餐厅。您有预约吗？\n顾客：是的，我用陈的名字订了两人桌。\n服务员：这边请。这是您靠窗的桌子。要先来点喝的吗？\n顾客：我要一杯水，我朋友想要一杯热茶。\n服务员：当然。这是菜单。今天的特别推荐是烤鱼配蔬菜和米饭。我稍后回来为您点餐。\n---\n服务员：您准备点餐了吗？\n顾客：是的。前菜，我们想分享一碗番茄汤。然后主菜，我要烤鸡配土豆，我朋友想试试特别推荐——烤鱼。\n服务员：很好的选择。要配菜吗？我们有新鲜田园沙拉和清蒸青豆。\n顾客：我们要沙拉吧。\n服务员：非常好。您的菜大约十五分钟后上。\n---\n服务员：一切都好吗？\n顾客：很好吃，谢谢。请给我们账单好吗？\n服务员：当然。给您。总共四十八美元。您刷卡还是付现金？\n顾客：刷卡。不用找了——服务很棒。\n服务员：非常感谢。祝您有个愉快的夜晚！"
+  },
+  {
+    "id": 6,
+    "title": "How Plants Grow",
+    "title_zh": "植物如何生长",
+    "level": "beginner",
+    "type": "science",
+    "description": "From a tiny seed to a tall tree — the life of a plant explained simply.",
+    "description_zh": "从一颗小种子到一棵大树——植物的生命简单解释。",
+    "content": "Every plant on Earth begins as a small seed. Inside each seed is a tiny living thing waiting for the right conditions to grow. Seeds need three things to wake up: water, warmth, and air. When a seed gets water, it swells and breaks open. A small root grows down into the soil to find more water and food. At the same time, a small shoot grows up toward the light. This is the beginning of a new plant. As the plant grows, it uses its leaves to catch sunlight. Through a process called photosynthesis, the plant turns sunlight, water, and carbon dioxide from the air into food. The green color of leaves comes from a substance that helps this process. Plants also need minerals from the soil, like nitrogen and phosphorus. Without plants, life on Earth would be impossible. They make the oxygen we breathe, they provide food for animals and people, and they help keep our planet cool. Next time you see a tree or a flower, remember: it started as a tiny seed, just like you started as a tiny cell.",
+    "translation_zh": "地球上的每一株植物都始于一颗小小的种子。每颗种子里都有一个微小的生命体，等待着合适的条件开始生长。种子需要三样东西才能醒来：水、温暖和空气。当种子获得水分时，它会膨胀并裂开。一条小根向下长入土壤，寻找更多的水和养分。同时，一根小芽向上生长，朝向光明。这就是新植物的开始。随着植物的生长，它用叶子捕捉阳光。通过一个叫做光合作用的过程，植物将阳光、水和空气中的二氧化碳转化为食物。叶子的绿色来自一种帮助这个过程进行的物质。植物还需要土壤中的矿物质，比如氮和磷。没有植物，地球上的生命将不可能存在。它们制造我们呼吸的氧气，为动物和人类提供食物，并帮助保持地球凉爽。下次你看到一棵树或一朵花时，记住：它始于一颗微小的种子，就像你始于一个微小的细胞。"
+  },
+  {
+    "id": 7,
+    "title": "Making New Friends",
+    "title_zh": "交新朋友",
+    "level": "beginner",
+    "type": "lifestyle",
+    "description": "Practical tips for meeting people and building friendships, in simple English.",
+    "description_zh": "认识人和建立友谊的实用技巧，简单英语。",
+    "content": "Making new friends can feel hard, especially when you are in a new place or starting a new job. But it is a skill you can learn, just like riding a bike or cooking. The first step is simply to show up. You cannot make friends if you never go anywhere. Join a class, a sports team, or a club that interests you. When you are there, the most important thing is to be open and friendly. Smile, make eye contact, and say hello. Most people are happy when someone else makes the first move. Ask questions and really listen to the answers. People love to talk about themselves, and good listening is a gift you can give to anyone. Do not try to be perfect — just be yourself. Another helpful tip: offer to help. When you see someone who needs a hand, step up. Small acts of kindness build trust very quickly. Finally, be patient. Deep friendships take time to grow. You do not need hundreds of friends. A few good ones who truly care about you are worth more than a thousand who only know your name.",
+    "translation_zh": "交新朋友可能让人觉得很难，尤其是当你在一个新地方或开始一份新工作时。但这是一项你可以学习的技能，就像骑自行车或做饭一样。第一步就是到场。如果你哪儿都不去，你不可能交到朋友。参加一个你感兴趣的课程、运动队或俱乐部。当你在那里时，最重要的事情是保持开放和友好。微笑，进行眼神交流，打招呼。当别人主动时，大多数人都会感到高兴。提出问题并真正倾听回答。人们喜欢谈论自己，而善于倾听是你可以给任何人的礼物。不要试图做到完美——做你自己就好。另一个有用的建议：主动帮忙。当你看到有人需要帮助时，挺身而出。小小的善举能很快建立信任。最后，要有耐心。深厚的友谊需要时间来培养。你不需要几百个朋友。几个真正关心你的好友，胜过一千个只知道你名字的人。"
+  },
+  {
+    "id": 8,
+    "title": "The Solar System",
+    "title_zh": "太阳系",
+    "level": "beginner",
+    "type": "science",
+    "description": "A tour of our solar system — the Sun, eight planets, and our place in space.",
+    "description_zh": "太阳系之旅——太阳、八大行星和我们在太空中的位置。",
+    "content": "Our solar system is like a big family with the Sun at the center. The Sun is a star — a huge ball of hot gas that gives us light and heat. Without it, there would be no life on Earth. Eight planets travel around the Sun. The four closest to the Sun are small and rocky: Mercury, Venus, Earth, and Mars. Earth is special because it is the only planet we know of that has life. The next four planets are much bigger and made mostly of gas: Jupiter, Saturn, Uranus, and Neptune. Jupiter is so large that more than one thousand Earths could fit inside it. Saturn is famous for its beautiful rings, which are made of ice and rock. Between Mars and Jupiter, there is a belt of asteroids — millions of rocky objects left over from when the solar system was formed. Some planets have moons. Earth has one, but Jupiter has more than ninety. Far beyond Neptune, there are icy worlds like Pluto. The solar system is very old — about four and a half billion years. It is just a tiny part of our galaxy, the Milky Way, which has hundreds of billions of other stars. Looking up at the night sky reminds us how small we are, and how amazing the universe is.",
+    "translation_zh": "我们的太阳系就像一个大家庭，太阳位于中心。太阳是一颗恒星——一个巨大的热气火球，给我们光和热。没有它，地球上就不会有生命。八颗行星围绕太阳运行。离太阳最近的四个行星很小，而且是岩石构成的：水星、金星、地球和火星。地球很特别，因为它是我们所知唯一有生命的行星。接下来的四个行星大得多，主要由气体构成：木星、土星、天王星和海王星。木星非常大，一千多个地球可以装进里面。土星因其美丽的环而闻名，这些环由冰和岩石组成。在火星和木星之间，有一条小行星带——数百万个岩石物体，是太阳系形成时留下的。有些行星有卫星。地球有一个，但木星有九十多个。在海王星之外很远的地方，有像冥王星这样的冰冷世界。太阳系非常古老——大约四十五亿年了。它只是我们银河系的一小部分，银河系有数千亿颗其他恒星。仰望夜空提醒我们自己是多么渺小，宇宙是多么令人惊叹。"
+  },
+  {
+    "id": 9,
+    "title": "Job Interview Tips",
+    "title_zh": "求职面试技巧",
+    "level": "intermediate",
+    "type": "career",
+    "description": "How to prepare, what to say, and how to make a great impression at your next interview.",
+    "description_zh": "如何准备、说什么、如何在面试中给人留下好印象。",
+    "content": "A job interview is your chance to show a company why they should hire you. Being nervous is normal, but preparation can help you feel calm and confident. Before the interview, learn about the company. Visit their website and read about what they do. Think about why you want this job and how your skills match what they need. Prepare answers to common questions, such as 'Tell me about yourself,' 'What are your strengths and weaknesses?' and 'Why do you want to work here?' Practice your answers out loud, but do not memorize them word for word — you want to sound natural. On the day of the interview, dress neatly and arrive a few minutes early. Bring a copy of your resume and a notebook. During the interview, speak clearly and make eye contact. Listen carefully to each question before you answer. If you do not understand something, it is perfectly fine to ask the interviewer to repeat or explain. At the end, thank them for their time and ask one or two questions about the role or the company. This shows that you are truly interested. After the interview, send a short thank-you email within twenty-four hours. Even if you do not get this job, every interview is good practice for the next one.",
+    "translation_zh": "求职面试是你向公司展示他们为什么应该雇用你的机会。感到紧张是正常的，但准备可以帮助你感到平静和自信。面试前，了解公司。访问他们的网站，了解他们做什么。想想你为什么想要这份工作，以及你的技能如何匹配他们的需求。准备好常见问题的答案，比如'介绍一下你自己'、'你的优点和缺点是什么？'和'你为什么想在这里工作？'大声练习你的答案，但不要逐字背诵——你希望听起来自然。面试当天，穿着整洁，提前几分钟到达。带一份简历和一个笔记本。面试过程中，说话清晰，保持眼神交流。在回答之前仔细听每个问题。如果你不明白某事，完全可以请面试官重复或解释。最后，感谢他们的时间，并问一两个关于职位或公司的问题。这表明你真正感兴趣。面试后，在二十四小时内发送一封简短的感谢邮件。即使你没有得到这份工作，每次面试都是下一次的好练习。"
+  },
+  {
+    "id": 10,
+    "title": "Why Exercise Matters",
+    "title_zh": "为什么锻炼很重要",
+    "level": "beginner",
+    "type": "health",
+    "description": "The benefits of moving your body, backed by science and common sense.",
+    "description_zh": "科学和常识支持的锻炼身体的益处。",
+    "content": "We all know that exercise is good for us, but do you know why? When you move your body, several wonderful things happen. First, your heart beats faster and pumps more blood around your body. This brings more oxygen to your brain, which helps you think more clearly and feel more awake. Second, your body releases chemicals called endorphins. These are natural mood-boosters that can make you feel happier and less stressed. Third, regular exercise strengthens your muscles and bones. This becomes more important as you get older, because it helps prevent falls and injuries. You do not need to run a marathon or spend hours at the gym. Even a thirty-minute walk every day can make a big difference. The key is to find something you enjoy — dancing, swimming, cycling, or even gardening all count. Try to move your body in some way every single day. It does not have to be hard or painful. Start small, be consistent, and pay attention to how you feel afterward. Your body and mind will thank you.",
+    "translation_zh": "我们都知道锻炼对健康有益，但你知道为什么吗？当你活动身体时，会发生几件奇妙的事情。首先，你的心跳加快，向全身输送更多血液。这给大脑带来更多的氧气，帮助你更清晰地思考，感到更加清醒。其次，你的身体释放一种叫做内啡肽的化学物质。这些是天然的情绪提升剂，可以让你感到更快乐、压力更小。第三，定期锻炼能增强你的肌肉和骨骼。随着年龄增长，这变得更加重要，因为它有助于防止跌倒和受伤。你不需要跑马拉松或在健身房花几个小时。即使每天三十分钟的散步也能带来很大的不同。关键是找到你喜欢的事情——跳舞、游泳、骑自行车，甚至园艺都算。尝试每天以某种方式活动你的身体。不必很辛苦或痛苦。从小处开始，保持一致，并注意你事后的感受。你的身体和头脑会感谢你的。"
+  }
+]
+;
 const INTRO = {"title":"About the 3000 words","subtitle":"Longman Communication 3000 — what it is and why it matters","en":"The Longman Communication 3000 is a list of the 3000 most frequent words in both spoken and written English, based on statistical analysis of the 390 million words contained in the Longman Corpus Network — a group of corpuses or databases of authentic English language. The Longman Communication 3000 represents the core of the English language and shows students of English which words are the most important for them to learn and study in order to communicate effectively in both speech and writing.\n\nAnalysis of the Longman Corpus Network shows that these 3000 most frequent words in spoken and written English account for 86% of the language. This means that by knowing this list of words, a learner of English is in a position to understand 86% or more of what he or she reads. Of course, 'knowing' a word involves more than simply being able to recognise it and know a main meaning of it. Many of the most frequent words have a range of different meanings, a variety of different grammatical patterns, and numerous significant collocations. Nonetheless, a basic understanding of the Longman Communication 3000 is a very powerful tool and will help students develop good comprehension and communication skills in English.\n\n— Jeremy Harmer, ELT author\n\nTo ensure that users have access to the appropriate information, the Longman Dictionary of Contemporary English marks all the words in the Longman Communication 3000 in red accompanied by special symbols: W1, W2, and W3 for words that are in the top 1000, 2000 and 3000 most frequent words in written English, and S1, S2 and S3 for the top 1000, 2000 and 3000 most frequent words in spoken English. Longman dictionaries are the only ones to highlight the differences between spoken and written frequency.\n\nThese frequency markers give users access to a wealth of information that can help the selection of the appropriate word or phrase in a variety of situations. Not only are the words and meanings given descriptive labels (for example formal or informal, AmE or BrE, humorous, old-fashioned), but now they have the added information about relative frequency in spoken and written language.","zh":"朗文交际 3000 词（Longman Communication 3000）是一份涵盖英语口语和书面语中最常见的 3000 个词的列表。它基于对「朗文语料库网络」（一个由真实英语语料组成的数据库群）中 3.9 亿词的统计分析得出。朗文交际 3000 词代表了英语的核心，它告诉英语学习者哪些词是最重要的，是他们在口语和书面交流中需要优先学习和掌握的。\n\n对朗文语料库网络的分析显示，这 3000 个最常见的英语口语和书面语词汇覆盖了 86% 的语言使用。这意味着，掌握了这份词汇表，英语学习者就能读懂 86% 以上的英语内容。当然，「掌握」一个词不仅仅是能认出它、知道它的主要意思。许多最常见的词有多个不同的含义、多种语法搭配和大量固定搭配。不过，对朗文交际 3000 词有一个基本的了解，本身就是一个非常强大的工具，能帮助学习者培养良好的英语理解能力和沟通能力。\n\n— Jeremy Harmer（杰里米·哈默），英语教学专家\n\n为了让使用者能获得准确的信息，《朗文当代英语词典》把朗文交际 3000 词表中的所有词都用红色标出，并配以特殊符号：W1、W2、W3 表示该词属于书面英语中最常见的 1000、2000、3000 词；S1、S2、S3 则表示该词属于口语中最常见的 1000、2000、3000 词。朗文词典是唯一区分口语和书面语使用频率的词典。\n\n这些频率标记为使用者提供了丰富的信息，能帮助他们在不同场合选择合适的词或短语。这些词和释义不仅有诸如「正式/非正式」「美式/英式」「幽默/过时」之类的描述性标签，还新增了关于口语和书面语相对使用频率的信息。","frequency_guide":[{"code":"S1","meaning_zh":"口语最常见 1000 词","meaning_en":"top 1000 most frequent in Spoken English"},{"code":"S2","meaning_zh":"口语最常见 2000 词","meaning_en":"top 2000 most frequent in Spoken English"},{"code":"S3","meaning_zh":"口语最常见 3000 词","meaning_en":"top 3000 most frequent in Spoken English"},{"code":"W1","meaning_zh":"书面最常见 1000 词","meaning_en":"top 1000 most frequent in Written English"},{"code":"W2","meaning_zh":"书面最常见 2000 词","meaning_en":"top 2000 most frequent in Written English"},{"code":"W3","meaning_zh":"书面最常见 3000 词","meaning_en":"top 3000 most frequent in Written English"}]};
 
 
@@ -862,6 +1014,9 @@ function render() {
   if (h.startsWith('#/blog/')) return renderBlogEdit(h.split('/')[2]);
   if (h === '#/words') return renderWords();
   if (h.startsWith('#/dictionary')) return renderDictionary();
+  if (h.startsWith('#/articles')) return renderArticleList();
+  if (h.startsWith('#/article/')) return renderArticle(h.split('/')[2]);
+  if (h.startsWith('#/generate')) return renderGenerate();
   if (h.startsWith('#/quiz')) return renderQuiz();
   if (h === '#/review') return renderReview();
   if (h === '#/settings') return renderSettings();
@@ -1209,6 +1364,202 @@ function renderDictionary() {
       }
     };
     input.focus();
+  }
+}
+
+/* === Articles === */
+function renderArticleList() {
+  const main = document.getElementById('main');
+  if (!ARTICLES || ARTICLES.length === 0) {
+    main.innerHTML = '<div class="empty"><h3>No articles yet</h3></div>';
+    return;
+  }
+  main.innerHTML = `
+    <div class="page-head">
+      <div class="page-eyebrow">Reading · ${ARTICLES.length} articles</div>
+      <h1 class="page-title">Real-world <em>reading</em></h1>
+      <p class="page-sub">Science, daily life, career &mdash; all written with the Longman 3000 words.</p>
+    </div>
+    <div class="story-list">
+      ${ARTICLES.map((a, i) => {
+        const wordCount = (a.content.match(/[A-Za-z]+/g) || []).length;
+        return `
+        <div class="story-card" onclick="navigate('#/article/${a.id}')">
+          <div>
+            <div class="num">${String(i + 1).padStart(2, '0')} · <span class="article-type-tag tag-${a.type || 'science'}">${a.type || 'article'}</span></div>
+            <h3>${escapeHtml(a.title)}${a.title_zh ? ` <span style="font-size:16px;color:var(--ink-muted);font-weight:300;">${escapeHtml(a.title_zh)}</span>` : ''}</h3>
+            <div class="desc">${escapeHtml(a.description || '')}</div>
+            <div class="meta">
+              <span>${levelLabel(a.level)}</span>
+              <span class="dot">·</span>
+              <span>${wordCount} words</span>
+            </div>
+          </div>
+          <div class="arrow">→</div>
+        </div>`;
+      }).join('')}
+    </div>
+  `;
+}
+
+function renderArticle(id) {
+  const main = document.getElementById('main');
+  const a = ARTICLES.find(x => String(x.id) === String(id));
+  if (!a) { main.innerHTML = '<div class="empty"><h3>Article not found</h3></div>'; return; }
+  const wordCount = (a.content.match(/[A-Za-z]+/g) || []).length;
+  main.innerHTML = `
+    <a class="reader-back" href="#/articles">← All articles</a>
+    <div class="reader-header">
+      <div class="reader-meta">
+        <span class="article-type-tag tag-${a.type || 'science'}">${a.type || 'article'}</span>
+        <span class="dot">·</span>
+        <span>${levelLabel(a.level)}</span>
+        <span class="dot">·</span>
+        <span>${wordCount} words</span>
+      </div>
+      <h1 class="reader-title">${escapeHtml(a.title)}</h1>
+      ${a.title_zh ? `<p class="reader-title-zh">${escapeHtml(a.title_zh)}</p>` : ''}
+    </div>
+    <div class="reader-progress"><div class="reader-progress-bar" id="prog-bar" style="width:0%"></div></div>
+    <div class="story-body">${renderStoryContent(a.content)}</div>
+    ${a.translation_zh ? `
+    <div class="trans-toggle-row">
+      <button class="btn btn-ghost" id="trans-toggle" onclick="toggleTranslation()">📖 Show Chinese translation</button>
+    </div>
+    <div class="story-translation" id="story-trans" style="display:none;">
+      <div class="trans-title">中文翻译 · Chinese Translation</div>
+      <div class="trans-content">${escapeHtml(a.translation_zh)}</div>
+    </div>` : ''}
+  `;
+  document.querySelectorAll('.story-body .word').forEach(el => {
+    el.onclick = (e) => { e.stopPropagation(); openWordPopup(el.dataset.word); };
+  });
+  window.onscroll = () => {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    const bar = document.getElementById('prog-bar');
+    if (bar) bar.style.width = Math.min(100, Math.round(window.scrollY / total * 100)) + '%';
+  };
+}
+
+/* === Story Generator === */
+const GEN_TEMPLATES = [
+  {
+    title: 'A Strange Discovery',
+    template: 'One {adj} morning, a {adj} {n1} named {name} decided to {v1}. {pronoun} had always wanted to {v2} near the {n2}. As {pronoun} walked past the {n3}, {pronoun} noticed something {adj} lying on the ground. It was a {adj} {n4}! Nobody had seen this {n4} in {number} years. {pronoun} picked it up carefully and {v3}. This was going to change everything.',
+  },
+  {
+    title: 'The Unexpected Journey',
+    template: 'The day started like any other until the {n1} began to {v1}. {name} looked out the window and could not believe what {pronoun} saw. A huge {adj} {n2} was coming toward the {n3}. "{v2}!" shouted {name}. Everyone in the {n4} stopped what they were doing. They had never seen anything so {adj} in their lives. By evening, the news had spread to every {n5} in the country.',
+  },
+  {
+    title: 'A Lesson Learned',
+    template: 'When {name} was young, {pronoun} had a {adj} habit. {pronoun} would always {v1} before {v2}. One day, this caused a big problem. A {adj} {n1} came to visit, and {name} forgot to {v3}. "{n2} is the most important thing," said the {n1} with a {adj} smile. From that day on, {name} never forgot to {v3} again. The moral is: always remember to {v3}.',
+  },
+  {
+    title: 'At the Perfect Moment',
+    template: 'The {n1} was {adj} and the air smelled of {n2}. {name} sat on a {adj} {n3}, thinking about the future. "{adv}, I wish I could {v1}," {pronoun} whispered. Just then, a {adj} stranger appeared carrying a {n4}. "I heard you needed help," the stranger said. "Take this {n4} and you will be able to {v1}." {name} was {adj} but grateful. Sometimes help comes when you least expect it.',
+  },
+  {
+    title: 'The Secret of the Old Building',
+    template: 'Nobody went near the old {n1} on {n2} Street. It had been empty for {number} years, and people said it was {adj}. But {name} was too {adj} to be scared. One {adj} night, {pronoun} decided to {v1} inside. The door made a {adj} sound as it opened. Inside, everything was covered in {n3}. But in the corner, there was a {adj} box. Inside the box was a {n4} that would answer one question. What would {name} ask?',
+  },
+];
+
+function renderGenerate() {
+  const main = document.getElementById('main');
+  const myWords = Object.values(state.myWords);
+  const wordCount = myWords.length;
+
+  main.innerHTML = `
+    <div class="page-head">
+      <div class="page-eyebrow">Story generator</div>
+      <h1 class="page-title">Generate <em>stories</em></h1>
+      <p class="page-sub">Stories crafted from your vocabulary words to help you remember them better.</p>
+    </div>
+    <div class="gen-card">
+      <h3>How it works</h3>
+      <p>We take words from your personal library and weave them into unique short stories. Each story uses your vocabulary words naturally in context — which is the best way to remember them. Words from your library appear <span style="background:var(--highlight);padding:2px 4px;border-radius:3px;">highlighted</span>.</p>
+      <p style="margin-bottom:24px;">You have <strong style="color:var(--accent);">${wordCount}</strong> words in your library. ${wordCount < 5 ? 'Add more words from Dictionary or by reading articles to get better stories!' : wordCount < 20 ? 'You have enough for some good stories. Try adding more for variety!' : 'You have a rich vocabulary to generate from!'}</p>
+      <div class="btn-row" style="justify-content:center;">
+        <button class="btn btn-primary" id="gen-btn" onclick="generateStory()" ${wordCount < 3 ? 'disabled' : ''}>
+          ${wordCount < 3 ? 'Add at least 3 words to your library first' : 'Generate a story'}
+        </button>
+        <button class="btn btn-ghost" onclick="generateStory()">Another one</button>
+      </div>
+      <div id="gen-output"></div>
+    </div>
+  `;
+}
+
+function generateStory() {
+  const myWords = Object.values(state.myWords);
+  if (myWords.length < 3) {
+    document.getElementById('gen-output').innerHTML = '<p style="color:var(--ink-muted);margin-top:16px;">Add at least 3 words to your library first. Go to Dictionary and click words you want to learn.</p>';
+    return;
+  }
+
+  // Pick a random template
+  const tpl = GEN_TEMPLATES[Math.floor(Math.random() * GEN_TEMPLATES.length)];
+
+  // Map POS to pool of words from user's library
+  const posMap = {
+    n: ['n'], v: ['v'], adj: ['adj'], adv: ['adv'],
+  };
+  const getWordsByPos = (pos) => {
+    return myWords.filter(w => {
+      const info = WORDLIST[w.word];
+      if (!info) return false;
+      const p = info.p || '';
+      if (pos === 'n' && p.startsWith('n')) return true;
+      if (pos === 'v' && p.startsWith('v')) return true;
+      if (pos === 'adj' && p.startsWith('adj')) return true;
+      if (pos === 'adv' && p.startsWith('adv')) return true;
+      return false;
+    });
+  };
+
+  // Build replacements
+  const usedWords = new Set();
+  const pickWord = (pos, suffix) => {
+    let pool = getWordsByPos(pos);
+    if (pool.length === 0) pool = myWords; // fallback to any word
+    const fresh = pool.filter(w => !usedWords.has(w.word));
+    const source = fresh.length > 0 ? fresh : pool;
+    const picked = source[Math.floor(Math.random() * source.length)];
+    if (picked) usedWords.add(picked.word);
+    return picked ? `<span class="gen-highlight" onclick="openWordPopup('${picked.word}')">${picked.word}</span>` : `[${pos}${suffix}]`;
+  };
+
+  const names = ['Alex', 'Sam', 'Jordan', 'Taylor', 'Casey', 'Morgan', 'Riley', 'Quinn'];
+  const numbers = ['a hundred', 'fifty', 'twenty', 'a thousand', 'three', 'ten', 'many', 'several'];
+
+  let story = tpl.template;
+  let nIdx = 0, vIdx = 0, adjIdx = 0, advIdx = 0;
+
+  story = story.replace(/\{name\}/g, () => names[Math.floor(Math.random() * names.length)]);
+  story = story.replace(/\{pronoun\}/g, (match, offset) => {
+    // Use consistent pronoun based on context
+    return Math.random() > 0.5 ? 'he' : 'she';
+  });
+  story = story.replace(/\{number\}/g, () => numbers[Math.floor(Math.random() * numbers.length)]);
+  story = story.replace(/\{n(\d+)\}/g, () => pickWord('n', ++nIdx));
+  story = story.replace(/\{v(\d+)\}/g, () => pickWord('v', ++vIdx));
+  story = story.replace(/\{adj\}/g, () => pickWord('adj', ++adjIdx));
+  story = story.replace(/\{adv\}/g, () => pickWord('adv', ++advIdx));
+
+  const output = document.getElementById('gen-output');
+  if (output) {
+    output.innerHTML = `
+      <div class="gen-story">
+        <div style="font-size:12px;color:var(--ink-muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.1em;">${tpl.title}</div>
+        ${story}
+        <div style="margin-top:16px;font-size:12px;color:var(--ink-dim);">Words used: ${usedWords.size} from your library</div>
+      </div>
+    `;
+    // Re-attach click handlers
+    output.querySelectorAll('.gen-highlight').forEach(el => {
+      el.onclick = (e) => { e.stopPropagation(); openWordPopup(el.textContent); };
+    });
   }
 }
 

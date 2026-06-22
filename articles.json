@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "Why We Sleep",
+    "title_zh": "我们为什么要睡觉",
+    "level": "beginner",
+    "type": "science",
+    "description": "The science behind sleep and why it matters for your body and brain.",
+    "description_zh": "睡眠背后的科学：为什么它对身体和大脑很重要。",
+    "content": "Every night, all over the world, people close their eyes and go to sleep. But why do we need sleep? Scientists have found several important reasons. First, sleep helps your brain work better. While you sleep, your brain sorts through the information you learned during the day. It keeps important memories and lets go of things that do not matter. This is why students who get enough sleep usually do better on tests. Second, sleep gives your body time to repair itself. Your muscles grow and your cells fix damage while you rest. Third, sleep helps control your feelings. When you do not get enough sleep, you may feel angry or sad more easily. Most adults need between seven and nine hours of sleep each night. Children and young people need even more. If you want to stay healthy, feel happy, and think clearly, going to bed on time is one of the best things you can do.",
+    "translation_zh": "每天晚上，全世界的人们闭上眼睛入睡。但我们为什么需要睡眠？科学家发现了几个重要的原因。首先，睡眠有助于大脑更好地工作。当你睡觉时，大脑会整理白天学到的信息。它保留重要的记忆，丢弃不重要的东西。这就是为什么睡眠充足的学生通常在考试中表现更好。其次，睡眠给身体时间来自我修复。你的肌肉在生长，细胞在你休息时修复损伤。第三，睡眠有助于控制你的情绪。当你睡眠不足时，你可能更容易感到生气或悲伤。大多数成年人每晚需要七到九小时的睡眠。儿童和年轻人需要更多。如果你想保持健康、感到快乐、思维清晰，按时上床睡觉是你能做的最好的事情之一。"
+  },
+  {
+    "id": 2,
+    "title": "How Rainbows Form",
+    "title_zh": "彩虹是如何形成的",
+    "level": "beginner",
+    "type": "science",
+    "description": "The simple science of light, water drops, and colors in the sky.",
+    "description_zh": "光、水滴和天空中色彩的简单科学。",
+    "content": "Have you ever seen a rainbow after a rain shower and wondered how it gets there? A rainbow is made when sunlight meets water drops in the air. Sunlight looks white, but it is actually made of many different colors. When a ray of light enters a drop of water, it bends and splits into these colors: red, orange, yellow, green, blue, indigo, and violet. You always see red on the outside of the rainbow and violet on the inside. The water drops act like tiny prisms. To see a rainbow, you need two things: sunlight behind you and rain in front of you. That is why rainbows often appear in the morning or late afternoon, when the sun is low in the sky. Sometimes you can see a double rainbow. The second one is fainter and has its colors in the opposite order. Rainbows are not objects you can touch or reach — they are just light playing with water. But knowing the science only makes them more beautiful.",
+    "translation_zh": "你有没有在阵雨后看到彩虹，想知道它是怎么出现的？彩虹是阳光遇到空气中的水滴时形成的。阳光看起来是白色的，但它实际上由许多不同的颜色组成。当一束光线进入水滴时，它会弯曲并分解成这些颜色：红、橙、黄、绿、蓝、靛、紫。你总是看到红色在彩虹的外侧，紫色在内侧。水滴就像微小的棱镜。要看到彩虹，你需要两个条件：阳光在你身后，雨水在你前方。这就是为什么彩虹经常出现在早晨或傍晚，当太阳在天空中较低的时候。有时你可以看到双彩虹。第二条比较淡，颜色顺序相反。彩虹不是你可以触摸或到达的物体——它们只是光与水的嬉戏。但了解科学只会让它们更加美丽。"
+  },
+  {
+    "id": 3,
+    "title": "The Internet, Simply Explained",
+    "title_zh": "互联网，简单解释",
+    "level": "beginner",
+    "type": "technology",
+    "description": "What the Internet is and how it connects the world, in plain English.",
+    "description_zh": "什么是互联网以及它如何连接世界，用简单的英语解释。",
+    "content": "The Internet is a global network of computers that talk to each other. Imagine a huge spider web that covers the whole planet. Each point on the web is a computer or a phone. When you send a message to a friend, your device breaks the message into small pieces called packets. These packets travel through cables under the ocean, through the air as radio waves, or through fiber-optic lines underground. They may pass through many different countries in just a few seconds. When they reach your friend's device, they are put back together into the original message. All of this happens in less time than it takes to blink your eyes. The Internet lets us share information, watch videos, play games with people far away, and learn almost anything we want. It has changed the way we work, learn, and stay in touch with people we love. But like any powerful tool, it is important to use it wisely — to check if information is true, to be kind to others online, and to take breaks from screens.",
+    "translation_zh": "互联网是一个由相互通信的计算机组成的全球网络。想象一张覆盖整个地球的巨大蜘蛛网。网上的每个点都是一台电脑或一部手机。当你给朋友发消息时，你的设备把消息分解成称为数据包的小块。这些数据包通过海底电缆、空中无线电波或地下的光纤线路传输。它们可能在几秒钟内经过许多不同的国家。当它们到达你朋友的设备时，它们被重新组合成原始消息。这一切发生的时间比你眨一下眼睛还短。互联网让我们分享信息、观看视频、与远方的人玩游戏、学习几乎任何我们想学的东西。它改变了我们工作、学习和与所爱之人保持联系的方式。但像任何强大的工具一样，明智地使用它很重要——核实信息的真实性，在网上善待他人，并适时远离屏幕休息一下。"
+  },
+  {
+    "id": 4,
+    "title": "At the Doctor's Office",
+    "title_zh": "在诊所看病",
+    "level": "beginner",
+    "type": "dialogue",
+    "description": "A real-life dialogue: making an appointment, describing symptoms, and getting advice.",
+    "description_zh": "真实场景对话：预约、描述症状、获取建议。",
+    "content": "Receptionist: Good morning. How can I help you today?\nPatient: Good morning. I would like to see a doctor, please. I am not feeling well.\nReceptionist: I am sorry to hear that. What seems to be the problem?\nPatient: I have had a bad headache for three days, and I feel very tired all the time. Sometimes I also feel a little sick to my stomach.\nReceptionist: I see. Have you taken your temperature?\nPatient: Yes, I checked it this morning. It was thirty-seven point eight.\nReceptionist: That is a mild fever. Do you have any other problems, like a cough or a sore throat?\nPatient: No cough, but my throat does feel a bit dry.\nReceptionist: Alright. We have an opening at two thirty this afternoon. Can you come in then?\nPatient: Yes, that works for me. Thank you.\nReceptionist: Please bring your health card and arrive ten minutes early. The doctor will ask you about your medical history, so please be ready to answer a few questions.\nPatient: I understand. Thank you very much.\nReceptionist: You are welcome. I hope you feel better soon.",
+    "translation_zh": "前台：早上好。有什么可以帮您的？\n病人：早上好。我想看医生，我感觉不太舒服。\n前台：很抱歉听到这个。是什么问题呢？\n病人：我头疼得厉害，已经三天了，而且一直觉得很累。有时还有点恶心想吐。\n前台：明白了。您量过体温吗？\n病人：是的，今天早上量的。三十七度八。\n前台：那是轻微发烧。您有其他问题吗，比如咳嗽或喉咙痛？\n病人：不咳嗽，但喉咙确实有点干。\n前台：好的。今天下午两点半有一个空位。您能来吗？\n病人：可以，没问题。谢谢。\n前台：请带上您的健康卡，提前十分钟到。医生会询问您的病史，请准备好回答几个问题。\n病人：我明白了。非常感谢。\n前台：不客气。希望您早日康复。"
+  },
+  {
+    "id": 5,
+    "title": "Ordering at a Restaurant",
+    "title_zh": "在餐厅点餐",
+    "level": "beginner",
+    "type": "dialogue",
+    "description": "From being seated to paying the bill — a complete restaurant conversation.",
+    "description_zh": "从入座到买单——完整的餐厅对话。",
+    "content": "Waiter: Good evening. Welcome to our restaurant. Do you have a reservation?\nCustomer: Yes, I booked a table for two under the name Chen.\nWaiter: Right this way, please. Here is your table by the window. Would you like to start with something to drink?\nCustomer: I will have a glass of water, and my friend would like a cup of hot tea, please.\nWaiter: Of course. Here are your menus. The special today is grilled fish with vegetables and rice. I will be back in a moment to take your order.\n---\nWaiter: Are you ready to order?\nCustomer: Yes. For the starter, we would like to share a bowl of tomato soup. Then for the main course, I will have the grilled chicken with potatoes, and my friend will try the special — the grilled fish.\nWaiter: Excellent choices. Would you like any side dishes? We have a fresh garden salad and steamed green beans.\nCustomer: We will have the salad, please.\nWaiter: Very good. Your food will be ready in about fifteen minutes.\n---\nWaiter: How was everything?\nCustomer: It was delicious, thank you. Could we have the bill, please?\nWaiter: Certainly. Here you are. The total is forty-eight dollars. Will you be paying by card or cash?\nCustomer: Card, please. And please keep the change — the service was wonderful.\nWaiter: Thank you so much. Have a lovely evening!",
+    "translation_zh": "服务员：晚上好。欢迎光临我们餐厅。您有预约吗？\n顾客：是的，我用陈的名字订了两人桌。\n服务员：这边请。这是您靠窗的桌子。要先来点喝的吗？\n顾客：我要一杯水，我朋友想要一杯热茶。\n服务员：当然。这是菜单。今天的特别推荐是烤鱼配蔬菜和米饭。我稍后回来为您点餐。\n---\n服务员：您准备点餐了吗？\n顾客：是的。前菜，我们想分享一碗番茄汤。然后主菜，我要烤鸡配土豆，我朋友想试试特别推荐——烤鱼。\n服务员：很好的选择。要配菜吗？我们有新鲜田园沙拉和清蒸青豆。\n顾客：我们要沙拉吧。\n服务员：非常好。您的菜大约十五分钟后上。\n---\n服务员：一切都好吗？\n顾客：很好吃，谢谢。请给我们账单好吗？\n服务员：当然。给您。总共四十八美元。您刷卡还是付现金？\n顾客：刷卡。不用找了——服务很棒。\n服务员：非常感谢。祝您有个愉快的夜晚！"
+  },
+  {
+    "id": 6,
+    "title": "How Plants Grow",
+    "title_zh": "植物如何生长",
+    "level": "beginner",
+    "type": "science",
+    "description": "From a tiny seed to a tall tree — the life of a plant explained simply.",
+    "description_zh": "从一颗小种子到一棵大树——植物的生命简单解释。",
+    "content": "Every plant on Earth begins as a small seed. Inside each seed is a tiny living thing waiting for the right conditions to grow. Seeds need three things to wake up: water, warmth, and air. When a seed gets water, it swells and breaks open. A small root grows down into the soil to find more water and food. At the same time, a small shoot grows up toward the light. This is the beginning of a new plant. As the plant grows, it uses its leaves to catch sunlight. Through a process called photosynthesis, the plant turns sunlight, water, and carbon dioxide from the air into food. The green color of leaves comes from a substance that helps this process. Plants also need minerals from the soil, like nitrogen and phosphorus. Without plants, life on Earth would be impossible. They make the oxygen we breathe, they provide food for animals and people, and they help keep our planet cool. Next time you see a tree or a flower, remember: it started as a tiny seed, just like you started as a tiny cell.",
+    "translation_zh": "地球上的每一株植物都始于一颗小小的种子。每颗种子里都有一个微小的生命体，等待着合适的条件开始生长。种子需要三样东西才能醒来：水、温暖和空气。当种子获得水分时，它会膨胀并裂开。一条小根向下长入土壤，寻找更多的水和养分。同时，一根小芽向上生长，朝向光明。这就是新植物的开始。随着植物的生长，它用叶子捕捉阳光。通过一个叫做光合作用的过程，植物将阳光、水和空气中的二氧化碳转化为食物。叶子的绿色来自一种帮助这个过程进行的物质。植物还需要土壤中的矿物质，比如氮和磷。没有植物，地球上的生命将不可能存在。它们制造我们呼吸的氧气，为动物和人类提供食物，并帮助保持地球凉爽。下次你看到一棵树或一朵花时，记住：它始于一颗微小的种子，就像你始于一个微小的细胞。"
+  },
+  {
+    "id": 7,
+    "title": "Making New Friends",
+    "title_zh": "交新朋友",
+    "level": "beginner",
+    "type": "lifestyle",
+    "description": "Practical tips for meeting people and building friendships, in simple English.",
+    "description_zh": "认识人和建立友谊的实用技巧，简单英语。",
+    "content": "Making new friends can feel hard, especially when you are in a new place or starting a new job. But it is a skill you can learn, just like riding a bike or cooking. The first step is simply to show up. You cannot make friends if you never go anywhere. Join a class, a sports team, or a club that interests you. When you are there, the most important thing is to be open and friendly. Smile, make eye contact, and say hello. Most people are happy when someone else makes the first move. Ask questions and really listen to the answers. People love to talk about themselves, and good listening is a gift you can give to anyone. Do not try to be perfect — just be yourself. Another helpful tip: offer to help. When you see someone who needs a hand, step up. Small acts of kindness build trust very quickly. Finally, be patient. Deep friendships take time to grow. You do not need hundreds of friends. A few good ones who truly care about you are worth more than a thousand who only know your name.",
+    "translation_zh": "交新朋友可能让人觉得很难，尤其是当你在一个新地方或开始一份新工作时。但这是一项你可以学习的技能，就像骑自行车或做饭一样。第一步就是到场。如果你哪儿都不去，你不可能交到朋友。参加一个你感兴趣的课程、运动队或俱乐部。当你在那里时，最重要的事情是保持开放和友好。微笑，进行眼神交流，打招呼。当别人主动时，大多数人都会感到高兴。提出问题并真正倾听回答。人们喜欢谈论自己，而善于倾听是你可以给任何人的礼物。不要试图做到完美——做你自己就好。另一个有用的建议：主动帮忙。当你看到有人需要帮助时，挺身而出。小小的善举能很快建立信任。最后，要有耐心。深厚的友谊需要时间来培养。你不需要几百个朋友。几个真正关心你的好友，胜过一千个只知道你名字的人。"
+  },
+  {
+    "id": 8,
+    "title": "The Solar System",
+    "title_zh": "太阳系",
+    "level": "beginner",
+    "type": "science",
+    "description": "A tour of our solar system — the Sun, eight planets, and our place in space.",
+    "description_zh": "太阳系之旅——太阳、八大行星和我们在太空中的位置。",
+    "content": "Our solar system is like a big family with the Sun at the center. The Sun is a star — a huge ball of hot gas that gives us light and heat. Without it, there would be no life on Earth. Eight planets travel around the Sun. The four closest to the Sun are small and rocky: Mercury, Venus, Earth, and Mars. Earth is special because it is the only planet we know of that has life. The next four planets are much bigger and made mostly of gas: Jupiter, Saturn, Uranus, and Neptune. Jupiter is so large that more than one thousand Earths could fit inside it. Saturn is famous for its beautiful rings, which are made of ice and rock. Between Mars and Jupiter, there is a belt of asteroids — millions of rocky objects left over from when the solar system was formed. Some planets have moons. Earth has one, but Jupiter has more than ninety. Far beyond Neptune, there are icy worlds like Pluto. The solar system is very old — about four and a half billion years. It is just a tiny part of our galaxy, the Milky Way, which has hundreds of billions of other stars. Looking up at the night sky reminds us how small we are, and how amazing the universe is.",
+    "translation_zh": "我们的太阳系就像一个大家庭，太阳位于中心。太阳是一颗恒星——一个巨大的热气火球，给我们光和热。没有它，地球上就不会有生命。八颗行星围绕太阳运行。离太阳最近的四个行星很小，而且是岩石构成的：水星、金星、地球和火星。地球很特别，因为它是我们所知唯一有生命的行星。接下来的四个行星大得多，主要由气体构成：木星、土星、天王星和海王星。木星非常大，一千多个地球可以装进里面。土星因其美丽的环而闻名，这些环由冰和岩石组成。在火星和木星之间，有一条小行星带——数百万个岩石物体，是太阳系形成时留下的。有些行星有卫星。地球有一个，但木星有九十多个。在海王星之外很远的地方，有像冥王星这样的冰冷世界。太阳系非常古老——大约四十五亿年了。它只是我们银河系的一小部分，银河系有数千亿颗其他恒星。仰望夜空提醒我们自己是多么渺小，宇宙是多么令人惊叹。"
+  },
+  {
+    "id": 9,
+    "title": "Job Interview Tips",
+    "title_zh": "求职面试技巧",
+    "level": "intermediate",
+    "type": "career",
+    "description": "How to prepare, what to say, and how to make a great impression at your next interview.",
+    "description_zh": "如何准备、说什么、如何在面试中给人留下好印象。",
+    "content": "A job interview is your chance to show a company why they should hire you. Being nervous is normal, but preparation can help you feel calm and confident. Before the interview, learn about the company. Visit their website and read about what they do. Think about why you want this job and how your skills match what they need. Prepare answers to common questions, such as 'Tell me about yourself,' 'What are your strengths and weaknesses?' and 'Why do you want to work here?' Practice your answers out loud, but do not memorize them word for word — you want to sound natural. On the day of the interview, dress neatly and arrive a few minutes early. Bring a copy of your resume and a notebook. During the interview, speak clearly and make eye contact. Listen carefully to each question before you answer. If you do not understand something, it is perfectly fine to ask the interviewer to repeat or explain. At the end, thank them for their time and ask one or two questions about the role or the company. This shows that you are truly interested. After the interview, send a short thank-you email within twenty-four hours. Even if you do not get this job, every interview is good practice for the next one.",
+    "translation_zh": "求职面试是你向公司展示他们为什么应该雇用你的机会。感到紧张是正常的，但准备可以帮助你感到平静和自信。面试前，了解公司。访问他们的网站，了解他们做什么。想想你为什么想要这份工作，以及你的技能如何匹配他们的需求。准备好常见问题的答案，比如'介绍一下你自己'、'你的优点和缺点是什么？'和'你为什么想在这里工作？'大声练习你的答案，但不要逐字背诵——你希望听起来自然。面试当天，穿着整洁，提前几分钟到达。带一份简历和一个笔记本。面试过程中，说话清晰，保持眼神交流。在回答之前仔细听每个问题。如果你不明白某事，完全可以请面试官重复或解释。最后，感谢他们的时间，并问一两个关于职位或公司的问题。这表明你真正感兴趣。面试后，在二十四小时内发送一封简短的感谢邮件。即使你没有得到这份工作，每次面试都是下一次的好练习。"
+  },
+  {
+    "id": 10,
+    "title": "Why Exercise Matters",
+    "title_zh": "为什么锻炼很重要",
+    "level": "beginner",
+    "type": "health",
+    "description": "The benefits of moving your body, backed by science and common sense.",
+    "description_zh": "科学和常识支持的锻炼身体的益处。",
+    "content": "We all know that exercise is good for us, but do you know why? When you move your body, several wonderful things happen. First, your heart beats faster and pumps more blood around your body. This brings more oxygen to your brain, which helps you think more clearly and feel more awake. Second, your body releases chemicals called endorphins. These are natural mood-boosters that can make you feel happier and less stressed. Third, regular exercise strengthens your muscles and bones. This becomes more important as you get older, because it helps prevent falls and injuries. You do not need to run a marathon or spend hours at the gym. Even a thirty-minute walk every day can make a big difference. The key is to find something you enjoy — dancing, swimming, cycling, or even gardening all count. Try to move your body in some way every single day. It does not have to be hard or painful. Start small, be consistent, and pay attention to how you feel afterward. Your body and mind will thank you.",
+    "translation_zh": "我们都知道锻炼对健康有益，但你知道为什么吗？当你活动身体时，会发生几件奇妙的事情。首先，你的心跳加快，向全身输送更多血液。这给大脑带来更多的氧气，帮助你更清晰地思考，感到更加清醒。其次，你的身体释放一种叫做内啡肽的化学物质。这些是天然的情绪提升剂，可以让你感到更快乐、压力更小。第三，定期锻炼能增强你的肌肉和骨骼。随着年龄增长，这变得更加重要，因为它有助于防止跌倒和受伤。你不需要跑马拉松或在健身房花几个小时。即使每天三十分钟的散步也能带来很大的不同。关键是找到你喜欢的事情——跳舞、游泳、骑自行车，甚至园艺都算。尝试每天以某种方式活动你的身体。不必很辛苦或痛苦。从小处开始，保持一致，并注意你事后的感受。你的身体和头脑会感谢你的。"
+  }
+]

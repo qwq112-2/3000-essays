@@ -6,6 +6,7 @@ import sys
 TEMPLATE_PATH = r'C:\Users\abala\Desktop\english-study\_template.html'
 WORDLIST_PATH = r'C:\Users\abala\Desktop\english-study\wordlist.json'
 STORIES_PATH = r'C:\Users\abala\Desktop\english-study\stories.json'
+ARTICLES_PATH = r'C:\Users\abala\Desktop\english-study\articles.json'
 INTRO_PATH = r'C:\Users\abala\Desktop\english-study\_intro.json'
 OUTPUT_PATH = r'C:\Users\abala\Desktop\english-study\index.html'
 
@@ -47,6 +48,10 @@ print(f'Words with translations: {merged}/{len(wordlist)}')
 with open(STORIES_PATH, 'r', encoding='utf-8') as f:
     stories_text = f.read()
 
+# Load articles
+with open(ARTICLES_PATH, 'r', encoding='utf-8') as f:
+    articles_text = f.read()
+
 # Load intro
 with open(INTRO_PATH, 'r', encoding='utf-8') as f:
     intro = json.load(f)
@@ -62,6 +67,7 @@ with open(TEMPLATE_PATH, 'r', encoding='utf-8') as f:
 # Substitute
 final = template.replace('__WORDLIST__', wordlist_json)
 final = final.replace('__STORIES__', stories_text)
+final = final.replace('__ARTICLES__', articles_text)
 final = final.replace('__INTRO__', intro_json)
 
 with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:

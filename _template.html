@@ -1450,7 +1450,7 @@ function renderReview() {
       <div class="review-counter">${remaining} card${remaining === 1 ? '' : 's'} remaining</div>
       <div class="review-word" id="rev-word">${w.word}</div>
       <div class="review-pos">${info ? info.p : ''}</div>
-      <div class="review-meaning" id="rev-meaning" style="visibility:hidden;">${w.notes || '— no note yet —'}</div>
+      <div class="review-meaning" id="rev-meaning" style="visibility:hidden;">${w.notes || (info && info.zh ? info.zh + (info.e ? ' · ' + info.e : '') : (info && info.e ? info.e : '— no note yet —'))}</div>
       <button class="btn btn-ghost" id="show-btn" onclick="showMeaning()">Show meaning</button>
       <div class="review-rates" id="rate-btns" style="display:none;">
         <button class="btn btn-danger" onclick="rate('again')">Again <small>&lt; 1d</small></button>

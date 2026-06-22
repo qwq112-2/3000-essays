@@ -759,15 +759,10 @@
 <header class="topbar">
   <a class="brand" href="#/stories">3000 <span class="em">essays</span></a>
   <nav>
-    <a class="tab" href="#/stories" data-tab="stories">Stories</a>
-    <a class="tab" href="#/guide" data-tab="guide">Guide</a>
-    <a class="tab" href="#/blog" data-tab="blog">Blog</a>
-    <a class="tab" href="#/words" data-tab="words">Library</a>
+    <a class="tab" href="#/read" data-tab="read">Read</a>
     <a class="tab" href="#/dictionary" data-tab="dictionary">Dictionary</a>
-    <a class="tab" href="#/articles" data-tab="articles">Articles</a>
-    <a class="tab" href="#/generate" data-tab="generate">Generate</a>
-    <a class="tab" href="#/quiz" data-tab="quiz">Quiz</a>
     <a class="tab" href="#/review" data-tab="review">Review</a>
+    <a class="tab" href="#/guide" data-tab="guide">Guide</a>
     <a class="tab" href="#/settings" data-tab="settings">Settings</a>
   </nav>
   <button class="icon-btn" id="theme-btn" title="Theme">☀</button>
@@ -879,13 +874,14 @@ function toast(msg) {
 }
 
 /* Router */
-function navigate(h) { window.location.hash = h || '#/stories'; }
-function currentHash() { return window.location.hash || '#/stories'; }
+function navigate(h) { window.location.hash = h || '#/read'; }
+function currentHash() { return window.location.hash || '#/read'; }
 function setActiveTab() {
   const h = currentHash();
   let tab = h.replace('#/', '').split('/')[0];
-  if (h.startsWith('#/story/')) tab = 'stories';
-  if (h.startsWith('#/blog/')) tab = 'blog';
+  if (h.startsWith('#/story/')) tab = 'read';
+  if (h.startsWith('#/article/')) tab = 'read';
+  if (h === '#/stories' || h === '#/articles') tab = 'read';
   document.querySelectorAll('.topbar .tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
 }
 window.addEventListener('hashchange', () => { setActiveTab(); render(); });
@@ -894,57 +890,69 @@ window.addEventListener('hashchange', () => { setActiveTab(); render(); });
 function render() {
   setActiveTab();
   const h = currentHash();
-  if (h === '#/' || h === '' || h === '#/stories') return renderStories();
+  if (h === '#/' || h === '' || h === '#/read' || h === '#/stories') return renderRead();
   if (h === '#/guide') return renderGuide();
   if (h.startsWith('#/story/')) return renderStory(h.split('/')[2]);
-  if (h === '#/blog' || h === '#/blog/') return renderBlogList();
-  if (h === '#/blog/new') return renderBlogEdit(null);
-  if (h.startsWith('#/blog/')) return renderBlogEdit(h.split('/')[2]);
-  if (h === '#/words') return renderWords();
-  if (h.startsWith('#/dictionary')) return renderDictionary();
-  if (h.startsWith('#/articles')) return renderArticleList();
   if (h.startsWith('#/article/')) return renderArticle(h.split('/')[2]);
-  if (h.startsWith('#/generate')) return renderGenerate();
-  if (h.startsWith('#/quiz')) return renderQuiz();
-  if (h === '#/review') return renderReview();
+  if (h.startsWith('#/dictionary')) return renderDictionary();
+  if (h.startsWith('#/review')) return renderReview();
   if (h === '#/settings') return renderSettings();
-  renderStories();
+  renderRead();
 }
 
 /* === Stories === */
-function renderStories() {
+function renderRead() {
   const main = document.getElementById('main');
-  if (!STORIES || STORIES.length === 0) {
-    main.innerHTML = `<div class="page-head"><div class="page-eyebrow">Library</div><h1 class="page-title">No <em>stories</em> yet</h1></div><div class="empty"><div class="mark">∅</div><h3>Stories haven't been loaded</h3><p>You can import stories from JSON in Settings, or paste them directly.</p><a class="btn btn-primary" href="#/settings">Go to Settings</a></div>`;
-    return;
-  }
+  const hash = currentHash();
+  const params = new URLSearchParams(hash.includes('?') ? hash.split('?')[1] : '');
+  const filter = params.get('type') || 'all';
+
+  // Merge stories + articles with type labels
+  const allItems = [
+    ...(STORIES || []).map(s => ({ ...s, kind: 'story', type: 'fable' })),
+    ...(ARTICLES || []).map(a => ({ ...a, kind: 'article' })),
+  ];
+
+  // Get unique types for filter pills
+  const types = ['all', ...new Set(allItems.map(x => x.type))];
+
+  const filtered = filter === 'all' ? allItems : allItems.filter(x => x.type === filter);
+  const totalWords = filtered.reduce((sum, x) => sum + (x.content.match(/[A-Za-z]+/g) || []).length, 0);
+
   main.innerHTML = `
     <div class="page-head">
-      <div class="page-eyebrow">Library · ${STORIES.length} stories</div>
-      <h1 class="page-title">Read & <em>remember</em></h1>
-      <p class="page-sub">${STORIES.length} short English texts. Click any word to look it up, or to add it to your study list.</p>
+      <div class="page-eyebrow">Read · ${filtered.length} items · ~${Math.round(totalWords/1000)}k words total</div>
+      <h1 class="page-title">Read & <em>learn</em></h1>
+      <p class="page-sub">Stories, science, dialogues, interviews — all written with the Longman 3000 words.</p>
+    </div>
+    <div class="filter-row" style="margin-bottom:20px;">
+      ${types.map(t => `
+        <button class="pill ${filter === t ? 'active' : ''}" onclick="navigate('#/read${t === 'all' ? '' : '?type=' + t}')">${t === 'all' ? 'All' : t.charAt(0).toUpperCase() + t.slice(1)}</button>
+      `).join('')}
     </div>
     <div class="story-list">
-      ${STORIES.map((s, i) => {
-        const wordCount = (s.content.match(/[A-Za-z]+/g) || []).length;
+      ${filtered.map((x, i) => {
+        const wordCount = (x.content.match(/[A-Za-z]+/g) || []).length;
+        const href = x.kind === 'story' ? '#/story/' + x.id : '#/article/' + x.id;
         return `
-        <div class="story-card" onclick="navigate('#/story/${s.id}')">
+        <div class="story-card" onclick="navigate('${href}')">
           <div>
-            <div class="num">No. ${String(i + 1).padStart(2, '0')}</div>
-            <h3>${escapeHtml(s.title)}${s.title_zh ? ` <span style="font-size:16px;color:var(--ink-muted);font-weight:300;">${escapeHtml(s.title_zh)}</span>` : ''}</h3>
-            <div class="desc">${escapeHtml(s.description || '')}${s.description_zh ? ` · ${escapeHtml(s.description_zh)}` : ''}</div>
+            <div class="num">${String(i + 1).padStart(2, '0')} · <span class="article-type-tag tag-${x.type || 'science'}">${x.type || 'article'}</span></div>
+            <h3>${escapeHtml(x.title)}${x.title_zh ? ` <span style="font-size:16px;color:var(--ink-muted);font-weight:300;">${escapeHtml(x.title_zh)}</span>` : ''}</h3>
+            <div class="desc">${escapeHtml(x.description || '')}${x.description_zh ? ` · ${escapeHtml(x.description_zh)}` : ''}</div>
             <div class="meta">
-              <span>${levelLabel(s.level)}</span>
+              <span>${levelLabel(x.level || 'beginner')}</span>
               <span class="dot">·</span>
               <span>${wordCount} words</span>
               <span class="dot">·</span>
-              <span>~${Math.ceil(wordCount / 200)} min read</span>
+              <span>~${Math.ceil(wordCount / 200)} min</span>
             </div>
           </div>
           <div class="arrow">→</div>
         </div>`;
       }).join('')}
-    </div>`;
+    </div>
+  `;
 }
 function levelLabel(l) { return { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced' }[l] || l; }
 
@@ -1203,6 +1211,10 @@ function renderDictionary() {
       <div class="page-eyebrow">Longman Communication 3000</div>
       <h1 class="page-title">All <em>3000</em> words</h1>
       <p class="page-sub">${allWords.length} entries &mdash; click any card to see details or add to your library.</p>
+      <div class="btn-row" style="margin-top:8px;">
+        <button class="btn btn-primary" onclick="startQuiz('all',20)" style="font-size:14px;">Test Yourself</button>
+        <button class="btn btn-ghost" onclick="startQuiz('top1000',20)">Top 1000 Quiz</button>
+      </div>
     </div>
     <input class="dict-search" id="dict-search" type="text" placeholder="Search English or Chinese..." autofocus />
     <div class="dict-count" id="dict-count">Showing all ${allWords.length} words</div>
@@ -1725,7 +1737,8 @@ function renderReview() {
       <div class="review-stage">
         <div style="font-family:var(--serif);font-size:64px;font-style:italic;color:var(--accent);">◌</div>
         <h3 style="font-family:var(--serif);font-size:24px;font-weight:400;margin:16px 0 8px;">Nothing to review</h3>
-        <p style="color:var(--ink-muted);">Come back later, or <a href="#/stories" style="color:var(--accent);text-decoration:underline;">read a story</a> to add new words.</p>
+        <p style="color:var(--ink-muted);">Come back later, or <a href="#/read" style="color:var(--accent);text-decoration:underline;">read something</a> to add new words.</p>
+        ${all.length >= 3 ? `<button class="btn btn-primary" onclick="generateStory()" style="margin-top:16px;">Generate a story from your ${all.length} words</button><div id="gen-output"></div>` : ''}
       </div>`;
     return;
   }
@@ -1750,6 +1763,12 @@ function renderReview() {
         <button class="btn" style="background:var(--ink);color:var(--bg);" onclick="rate('easy')">Easy <small>7d</small></button>
       </div>
     </div>
+    ${all.length >= 3 ? `
+    <div style="margin-top:40px;text-align:center;">
+      <p style="color:var(--ink-muted);font-size:13px;margin-bottom:8px;">Want to see your words in context?</p>
+      <button class="btn btn-ghost" onclick="generateStory()">Generate a story from your ${all.length} words</button>
+      <div id="gen-output"></div>
+    </div>` : ''}
   `;
   window._rq = queue;
   window._rw = w;

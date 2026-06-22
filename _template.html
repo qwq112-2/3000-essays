@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3000 词英语口语</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f0;
+    --bg-elev: #f3eee2;
+    --bg-card: #fffdf7;
+    --ink: #26221c;
+    --ink-muted: #75695b;
+    --ink-dim: #a8a092;
+    --accent: #b35a35;
+    --accent-soft: #f0dccb;
+    --accent-deep: #8a3e1f;
+    --line: #e6dfd0;
+    --line-soft: #efe9db;
+    --highlight: #f9e3a0;
+    --highlight-added: #d4ecc5;
+    --shadow-sm: 0 1px 2px rgba(60, 40, 20, 0.04);
+    --shadow-md: 0 4px 16px rgba(60, 40, 20, 0.06), 0 1px 2px rgba(60, 40, 20, 0.04);
+    --shadow-lg: 0 20px 50px rgba(60, 40, 20, 0.12), 0 4px 8px rgba(60, 40, 20, 0.04);
+    --serif: 'Fraunces', Georgia, 'Songti SC', 'Source Han Serif SC', serif;
+    --sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  }
+  [data-theme="dark"] {
+    --bg: #1a1714;
+    --bg-elev: #25211b;
+    --bg-card: #211d17;
+    --ink: #ede5d6;
+    --ink-muted: #b4a89a;
+    --ink-dim: #75695b;
+    --accent: #d97a52;
+    --accent-soft: #3a261a;
+    --accent-deep: #f0a884;
+    --line: #3a3328;
+    --line-soft: #2f2a22;
+    --highlight: #5c4a1e;
+    --highlight-added: #2e4a2a;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    position: relative;
+  }
+  body::before {
+    content: '';
+    position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.10 0 0 0 0 0.05 0 0 0 0.025 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+  }
+  [data-theme="dark"] body::before { mix-blend-mode: screen; opacity: 0.3; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; cursor: pointer; background: none; border: none; }
+  input, textarea, select { font: inherit; color: inherit; }
+  ::selection { background: var(--accent-soft); color: var(--accent-deep); }
+
+  /* ===== Topbar ===== */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line-soft);
+    padding: 18px 32px;
+    display: flex; align-items: baseline; gap: 28px;
+  }
+  .topbar .brand {
+    font-family: var(--serif); font-weight: 500;
+    font-size: 19px; font-variation-settings: 'opsz' 144, 'SOFT' 30;
+    color: var(--ink); letter-spacing: -0.01em;
+  }
+  .topbar .brand .em { color: var(--accent); font-style: italic; }
+  .topbar nav { display: flex; gap: 4px; margin-left: 8px; }
+  .topbar .tab {
+    font-size: 13px; font-weight: 500;
+    padding: 6px 12px; border-radius: 999px;
+    color: var(--ink-muted); transition: all 0.2s;
+    position: relative;
+  }
+  .topbar .tab:hover { color: var(--ink); background: var(--bg-elev); }
+  .topbar .tab.active { color: var(--accent-deep); background: var(--accent-soft); }
+  .topbar .icon-btn {
+    margin-left: auto; padding: 6px 10px; border-radius: 999px;
+    color: var(--ink-muted); font-size: 16px;
+  }
+  .topbar .icon-btn:hover { background: var(--bg-elev); color: var(--ink); }
+
+  /* ===== Main ===== */
+  main { max-width: 880px; margin: 0 auto; padding: 56px 32px 96px; }
+  .page-head { margin-bottom: 40px; }
+  .page-eyebrow {
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.18em;
+    color: var(--accent); margin-bottom: 12px;
+  }
+  .page-title {
+    font-family: var(--serif); font-size: 42px; font-weight: 400;
+    font-variation-settings: 'opsz' 144, 'SOFT' 30, 'WONK' 1;
+    color: var(--ink); letter-spacing: -0.02em; line-height: 1.05;
+  }
+  .page-title em { color: var(--accent); font-style: italic; }
+  .page-sub {
+    font-family: var(--serif); font-size: 18px; font-weight: 300;
+    color: var(--ink-muted); margin-top: 12px;
+    font-variation-settings: 'opsz' 24;
+    font-style: italic; line-height: 1.5;
+  }
+
+  /* ===== Buttons ===== */
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 10px 18px; border-radius: 999px;
+    background: var(--ink); color: var(--bg);
+    font-size: 13px; font-weight: 600; letter-spacing: 0.02em;
+    transition: transform 0.15s, background 0.2s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-deep); }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .btn-ghost:hover { background: var(--bg-elev); border-color: var(--ink-dim); }
+  .btn-danger { background: transparent; color: #b54545; border: 1px solid #e5c5c5; }
+  .btn-danger:hover { background: #f5e5e5; }
+  .btn-sm { padding: 6px 12px; font-size: 12px; }
+  .btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  /* ===== Story Cards ===== */
+  .story-list { display: flex; flex-direction: column; gap: 0; }
+  .story-card {
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 16px; align-items: start;
+    padding: 28px 0; border-top: 1px solid var(--line-soft);
+    cursor: pointer; transition: padding 0.2s;
+  }
+  .story-card:last-child { border-bottom: 1px solid var(--line-soft); }
+  .story-card:hover { padding-left: 12px; }
+  .story-card .num {
+    font-family: var(--serif); font-size: 14px;
+    color: var(--ink-dim); font-style: italic;
+    font-variation-settings: 'opsz' 24;
+  }
+  .story-card h3 {
+    font-family: var(--serif); font-size: 26px; font-weight: 400;
+    color: var(--ink); margin: 4px 0 6px;
+    font-variation-settings: 'opsz' 72, 'SOFT' 30;
+    letter-spacing: -0.01em;
+  }
+  .story-card .desc {
+    font-family: var(--serif); font-size: 15px; color: var(--ink-muted);
+    font-style: italic; line-height: 1.5;
+    font-variation-settings: 'opsz' 24;
+  }
+  .story-card .meta {
+    display: flex; gap: 14px; margin-top: 10px; font-size: 12px; color: var(--ink-dim);
+    text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500;
+  }
+  .story-card .meta .dot { color: var(--line); }
+  .story-card .arrow {
+    color: var(--ink-dim); font-size: 22px; line-height: 1; margin-top: 8px;
+    transition: transform 0.2s, color 0.2s;
+  }
+  .story-card:hover .arrow { color: var(--accent); transform: translateX(4px); }
+
+  /* ===== Empty State ===== */
+  .empty {
+    text-align: center; padding: 80px 32px;
+    border: 1px dashed var(--line); border-radius: 4px;
+    background: var(--bg-card);
+  }
+  .empty .mark { font-family: var(--serif); font-size: 56px; color: var(--ink-dim); font-style: italic; line-height: 1; margin-bottom: 16px; }
+  .empty h3 { font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--ink); margin-bottom: 8px; }
+  .empty p { color: var(--ink-muted); font-size: 14px; max-width: 380px; margin: 0 auto 24px; }
+
+  /* ===== Story Reader ===== */
+  .reader-back {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 13px; color: var(--ink-muted);
+    margin-bottom: 24px; transition: color 0.2s;
+  }
+  .reader-back:hover { color: var(--accent); }
+  .reader-header { margin-bottom: 32px; }
+  .reader-title {
+    font-family: var(--serif); font-size: 44px; font-weight: 400;
+    color: var(--ink); letter-spacing: -0.02em; line-height: 1.05;
+    font-variation-settings: 'opsz' 144, 'SOFT' 50;
+  }
+  .reader-title-zh {
+    font-family: 'Source Han Serif SC', 'Songti SC', 'Noto Serif CJK SC', var(--serif);
+    font-size: 22px; font-weight: 350; color: var(--ink-muted);
+    margin-top: 8px; letter-spacing: 0.02em;
+  }
+  .reader-meta {
+    display: flex; gap: 14px; align-items: center;
+    margin-top: 16px; font-size: 12px; color: var(--ink-muted);
+    text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500;
+  }
+  .reader-meta .dot { color: var(--line); }
+  .reader-progress {
+    height: 2px; background: var(--line-soft); border-radius: 1px;
+    margin: 32px 0; overflow: hidden;
+  }
+  .reader-progress-bar {
+    height: 100%; background: var(--accent);
+    transition: width 0.3s;
+  }
+  .story-body {
+    font-family: var(--serif);
+    font-size: 21px; font-weight: 350;
+    line-height: 1.75; color: var(--ink);
+    font-variation-settings: 'opsz' 24;
+    letter-spacing: -0.005em;
+  }
+  .story-body p { margin-bottom: 1.2em; }
+  .story-body p:first-of-type::first-letter {
+    font-family: var(--serif);
+    font-size: 72px; font-weight: 400; float: left; line-height: 0.9;
+    margin: 8px 12px 0 0; color: var(--accent);
+    font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
+  }
+  .story-body .word {
+    cursor: pointer; padding: 0 2px; margin: 0 -2px;
+    border-radius: 2px; transition: all 0.15s;
+    position: relative;
+  }
+  .story-body .word:hover { background: var(--accent-soft); color: var(--accent-deep); }
+  .story-body .word.added { background: var(--highlight-added); }
+  .story-body .word.in-list { color: var(--ink-muted); }
+  .story-body .word.just-added { animation: pulse 0.5s; }
+  @keyframes pulse {
+    0% { background: var(--accent); }
+    100% { background: var(--highlight-added); }
+  }
+
+  /* ===== Word Popup ===== */
+  .modal-back {
+    position: fixed; inset: 0; z-index: 100;
+    background: rgba(40, 30, 20, 0.35);
+    backdrop-filter: blur(6px);
+    display: none; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .modal-back.show { display: flex; }
+  .modal {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 8px; padding: 32px 36px;
+    min-width: 360px; max-width: 480px; width: 100%;
+    box-shadow: var(--shadow-lg);
+  }
+  .modal .word {
+    font-family: var(--serif); font-size: 38px; font-weight: 400;
+    color: var(--ink); letter-spacing: -0.01em;
+    font-variation-settings: 'opsz' 144, 'SOFT' 50;
+  }
+  .modal .pos {
+    font-size: 12px; color: var(--ink-muted);
+    font-style: italic; margin-top: 2px; margin-bottom: 14px;
+  }
+  .modal .freq {
+    display: flex; gap: 6px; margin-bottom: 18px;
+  }
+  .modal .freq .pill {
+    font-size: 11px; padding: 3px 10px; border-radius: 999px;
+    background: var(--bg-elev); color: var(--ink-muted);
+    font-weight: 500; letter-spacing: 0.04em;
+  }
+  .modal .freq .pill strong { color: var(--ink); margin-left: 2px; }
+  .modal .dict-row { margin: 14px 0 4px; padding: 12px 14px; background: var(--bg-elev); border-radius: 6px; border-left: 2px solid var(--accent); }
+  .modal .dict-label { font-size: 10px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; margin-bottom: 4px; }
+  .modal .dict-content { font-size: 15px; line-height: 1.55; }
+  .modal .dict-zh { font-family: 'Source Han Serif SC', 'Songti SC', 'Noto Serif CJK SC', serif; color: var(--ink); }
+  .modal .dict-en { font-family: var(--serif); color: var(--ink-muted); font-style: italic; font-variation-settings: 'opsz' 24; }
+  .modal .notes-input {
+    width: 100%; padding: 10px 12px;
+    border: 1px solid var(--line); border-radius: 6px;
+    background: var(--bg); color: var(--ink);
+    font-size: 14px; font-family: var(--sans);
+    margin-bottom: 18px;
+  }
+  .modal .notes-input:focus { outline: none; border-color: var(--accent); }
+  .modal .notes-label { font-size: 11px; color: var(--ink-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+  .modal .actions { display: flex; gap: 8px; justify-content: space-between; align-items: center; }
+  .modal .actions .left { display: flex; gap: 8px; }
+  .modal .status {
+    font-size: 12px; color: var(--ink-muted); margin-top: 16px;
+    padding-top: 16px; border-top: 1px solid var(--line-soft);
+    display: flex; justify-content: space-between;
+  }
+  .modal .status .ok { color: #2e7d32; }
+
+  /* ===== Words Library ===== */
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    margin-bottom: 32px;
+  }
+  .stat-cell {
+    padding: 24px 16px; text-align: center;
+    border-right: 1px solid var(--line-soft);
+  }
+  .stat-cell:last-child { border-right: none; }
+  .stat-cell .num {
+    font-family: var(--serif); font-size: 36px; font-weight: 400;
+    color: var(--ink); font-variation-settings: 'opsz' 144;
+    letter-spacing: -0.02em;
+  }
+  .stat-cell .num.accent { color: var(--accent); font-style: italic; }
+  .stat-cell .label {
+    font-size: 11px; color: var(--ink-muted); margin-top: 6px;
+    text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;
+  }
+  .filter-row {
+    display: flex; gap: 6px; margin-bottom: 24px; flex-wrap: wrap;
+  }
+  .filter-row .pill {
+    padding: 6px 14px; border-radius: 999px;
+    font-size: 13px; color: var(--ink-muted);
+    background: transparent; border: 1px solid var(--line);
+    cursor: pointer; transition: all 0.15s;
+  }
+  .filter-row .pill:hover { color: var(--ink); }
+  .filter-row .pill.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .word-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0; border-top: 1px solid var(--line-soft);
+  }
+  .word-tile {
+    padding: 16px 18px; cursor: pointer;
+    border-bottom: 1px solid var(--line-soft);
+    border-right: 1px solid var(--line-soft);
+    transition: background 0.15s;
+  }
+  .word-tile:hover { background: var(--bg-card); }
+  .word-tile .w {
+    font-family: var(--serif); font-size: 19px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.01em;
+  }
+  .word-tile .p { font-size: 10px; color: var(--ink-dim); font-style: italic; margin-left: 6px; }
+  .word-tile .n { font-size: 12px; color: var(--ink-muted); margin-top: 4px; min-height: 16px; }
+  .word-tile .s {
+    display: inline-block; margin-top: 8px;
+    font-size: 10px; padding: 2px 8px; border-radius: 999px;
+    font-weight: 600; letter-spacing: 0.04em;
+  }
+  .s-new { background: #e6efe6; color: #2e6a35; }
+  .s-learning { background: #f5e6cc; color: #8a5a1f; }
+  .s-reviewing { background: #ece4f0; color: #6a3a85; }
+  .s-mastered { background: #d4ecc5; color: #1f5d2a; }
+  [data-theme="dark"] .s-new { background: #1d2e1f; color: #81c784; }
+  [data-theme="dark"] .s-learning { background: #3a2517; color: #ffb74d; }
+  [data-theme="dark"] .s-reviewing { background: #2a1b30; color: #ce93d8; }
+  [data-theme="dark"] .s-mastered { background: #1b2e1d; color: #a5d6a7; }
+
+  /* ===== Review ===== */
+  .review-stage {
+    text-align: center; padding: 80px 32px;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: var(--bg-card);
+  }
+  .review-counter {
+    font-size: 12px; color: var(--ink-muted);
+    text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;
+    margin-bottom: 32px;
+  }
+  .review-word {
+    font-family: var(--serif); font-size: 72px; font-weight: 400;
+    color: var(--ink); letter-spacing: -0.02em; line-height: 1.05;
+    font-variation-settings: 'opsz' 144, 'SOFT' 50;
+    margin-bottom: 8px;
+  }
+  .review-pos { font-size: 14px; color: var(--ink-muted); font-style: italic; margin-bottom: 28px; }
+  .review-meaning {
+    font-family: var(--serif); font-size: 24px; font-weight: 300;
+    color: var(--accent); font-style: italic;
+    min-height: 32px; margin: 24px 0;
+    font-variation-settings: 'opsz' 72;
+  }
+  .review-rates {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+    max-width: 560px; margin: 24px auto 0;
+  }
+  .review-rates .btn {
+    flex-direction: column; padding: 14px 8px; gap: 4px;
+    font-size: 13px; line-height: 1.3;
+  }
+  .review-rates .btn small {
+    font-size: 10px; opacity: 0.7; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+
+  /* ===== Blog ===== */
+  .blog-list { display: flex; flex-direction: column; gap: 0; }
+  .blog-card {
+    padding: 24px 0; border-top: 1px solid var(--line-soft);
+    cursor: pointer; transition: padding 0.2s;
+  }
+  .blog-card:last-child { border-bottom: 1px solid var(--line-soft); }
+  .blog-card:hover { padding-left: 12px; }
+  .blog-card h3 {
+    font-family: var(--serif); font-size: 22px; font-weight: 500;
+    color: var(--ink); margin-bottom: 4px;
+    font-variation-settings: 'opsz' 72;
+  }
+  .blog-card .meta {
+    display: flex; gap: 10px; font-size: 12px; color: var(--ink-muted);
+    text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .blog-card .meta .dot { color: var(--line); }
+  .blog-card .stats { font-size: 12px; color: var(--ink-dim); margin-top: 6px; }
+  .blog-card .stats strong { color: var(--accent); font-weight: 600; }
+
+  .blog-form { display: flex; flex-direction: column; gap: 4px; }
+  .blog-form .field { margin-bottom: 20px; }
+  .blog-form label {
+    display: block; font-size: 11px; color: var(--ink-muted);
+    text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .blog-form input, .blog-form textarea {
+    width: 100%; padding: 10px 14px;
+    border: 1px solid var(--line); border-radius: 6px;
+    background: var(--bg-card); color: var(--ink);
+    font-size: 14px; font-family: var(--sans);
+  }
+  .blog-form input:focus, .blog-form textarea:focus { outline: none; border-color: var(--accent); }
+  .blog-form textarea {
+    min-height: 140px; line-height: 1.7;
+    font-family: var(--serif); font-size: 16px;
+    font-variation-settings: 'opsz' 24;
+    resize: vertical;
+  }
+  .blog-form textarea.transcript { min-height: 220px; }
+  .blog-form .row2 { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; }
+
+  .blog-stats {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    border: 1px solid var(--line); border-radius: 6px;
+    background: var(--bg-card);
+    margin: 24px 0;
+    overflow: hidden;
+  }
+  .blog-stats .cell { padding: 16px; text-align: center; border-right: 1px solid var(--line-soft); }
+  .blog-stats .cell:last-child { border-right: none; }
+  .blog-stats .num {
+    font-family: var(--serif); font-size: 24px; font-weight: 400;
+    font-variation-settings: 'opsz' 144;
+  }
+  .blog-stats .num.accent { color: var(--accent); font-style: italic; }
+  .blog-stats .num.green { color: #2e7d32; }
+  .blog-stats .num.red { color: #c0392b; }
+  .blog-stats .lbl { font-size: 10px; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-top: 4px; }
+
+  .unlearned {
+    display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px;
+    padding: 14px; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--bg-card); max-height: 200px; overflow-y: auto;
+  }
+  .unlearned-tile {
+    display: inline-flex; align-items: baseline; gap: 4px;
+    padding: 4px 10px; border-radius: 4px;
+    font-size: 13px; cursor: pointer; transition: all 0.15s;
+    background: var(--bg); border: 1px solid var(--line-soft);
+  }
+  .unlearned-tile:hover { background: var(--accent-soft); border-color: var(--accent); }
+  .unlearned-tile .pos { color: var(--ink-dim); font-size: 10px; font-style: italic; }
+
+  /* ===== Settings ===== */
+  .settings-section { padding: 32px 0; border-top: 1px solid var(--line-soft); }
+  .settings-section:first-of-type { border-top: none; padding-top: 0; }
+  .settings-section h3 {
+    font-family: var(--serif); font-size: 22px; font-weight: 500;
+    color: var(--ink); margin-bottom: 6px;
+    font-variation-settings: 'opsz' 72;
+  }
+  .settings-section .desc { color: var(--ink-muted); font-size: 14px; margin-bottom: 20px; line-height: 1.5; max-width: 580px; }
+  .file-input {
+    position: relative; display: inline-block;
+  }
+  .file-input input[type="file"] {
+    position: absolute; inset: 0; opacity: 0; cursor: pointer;
+  }
+  .info-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 10px 0; border-bottom: 1px solid var(--line-soft);
+    font-size: 14px;
+  }
+  .info-row:last-child { border-bottom: none; }
+  .info-row .label { color: var(--ink-muted); }
+  .info-row .val { font-family: var(--serif); font-size: 18px; color: var(--accent); font-variation-settings: 'opsz' 72; }
+
+  /* ===== Toast ===== */
+  .toast {
+    position: fixed; bottom: 32px; left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--ink); color: var(--bg);
+    padding: 12px 24px; border-radius: 999px;
+    font-size: 13px; font-weight: 500;
+    z-index: 200; transition: transform 0.3s; pointer-events: none;
+    box-shadow: var(--shadow-md);
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  /* ===== Guide Page ===== */
+  .lang-tabs { display: flex; gap: 0; margin: 24px 0 32px; border-bottom: 1px solid var(--line); }
+  .lang-tab {
+    padding: 10px 20px; font-size: 13px; color: var(--ink-muted);
+    border-bottom: 2px solid transparent; margin-bottom: -1px; cursor: pointer;
+    background: none; font-weight: 500;
+  }
+  .lang-tab:hover { color: var(--ink); }
+  .lang-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .guide-content {
+    font-family: var(--serif); font-size: 17px; line-height: 1.85;
+    color: var(--ink); font-variation-settings: 'opsz' 24;
+  }
+  .guide-content p { margin-bottom: 1.2em; }
+  #guide-zh {
+    font-family: 'Source Han Serif SC', 'Songti SC', 'Noto Serif CJK SC', var(--serif);
+  }
+  .guide-freq-title {
+    font-family: var(--serif); font-size: 22px; font-weight: 500;
+    color: var(--ink); margin: 56px 0 12px;
+    font-variation-settings: 'opsz' 72;
+  }
+  table.freq-table {
+    width: 100%; border-collapse: collapse; font-size: 14px;
+    margin-bottom: 32px;
+  }
+  table.freq-table th, table.freq-table td {
+    text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line-soft);
+  }
+  table.freq-table th {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-muted); font-weight: 600; border-bottom: 1px solid var(--line);
+  }
+  table.freq-table td.fg-code {
+    font-family: var(--serif); font-size: 16px; color: var(--accent); font-weight: 600;
+    font-variation-settings: 'opsz' 72; width: 60px;
+  }
+  table.freq-table td.fg-en { color: var(--ink-muted); font-style: italic; font-size: 13px; }
+
+  /* ===== Story translation ===== */
+  .story-translation {
+    margin-top: 48px; padding: 32px 36px;
+    background: var(--bg-elev); border-radius: 6px;
+    border-left: 2px solid var(--accent);
+  }
+  .story-translation .trans-title {
+    font-family: var(--serif); font-size: 14px; font-weight: 500;
+    color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 16px; font-variation-settings: 'opsz' 72;
+  }
+  .story-translation .trans-content {
+    font-family: 'Source Han Serif SC', 'Songti SC', 'Noto Serif CJK SC', var(--serif);
+    font-size: 17px; line-height: 1.85; color: var(--ink);
+    font-variation-settings: 'opsz' 24;
+  }
+  .trans-toggle-row { text-align: center; margin-top: 48px; }
+  .trans-toggle-row .btn { font-size: 13px; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 720px) {
+    .topbar { padding: 14px 18px; flex-wrap: wrap; gap: 12px; }
+    .topbar nav { order: 3; width: 100%; overflow-x: auto; }
+    main { padding: 32px 18px 64px; }
+    .page-title { font-size: 32px; }
+    .reader-title { font-size: 32px; }
+    .story-body { font-size: 18px; }
+    .story-body p:first-of-type::first-letter { font-size: 56px; }
+    .review-word { font-size: 48px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-cell:nth-child(2) { border-right: none; }
+    .review-rates { grid-template-columns: repeat(2, 1fr); }
+    .blog-stats { grid-template-columns: repeat(2, 1fr); }
+    .blog-form .row2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/stories">3000 <span class="em">essays</span></a>
+  <nav>
+    <a class="tab" href="#/stories" data-tab="stories">Stories</a>
+    <a class="tab" href="#/guide" data-tab="guide">Guide</a>
+    <a class="tab" href="#/blog" data-tab="blog">Blog</a>
+    <a class="tab" href="#/words" data-tab="words">Library</a>
+    <a class="tab" href="#/review" data-tab="review">Review</a>
+    <a class="tab" href="#/settings" data-tab="settings">Settings</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" title="Theme">☀</button>
+</header>
+
+<main id="main"></main>
+
+<div class="modal-back" id="modal-bd">
+  <div class="modal" id="modal"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* === Embedded data === */
+const WORDLIST = __WORDLIST__;
+
+const STORIES = __STORIES__;
+const INTRO = __INTRO__;
+
+
+/* === App === */
+const STORE = {
+  myWords: 'es_mywords_v2',
+  blogs: 'es_blogs_v2',
+  settings: 'es_settings_v2',
+};
+function load(key, fallback) {
+  try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; }
+  catch { return fallback; }
+}
+function save(key, val) { localStorage.setItem(key, JSON.stringify(val)); }
+let state = {
+  myWords: load(STORE.myWords, {}),
+  blogs: load(STORE.blogs, []),
+  settings: load(STORE.settings, { theme: 'light' }),
+};
+
+/* Theme */
+function applyTheme() {
+  document.documentElement.setAttribute('data-theme', state.settings.theme);
+  document.getElementById('theme-btn').textContent = state.settings.theme === 'dark' ? '🌙' : '☀';
+}
+document.getElementById('theme-btn').onclick = () => {
+  state.settings.theme = state.settings.theme === 'dark' ? 'light' : 'dark';
+  applyTheme(); save(STORE.settings, state.settings);
+};
+
+/* Toast */
+let toastTimer;
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+/* Router */
+function navigate(h) { window.location.hash = h || '#/stories'; }
+function currentHash() { return window.location.hash || '#/stories'; }
+function setActiveTab() {
+  const h = currentHash();
+  let tab = h.replace('#/', '').split('/')[0];
+  if (h.startsWith('#/story/')) tab = 'stories';
+  if (h.startsWith('#/blog/')) tab = 'blog';
+  document.querySelectorAll('.topbar .tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+}
+window.addEventListener('hashchange', () => { setActiveTab(); render(); });
+
+/* Renderers */
+function render() {
+  setActiveTab();
+  const h = currentHash();
+  if (h === '#/' || h === '' || h === '#/stories') return renderStories();
+  if (h === '#/guide') return renderGuide();
+  if (h.startsWith('#/story/')) return renderStory(h.split('/')[2]);
+  if (h === '#/blog' || h === '#/blog/') return renderBlogList();
+  if (h === '#/blog/new') return renderBlogEdit(null);
+  if (h.startsWith('#/blog/')) return renderBlogEdit(h.split('/')[2]);
+  if (h === '#/words') return renderWords();
+  if (h === '#/review') return renderReview();
+  if (h === '#/settings') return renderSettings();
+  renderStories();
+}
+
+/* === Stories === */
+function renderStories() {
+  const main = document.getElementById('main');
+  if (!STORIES || STORIES.length === 0) {
+    main.innerHTML = `<div class="page-head"><div class="page-eyebrow">Library</div><h1 class="page-title">No <em>stories</em> yet</h1></div><div class="empty"><div class="mark">∅</div><h3>Stories haven't been loaded</h3><p>You can import stories from JSON in Settings, or paste them directly.</p><a class="btn btn-primary" href="#/settings">Go to Settings</a></div>`;
+    return;
+  }
+  main.innerHTML = `
+    <div class="page-head">
+      <div class="page-eyebrow">Library · ${STORIES.length} stories</div>
+      <h1 class="page-title">Read & <em>remember</em></h1>
+      <p class="page-sub">${STORIES.length} short English texts. Click any word to look it up, or to add it to your study list.</p>
+    </div>
+    <div class="story-list">
+      ${STORIES.map((s, i) => {
+        const wordCount = (s.content.match(/[A-Za-z]+/g) || []).length;
+        return `
+        <div class="story-card" onclick="navigate('#/story/${s.id}')">
+          <div>
+            <div class="num">No. ${String(i + 1).padStart(2, '0')}</div>
+            <h3>${escapeHtml(s.title)}${s.title_zh ? ` <span style="font-size:16px;color:var(--ink-muted);font-weight:300;">${escapeHtml(s.title_zh)}</span>` : ''}</h3>
+            <div class="desc">${escapeHtml(s.description || '')}${s.description_zh ? ` · ${escapeHtml(s.description_zh)}` : ''}</div>
+            <div class="meta">
+              <span>${levelLabel(s.level)}</span>
+              <span class="dot">·</span>
+              <span>${wordCount} words</span>
+              <span class="dot">·</span>
+              <span>~${Math.ceil(wordCount / 200)} min read</span>
+            </div>
+          </div>
+          <div class="arrow">→</div>
+        </div>`;
+      }).join('')}
+    </div>`;
+}
+function levelLabel(l) { return { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced' }[l] || l; }
+
+/* === Guide (About the 3000 words) === */
+function renderGuide() {
+  const main = document.getElementById('main');
+  if (typeof INTRO === 'undefined') {
+    main.innerHTML = `<div class="empty"><h3>Guide not loaded</h3></div>`;
+    return;
+  }
+  const intro = INTRO;
+  const guide = (intro.frequency_guide || []).map(g =>
+    `<tr><td class="fg-code">${g.code}</td><td>${g.meaning_zh}</td><td class="fg-en">${g.meaning_en}</td></tr>`
+  ).join('');
+  main.innerHTML = `
+    <div class="page-head">
+      <div class="page-eyebrow">Reference</div>
+      <h1 class="page-title">${escapeHtml(intro.title)}</h1>
+      <p class="page-sub">${escapeHtml(intro.subtitle || '')}</p>
+    </div>
+
+    <div class="lang-tabs">
+      <button class="lang-tab active" data-lang="en" onclick="switchLang('en')">English</button>
+      <button class="lang-tab" data-lang="zh" onclick="switchLang('zh')">中文</button>
+    </div>
+
+    <div class="guide-content" id="guide-en">
+      ${(intro.en || '').split('\n\n').map(p => `<p>${escapeHtml(p)}</p>`).join('')}
+    </div>
+    <div class="guide-content" id="guide-zh" style="display:none;">
+      ${(intro.zh || '').split('\n\n').map(p => `<p>${escapeHtml(p)}</p>`).join('')}
+    </div>
+
+    <h2 class="guide-freq-title">Frequency markers · 频次标记说明</h2>
+    <table class="freq-table">
+      <thead>
+        <tr><th>Code</th><th>中文</th><th>English</th></tr>
+      </thead>
+      <tbody>${guide}</tbody>
+    </table>
+  `;
+}
+function switchLang(lang) {
+  document.getElementById('guide-en').style.display = lang === 'en' ? '' : 'none';
+  document.getElementById('guide-zh').style.display = lang === 'zh' ? '' : 'none';
+  document.querySelectorAll('.lang-tab').forEach(t => t.classList.toggle('active', t.dataset.lang === lang));
+}
+
+/* === Story Reader === */
+function renderStory(id) {
+  const s = STORIES.find(x => String(x.id) === String(id));
+  const main = document.getElementById('main');
+  if (!s) { main.innerHTML = `<div class="empty"><h3>Story not found</h3><a class="btn btn-primary" href="#/stories">Back</a></div>`; return; }
+  const wordCount = (s.content.match(/[A-Za-z]+/g) || []).length;
+  main.innerHTML = `
+    <a class="reader-back" href="#/stories">← All stories</a>
+    <div class="reader-header">
+      <div class="reader-meta">
+        <span>${levelLabel(s.level)}</span>
+        <span class="dot">·</span>
+        <span>${wordCount} words</span>
+        <span class="dot">·</span>
+        <span>~${Math.ceil(wordCount / 200)} min</span>
+      </div>
+      <h1 class="reader-title">${escapeHtml(s.title)}</h1>
+      ${s.title_zh ? `<p class="reader-title-zh">${escapeHtml(s.title_zh)}</p>` : ''}
+    </div>
+    <div class="reader-progress"><div class="reader-progress-bar" id="prog-bar" style="width:0%"></div></div>
+    <div class="story-body">${renderStoryContent(s.content)}</div>
+    ${s.translation_zh ? `
+    <div class="trans-toggle-row">
+      <button class="btn btn-ghost" id="trans-toggle" onclick="toggleTranslation()">📖 查看中文翻译</button>
+    </div>
+    <div class="story-translation" id="story-trans" style="display:none;">
+      <div class="trans-title">中文翻译 · Chinese Translation</div>
+      <div class="trans-content">${escapeHtml(s.translation_zh)}</div>
+    </div>` : ''}
+  `;
+  document.querySelectorAll('.story-body .word').forEach(el => {
+    el.onclick = (e) => { e.stopPropagation(); openWordPopup(el.dataset.word); };
+  });
+  // scroll progress
+  window.onscroll = () => {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = total > 0 ? Math.min(100, Math.round(window.scrollY / total * 100)) : 0;
+    const bar = document.getElementById('prog-bar');
+    if (bar) bar.style.width = pct + '%';
+  };
+}
+function renderStoryContent(text) {
+  return text.split(/\n\s*\n/).map(para => {
+    const html = escapeHtml(para).replace(/\b([A-Za-z]+(?:'[A-Za-z]+)?)\b/g, (m, w) => {
+      const lower = w.toLowerCase();
+      const inDict = !!WORDLIST[lower];
+      const inMine = !!state.myWords[lower];
+      const cls = ['word'];
+      if (!inDict) cls.push('in-list');
+      if (inMine) cls.push('added');
+      return `<span class="${cls.join(' ')}" data-word="${lower}">${m}</span>`;
+    });
+    return `<p>${html}</p>`;
+  }).join('');
+}
+
+function toggleTranslation() {
+  const el = document.getElementById('story-trans');
+  const btn = document.getElementById('trans-toggle');
+  if (!el || !btn) return;
+  if (el.style.display === 'none') {
+    el.style.display = '';
+    btn.textContent = '📕 隐藏中文翻译';
+  } else {
+    el.style.display = 'none';
+    btn.textContent = '📖 查看中文翻译';
+  }
+}
+
+/* === Word Popup === */
+function openWordPopup(word) {
+  const w = WORDLIST[word];
+  const mine = state.myWords[word];
+  if (!w) {
+    document.getElementById('modal').innerHTML = `
+      <div class="word">${escapeHtml(word)}</div>
+      <div class="pos">not in your 3000-word list</div>
+      <div class="actions"><div class="left"></div><button class="btn btn-ghost btn-sm" onclick="closeModal()">Close</button></div>
+    `;
+    document.getElementById('modal-bd').classList.add('show');
+    return;
+  }
+  document.getElementById('modal').innerHTML = `
+    <div class="word">${escapeHtml(word)}</div>
+    <div class="pos">${w.p}.</div>
+    <div class="freq">
+      ${w.s ? `<span class="pill">Spoken <strong>${w.s}</strong></span>` : ''}
+      ${w.w ? `<span class="pill">Written <strong>${w.w}</strong></span>` : ''}
+    </div>
+    ${w.zh ? `<div class="dict-row"><div class="dict-label">中文</div><div class="dict-content dict-zh">${escapeHtml(w.zh)}</div></div>` : ''}
+    ${w.e ? `<div class="dict-row"><div class="dict-label">English</div><div class="dict-content dict-en">${escapeHtml(w.e)}</div></div>` : ''}
+    <div class="notes-label">Your note</div>
+    <input class="notes-input" id="notes-input" placeholder="写下你自己的笔记（可空着）" value="${escapeAttr(mine ? mine.notes || '' : '')}" />
+    <div class="actions">
+      <div class="left">
+        <button class="btn btn-sm ${mine ? 'btn-danger' : 'btn-primary'}" onclick="${mine ? 'removeWord' : 'addWord'}('${word}')">
+          ${mine ? 'Remove' : 'Add to library'}
+        </button>
+      </div>
+      <button class="btn btn-ghost btn-sm" onclick="closeModal()">Close</button>
+    </div>
+    ${mine ? `<div class="status"><span>Status: <strong>${statusLabel(mine.status)}</strong></span><span class="ok">Next: ${formatDate(mine.nextReview)}</span></div>` : ''}
+  `;
+  document.getElementById('modal-bd').classList.add('show');
+  const input = document.getElementById('notes-input');
+  if (input) {
+    input.oninput = () => {
+      if (state.myWords[word]) { state.myWords[word].notes = input.value; save(STORE.myWords, state.myWords); }
+    };
+  }
+}
+function closeModal() { document.getElementById('modal-bd').classList.remove('show'); }
+document.getElementById('modal-bd').onclick = (e) => { if (e.target.id === 'modal-bd') closeModal(); };
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function addWord(word) {
+  const notes = (document.getElementById('notes-input') || {}).value || '';
+  const now = Date.now();
+  state.myWords[word] = { word, addedAt: now, notes, status: 'new', level: 0, lastResult: null, lastReviewed: null, nextReview: now };
+  save(STORE.myWords, state.myWords);
+  toast('Added: ' + word);
+  openWordPopup(word);
+  document.querySelectorAll(`.word[data-word="${word}"]`).forEach(el => { el.classList.add('added'); el.classList.add('just-added'); setTimeout(() => el.classList.remove('just-added'), 600); });
+}
+function removeWord(word) {
+  delete state.myWords[word];
+  save(STORE.myWords, state.myWords);
+  toast('Removed: ' + word);
+  openWordPopup(word);
+  document.querySelectorAll(`.word[data-word="${word}"]`).forEach(el => el.classList.remove('added'));
+}
+function statusLabel(s) { return { new: 'New', learning: 'Learning', reviewing: 'Reviewing', mastered: 'Mastered' }[s] || s; }
+function formatDate(ts) {
+  if (!ts) return '—';
+  const d = new Date(ts);
+  const today = new Date(); today.setHours(0,0,0,0);
+  const d0 = new Date(d); d0.setHours(0,0,0,0);
+  const diff = Math.round((d0 - today) / 86400000);
+  if (diff === 0) return 'today';
+  if (diff === 1) return 'tomorrow';
+  if (diff === -1) return 'yesterday';
+  if (diff > 0) return `in ${diff} days`;
+  return `${-diff} days overdue`;
+}
+
+/* === Words Library === */
+let currentFilter = 'all';
+function renderWords() {
+  const main = document.getElementById('main');
+  const all = Object.values(state.myWords);
+  const stats = {
+    all: all.length,
+    new: all.filter(w => w.status === 'new').length,
+    learning: all.filter(w => w.status === 'learning').length,
+    reviewing: all.filter(w => w.status === 'reviewing').length,
+    mastered: all.filter(w => w.status === 'mastered').length,
+  };
+  const dueCount = all.filter(w => w.status !== 'new' && w.nextReview <= Date.now()).length;
+  main.innerHTML = `
+    <div class="page-head">
+      <div class="page-eyebrow">Your library</div>
+      <h1 class="page-title">Words & <em>progress</em></h1>
+      <p class="page-sub">${stats.all} ${stats.all === 1 ? 'word' : 'words'} saved · ${dueCount + stats.new} ready to review.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-cell"><div class="num">${stats.new}</div><div class="label">New</div></div>
+      <div class="stat-cell"><div class="num">${stats.learning}</div><div class="label">Learning</div></div>
+      <div class="stat-cell"><div class="num">${stats.reviewing}</div><div class="label">Reviewing</div></div>
+      <div class="stat-cell"><div class="num accent">${stats.mastered}</div><div class="label">Mastered</div></div>
+    </div>
+    ${(dueCount + stats.new) > 0 ? `<div class="btn-row" style="margin-bottom:28px;"><a class="btn btn-primary" href="#/review">Start review · ${dueCount + stats.new} cards</a></div>` : ''}
+    <div class="filter-row" id="filter-row">
+      ${['all', 'new', 'learning', 'reviewing', 'mastered'].map(f => `
+        <button class="pill ${currentFilter === f ? 'active' : ''}" onclick="setFilter('${f}')">${f === 'all' ? 'All' : statusLabel(f)} · ${stats[f]}</button>
+      `).join('')}
+    </div>
+    <div id="word-list-area"></div>
+  `;
+  renderWordList();
+}
+function setFilter(f) { currentFilter = f; renderWords(); }
+function renderWordList() {
+  const area = document.getElementById('word-list-area');
+  if (!area) return;
+  let all = Object.values(state.myWords);
+  if (currentFilter !== 'all') all = all.filter(w => w.status === currentFilter);
+  all.sort((a, b) => a.word.localeCompare(b.word));
+  if (all.length === 0) {
+    area.innerHTML = `<div class="empty" style="margin-top:24px;"><div class="mark">∅</div><h3>No words here yet</h3><p>Read a story and click any word to add it to your library.</p></div>`;
+    return;
+  }
+  area.innerHTML = `<div class="word-grid">${all.map(w => {
+    const info = WORDLIST[w.word];
+    return `<div class="word-tile" onclick="openWordPopup('${w.word}')">
+      <div><span class="w">${w.word}</span><span class="p">${info ? info.p : ''}</span></div>
+      <div class="n">${w.notes || ''}</div>
+      <span class="s s-${w.status}">${statusLabel(w.status)}</span>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+/* === Review === */
+function renderReview() {
+  const main = document.getElementById('main');
+  const all = Object.values(state.myWords);
+  const now = Date.now();
+  const due = all.filter(w => w.status !== 'new' && w.nextReview <= now);
+  const newWords = all.filter(w => w.status === 'new');
+  const queue = [...due, ...newWords].sort((a, b) => a.nextReview - b.nextReview);
+  if (queue.length === 0) {
+    main.innerHTML = `
+      <div class="page-head">
+        <div class="page-eyebrow">SRS · Spaced repetition</div>
+        <h1 class="page-title">All <em>caught up</em></h1>
+        <p class="page-sub">No words are due for review right now. Read a story to add new ones.</p>
+      </div>
+      <div class="review-stage">
+        <div style="font-family:var(--serif);font-size:64px;font-style:italic;color:var(--accent);">◌</div>
+        <h3 style="font-family:var(--serif);font-size:24px;font-weight:400;margin:16px 0 8px;">Nothing to review</h3>
+        <p style="color:var(--ink-muted);">Come back later, or <a href="#/stories" style="color:var(--accent);text-decoration:underline;">read a story</a> to add new words.</p>
+      </div>`;
+    return;
+  }
+  const w = queue[0];
+  const info = WORDLIST[w.word];
+  const remaining = queue.length;
+  main.innerHTML = `
+    <div class="page-head">
+      <div class="page-eyebrow">SRS · Spaced repetition</div>
+      <h1 class="page-title">Today's <em>review</em></h1>
+    </div>
+    <div class="review-stage">
+      <div class="review-counter">${remaining} card${remaining === 1 ? '' : 's'} remaining</div>
+      <div class="review-word" id="rev-word">${w.word}</div>
+      <div class="review-pos">${info ? info.p : ''}</div>
+      <div class="review-meaning" id="rev-meaning" style="visibility:hidden;">${w.notes || '— no note yet —'}</div>
+      <button class="btn btn-ghost" id="show-btn" onclick="showMeaning()">Show meaning</button>
+      <div class="review-rates" id="rate-btns" style="display:none;">
+        <button class="btn btn-danger" onclick="rate('again')">Again <small>&lt; 1d</small></button>
+        <button class="btn btn-ghost" onclick="rate('hard')">Hard <small>2d</small></button>
+        <button class="btn btn-primary" onclick="rate('good')">Good <small>4d</small></button>
+        <button class="btn" style="background:var(--ink);color:var(--bg);" onclick="rate('easy')">Easy <small>7d</small></button>
+      </div>
+    </div>
+  `;
+  window._rq = queue;
+  window._rw = w;
+}
+function showMeaning() {
+  document.getElementById('rev-meaning').style.visibility = 'visible';
+  document.getElementById('show-btn').style.display = 'none';
+  document.getElementById('rate-btns').style.display = 'grid';
+}
+function rate(result) {
+  const w = window._rw; if (!w) return;
+  const now = Date.now();
+  const day = 86400000;
+  const intervals = { again: 1, hard: 2, good: 4, easy: 7 };
+  w.lastResult = result; w.lastReviewed = now; w.nextReview = now + intervals[result] * day;
+  if (result === 'again') { w.status = 'learning'; w.level = 0; }
+  else if (result === 'hard') { if (w.status === 'new') w.status = 'learning'; }
+  else if (result === 'good') { w.level++; if (w.status === 'new' || w.status === 'learning') w.status = 'reviewing'; }
+  else if (result === 'easy') { w.level += 2; if (w.level >= 4) w.status = 'mastered'; else w.status = 'reviewing'; }
+  state.myWords[w.word] = w; save(STORE.myWords, state.myWords);
+  renderReview();
+}
+
+/* === Blog === */
+function renderBlogList() {
+  const main = document.getElementById('main');
+  const blogs = state.blogs.slice().sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  main.innerHTML = `
+    <div class="page-head">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;">
+        <div>
+          <div class="page-eyebrow">Interviews & notes</div>
+          <h1 class="page-title">Your <em>blog</em></h1>
+        </div>
+        <a class="btn btn-primary" href="#/blog/new">+ New entry</a>
+      </div>
+      <p class="page-sub">Record the interviews you watch. Your notes and transcripts link to the 3000-word library.</p>
+    </div>
+    ${blogs.length === 0 ? `
+      <div class="empty">
+        <div class="mark">✎</div>
+        <h3>No entries yet</h3>
+        <p>Add your first interview or talk. Drop in the YouTube link, write some notes, paste a transcript — your 3000-word stats update live.</p>
+        <a class="btn btn-primary" href="#/blog/new">Add first entry</a>
+      </div>
+    ` : `
+      <div class="blog-list">
+        ${blogs.map((b, i) => {
+          const stats = computeBlogStats(b);
+          return `
+          <div class="blog-card" onclick="navigate('#/blog/${b.id}')">
+            <h3>${escapeHtml(b.title || 'Untitled')}</h3>
+            <div class="meta">
+              <span>${escapeHtml(b.source || '')}</span>
+              ${b.interviewee ? `<span class="dot">·</span><span>${escapeHtml(b.interviewee)}</span>` : ''}
+              ${b.date ? `<span class="dot">·</span><span>${escapeHtml(b.date)}</span>` : ''}
+            </div>
+            <div class="stats">
+              ${stats.total} 3000-words appear · <strong>${stats.learned}</strong> learned (${stats.pct}%)
+              ${stats.unlearned > 0 ? `· <strong>${stats.unlearned}</strong> to add` : ''}
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
+    `}
+  `;
+}
+
+function renderBlogEdit(id) {
+  const main = document.getElementById('main');
+  const isNew = !id;
+  const b = isNew ? { id: Date.now(), title: '', source: '', interviewee: '', videoUrl: '', date: new Date().toISOString().slice(0,10), notes: '', transcript: '', tags: [] } : (state.blogs.find(x => String(x.id) === String(id)) || null);
+  if (!b) { main.innerHTML = `<div class="empty"><h3>Not found</h3><a class="btn btn-primary" href="#/blog">Back</a></div>`; return; }
+  window._eb = b;
+  main.innerHTML = `
+    <a class="reader-back" href="#/blog">← All entries</a>
+    <div class="page-head">
+      <div class="page-eyebrow">${isNew ? 'New entry' : 'Edit entry'}</div>
+      <h1 class="page-title">${isNew ? 'New <em>entry</em>' : escapeHtml(b.title || 'Edit')}</h1>
+    </div>
+    <div class="blog-form">
+      <div class="field"><label>Title</label><input type="text" id="b-title" value="${escapeAttr(b.title)}" placeholder="e.g. Yann LeCun on AI future" /></div>
+      <div class="row2">
+        <div class="field"><label>Source / Show</label><input type="text" id="b-source" value="${escapeAttr(b.source)}" placeholder="e.g. Lex Fridman Podcast" /></div>
+        <div class="field"><label>Interviewee</label><input type="text" id="b-interviewee" value="${escapeAttr(b.interviewee)}" placeholder="e.g. Yann LeCun" /></div>
+        <div class="field"><label>Date</label><input type="date" id="b-date" value="${escapeAttr(b.date)}" /></div>
+      </div>
+      <div class="field"><label>Video URL</label><input type="url" id="b-videoUrl" value="${escapeAttr(b.videoUrl)}" placeholder="https://..." /></div>
+      <div class="field"><label>Tags (comma separated)</label><input type="text" id="b-tags" value="${escapeAttr((b.tags || []).join(', '))}" placeholder="AI, deep learning" /></div>
+      <div class="field"><label>Your notes</label><textarea id="b-notes" placeholder="写你看完之后的感受、关键句...">${escapeHtml(b.notes || '')}</textarea></div>
+      <div class="field"><label>Transcript (optional, paste from YouTube captions)</label><textarea id="b-transcript" class="transcript" placeholder="Paste transcript here...">${escapeHtml(b.transcript || '')}</textarea></div>
+      <div id="blog-stats-area"></div>
+      <div class="btn-row" style="margin-top:16px;">
+        <button class="btn btn-primary" onclick="saveBlog()">${isNew ? 'Create' : 'Save'}</button>
+        <a class="btn btn-ghost" href="#/blog">Cancel</a>
+        ${!isNew ? '<button class="btn btn-danger" style="margin-left:auto;" onclick="deleteBlog()">Delete</button>' : ''}
+      </div>
+    </div>
+  `;
+  ['b-notes', 'b-transcript'].forEach(id => {
+    document.getElementById(id).oninput = updateBlogStatsPreview;
+  });
+  updateBlogStatsPreview();
+}
+function updateBlogStatsPreview() {
+  const area = document.getElementById('blog-stats-area');
+  if (!area) return;
+  const notes = document.getElementById('b-notes').value;
+  const transcript = document.getElementById('b-transcript').value;
+  const stats = computeBlogStats({ notes, transcript });
+  const all = extract3000Words(notes + ' ' + transcript);
+  const unlearned = all.filter(w => !state.myWords[w]);
+  area.innerHTML = `
+    <div class="blog-stats">
+      <div class="cell"><div class="num">${stats.total}</div><div class="lbl">Total 3000-words</div></div>
+      <div class="cell"><div class="num green">${stats.learned}</div><div class="lbl">Learned</div></div>
+      <div class="cell"><div class="num accent">${stats.pct}%</div><div class="lbl">Coverage</div></div>
+      <div class="cell"><div class="num red">${stats.unlearned}</div><div class="lbl">To learn</div></div>
+    </div>
+    ${unlearned.length ? `
+      <div style="font-size:11px;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-top:8px;">Click any word to add to library</div>
+      <div class="unlearned">
+        ${unlearned.slice(0, 200).map(w => {
+          const info = WORDLIST[w];
+          return `<span class="unlearned-tile" onclick="quickAdd('${w}')">${w}${info ? `<span class="pos">${info.p}</span>` : ''}</span>`;
+        }).join('')}
+        ${unlearned.length > 200 ? `<span style="color:var(--ink-dim);font-size:12px;align-self:center;">+${unlearned.length - 200} more</span>` : ''}
+      </div>
+    ` : ''}
+  `;
+}
+function computeBlogStats(blog) {
+  const text = (blog.notes || '') + ' ' + (blog.transcript || '');
+  const all = extract3000Words(text);
+  const learned = all.filter(w => state.myWords[w]);
+  return { total: all.length, learned: learned.length, unlearned: all.length - learned.length, pct: all.length ? Math.round(learned.length / all.length * 100) : 0 };
+}
+function extract3000Words(text) {
+  if (!text) return [];
+  const found = new Set();
+  const matches = text.toLowerCase().match(/[a-z]+(?:'[a-z]+)?/g) || [];
+  matches.forEach(w => { if (WORDLIST[w]) found.add(w); });
+  return Array.from(found);
+}
+function quickAdd(word) {
+  if (state.myWords[word]) { toast('Already in library: ' + word); return; }
+  const now = Date.now();
+  state.myWords[word] = { word, addedAt: now, notes: '', status: 'new', level: 0, lastResult: null, lastReviewed: null, nextReview: now };
+  save(STORE.myWords, state.myWords);
+  toast('Added: ' + word);
+  updateBlogStatsPreview();
+}
+function saveBlog() {
+  const b = window._eb; if (!b) return;
+  b.title = document.getElementById('b-title').value.trim();
+  b.source = document.getElementById('b-source').value.trim();
+  b.interviewee = document.getElementById('b-interviewee').value.trim();
+  b.videoUrl = document.getElementById('b-videoUrl').value.trim();
+  b.date = document.getElementById('b-date').value;
+  b.notes = document.getElementById('b-notes').value;
+  b.transcript = document.getElementById('b-transcript').value;
+  b.tags = document.getElementById('b-tags').value.split(',').map(s => s.trim()).filter(Boolean);
+  if (!b.title) { toast('Title is required'); return; }
+  const idx = state.blogs.findIndex(x => x.id === b.id);
+  if (idx === -1) state.blogs.push(b); else state.blogs[idx] = b;
+  save(STORE.blogs, state.blogs);
+  toast('Saved');
+  navigate('#/blog');
+}
+function deleteBlog() {
+  const b = window._eb; if (!b) return;
+  if (!confirm('Delete this entry?')) return;
+  state.blogs = state.blogs.filter(x => x.id !== b.id);
+  save(STORE.blogs, state.blogs);
+  toast('Deleted');
+  navigate('#/blog');
+}
+
+/* === Settings === */
+function renderSettings() {
+  const main = document.getElementById('main');
+  const all = Object.values(state.myWords);
+  const dueCount = all.filter(w => w.nextReview <= Date.now() && w.status !== 'new').length;
+  const newCount = all.filter(w => w.status === 'new').length;
+  const storiesLoaded = (typeof STORIES !== 'undefined' && STORIES.length) || 0;
+  const wordsLoaded = (typeof WORDLIST !== 'undefined' && Object.keys(WORDLIST).length) || 0;
+  main.innerHTML = `
+    <div class="page-head">
+      <div class="page-eyebrow">Configuration</div>
+      <h1 class="page-title">Settings</h1>
+    </div>
+    <div class="settings-section">
+      <h3>Word library</h3>
+      <p class="desc">The 3000 most-frequent English words (Longman Communication 3000) are pre-loaded.</p>
+      <div class="info-row"><span class="label">Words available</span><span class="val">${wordsLoaded}</span></div>
+    </div>
+    <div class="settings-section">
+      <h3>Stories</h3>
+      <p class="desc">Stories are pre-loaded. You can import more from JSON, or write your own.</p>
+      <div class="info-row"><span class="label">Stories available</span><span class="val">${storiesLoaded}</span></div>
+      <div class="btn-row" style="margin-top:16px;">
+        <div class="file-input">
+          <button class="btn btn-ghost">Import stories (JSON)</button>
+          <input type="file" accept=".json" onchange="importStories(event)">
+        </div>
+      </div>
+    </div>
+    <div class="settings-section">
+      <h3>Your study data</h3>
+      <p class="desc">All your data is stored locally in this browser. Nothing is uploaded.</p>
+      <div class="info-row"><span class="label">Words in library</span><span class="val">${all.length}</span></div>
+      <div class="info-row"><span class="label">Due for review</span><span class="val">${dueCount + newCount}</span></div>
+      <div class="info-row"><span class="label">Mastered</span><span class="val">${all.filter(w => w.status === 'mastered').length}</span></div>
+      <div class="btn-row" style="margin-top:20px;">
+        <button class="btn btn-ghost" onclick="exportLibrary()">Export library</button>
+        <button class="btn btn-danger" onclick="resetAll()">Reset all data</button>
+      </div>
+    </div>
+    <div class="settings-section">
+      <h3>Appearance</h3>
+      <p class="desc">Light or dark theme. Persisted in your browser.</p>
+      <div class="btn-row">
+        <button class="btn ${state.settings.theme === 'light' ? 'btn-primary' : 'btn-ghost'}" onclick="setTheme('light')">☀ Light</button>
+        <button class="btn ${state.settings.theme === 'dark' ? 'btn-primary' : 'btn-ghost'}" onclick="setTheme('dark')">☾ Dark</button>
+      </div>
+    </div>
+    <div class="settings-section">
+      <h3>About</h3>
+      <p class="desc">A quiet place to read 3000 English words and remember them.<br>
+        Word list: Longman Communication 3000 (pre-loaded)<br>
+        Stories: classic public-domain texts (pre-loaded)<br>
+        Spaced repetition: simplified SM-2 (1 / 2 / 4 / 7 day intervals)<br>
+        Storage: this browser's localStorage (no server, no tracking)
+      </p>
+    </div>
+  `;
+}
+function setTheme(t) { state.settings.theme = t; applyTheme(); save(STORE.settings, state.settings); renderSettings(); }
+function importStories(e) {
+  const file = e.target.files[0]; if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (ev) => {
+    try {
+      const arr = JSON.parse(ev.target.result);
+      if (!Array.isArray(arr)) throw new Error('Expected a JSON array');
+      // Append to existing
+      const existingIds = new Set(STORIES.map(s => s.id));
+      const newStories = arr.filter(s => !existingIds.has(s.id));
+      STORIES.push(...newStories);
+      // Persist (in production, this would be in state)
+      toast(`Imported ${newStories.length} new stories`);
+      renderSettings();
+    } catch (err) { toast('Error: ' + err.message); }
+  };
+  reader.readAsText(file, 'utf-8');
+}
+function exportLibrary() {
+  const data = Object.values(state.myWords);
+  if (!data.length) { toast('Library is empty'); return; }
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'library_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+}
+function resetAll() {
+  if (!confirm('Erase all your data? This cannot be undone.')) return;
+  if (!confirm('Are you sure? Words, reviews, and blog entries will all be deleted.')) return;
+  localStorage.removeItem(STORE.myWords);
+  localStorage.removeItem(STORE.blogs);
+  localStorage.removeItem(STORE.settings);
+  state = { myWords: {}, blogs: [], settings: { theme: state.settings.theme } };
+  toast('Reset complete');
+  renderSettings();
+}
+
+/* Utils */
+function escapeHtml(s) { return String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+function escapeAttr(s) { return escapeHtml(s).replace(/"/g, '&quot;'); }
+
+/* Init */
+applyTheme();
+render();
+</script>
+
+</body>
+</html>

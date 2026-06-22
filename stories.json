@@ -2,36 +2,51 @@
   {
     "id": 1,
     "title": "The Fox and the Grapes",
+    "title_zh": "狐狸与葡萄",
     "level": "beginner",
     "description": "An Aesop fable about wanting what we cannot have.",
-    "content": "One hot summer day, a fox was walking through a garden. He was very hungry. Soon he came to a wall with green grapes growing over it. The grapes looked sweet and juicy. The fox's mouth began to water. He jumped high to reach the grapes, but they were too high. He jumped again and again, but he could not reach them. At last, he was tired and gave up. As he walked away, he said to himself, 'These grapes are sour. I do not want them after all.' The grapes were, in fact, very sweet. But the fox did not want to admit that he could not get them. So he told himself a small lie. The story teaches us: it is easy to hate what we cannot have."
+    "description_zh": "伊索寓言：关于我们如何看待得不到的东西。",
+    "content": "One hot summer day, a fox was walking through a garden. He was very hungry. Soon he came to a wall with green grapes growing over it. The grapes looked sweet and juicy. The fox's mouth began to water. He jumped high to reach the grapes, but they were too high. He jumped again and again, but he could not reach them. At last, he was tired and gave up. As he walked away, he said to himself, 'These grapes are sour. I do not want them after all.' The grapes were, in fact, very sweet. But the fox did not want to admit that he could not get them. So he told himself a small lie. The story teaches us: it is easy to hate what we cannot have.",
+    "translation_zh": "一个炎热的夏日，一只狐狸在花园里散步。他非常饿。很快，他来到一堵墙前，墙上长满了绿色的葡萄。葡萄看起来又甜又多汁。狐狸馋得直流口水。他跳得很高想去够葡萄，但葡萄太高了。他跳了一次又一次，可还是够不着。最后，他累了，放弃了。他一边走开，一边自言自语道：'这些葡萄是酸的，我根本就不想要。'事实上，葡萄非常甜。但狐狸不愿意承认自己得不到它们。于是他对自己撒了个小谎。这个故事告诉我们：人们很容易贬低自己得不到的东西。"
   },
   {
     "id": 2,
     "title": "The Tortoise and the Hare",
+    "title_zh": "龟兔赛跑",
     "level": "beginner",
     "description": "Slow and steady wins the race.",
-    "content": "A hare was always making fun of a tortoise because he was so slow. 'You are the slowest animal in the world,' said the hare. 'I can run faster than you, and I can do everything better.' The tortoise was tired of the hare's words. 'Let us have a race,' said the tortoise. 'I am sure I can beat you.' The hare laughed. 'A race? With you? That will be easy!' They found a long road and started the race. The hare ran very fast. Soon he was far ahead of the tortoise. 'I have plenty of time,' thought the hare. 'I will rest under this tree for a while.' So the hare lay down in the soft grass and soon fell fast asleep. The tortoise walked on, slowly but surely. He did not stop. He walked past the sleeping hare. When the hare woke up, he saw the tortoise near the end of the road. The hare ran as fast as he could, but it was too late. The tortoise had already won the race. The moral is: slow and steady wins the race."
+    "description_zh": "稳扎稳打才能赢得比赛。",
+    "content": "A hare was always making fun of a tortoise because he was so slow. 'You are the slowest animal in the world,' said the hare. 'I can run faster than you, and I can do everything better.' The tortoise was tired of the hare's words. 'Let us have a race,' said the tortoise. 'I am sure I can beat you.' The hare laughed. 'A race? With you? That will be easy!' They found a long road and started the race. The hare ran very fast. Soon he was far ahead of the tortoise. 'I have plenty of time,' thought the hare. 'I will rest under this tree for a while.' So the hare lay down in the soft grass and soon fell fast asleep. The tortoise walked on, slowly but surely. He did not stop. He walked past the sleeping hare. When the hare woke up, he saw the tortoise near the end of the road. The hare ran as fast as he could, but it was too late. The tortoise had already won the race. The moral is: slow and steady wins the race.",
+    "translation_zh": "一只兔子总是嘲笑乌龟，因为他跑得太慢了。'你是世界上最慢的动物，'兔子说，'我比你跑得快，我什么都比你强。'乌龟受够了兔子的话。'我们来赛跑吧，'乌龟说，'我肯定能赢你。'兔子大笑起来。'赛跑？跟你？太容易了！'他们找了一条长长的路，开始了比赛。兔子跑得非常快，很快就把乌龟远远甩在了后面。'我有的是时间，'兔子想，'我在这棵树下休息一会儿吧。'于是兔子躺在柔软的草地上，很快就睡着了。乌龟继续走着，虽然慢但很坚定。他没有停下来，走过了呼呼大睡的兔子身边。当兔子醒来时，他看到乌龟已经快到终点了。兔子拼命跑，但为时已晚。乌龟已经赢得了比赛。这个寓言的寓意是：稳扎稳打才能赢得比赛。"
   },
   {
     "id": 3,
     "title": "The Boy Who Cried Wolf",
+    "title_zh": "狼来了",
     "level": "beginner",
     "description": "A lesson about telling the truth.",
-    "content": "There was once a young boy who looked after sheep on a hill near a village. He was very bored. 'I wish something exciting would happen,' he thought. Then he had an idea. He ran down the hill and shouted, 'Wolf! Wolf! A wolf is attacking the sheep!' The villagers heard the cry and ran up the hill to help. But when they arrived, there was no wolf. The boy laughed. 'I was only joking,' he said. The villagers were angry, but they went back to their work. A few days later, the boy played the same trick. 'Wolf! Wolf!' he cried. Again the villagers ran up the hill. Again there was no wolf. They warned him, 'Do not lie to us again.' But the boy did not listen. Then one day, a real wolf came. The boy ran down the hill, shouting loudly, 'Wolf! Wolf! Please help!' But this time the villagers thought he was lying again. Nobody came. The wolf destroyed the whole flock. The moral is: a liar is not believed even when he tells the truth."
+    "description_zh": "关于诚实的教训。",
+    "content": "There was once a young boy who looked after sheep on a hill near a village. He was very bored. 'I wish something exciting would happen,' he thought. Then he had an idea. He ran down the hill and shouted, 'Wolf! Wolf! A wolf is attacking the sheep!' The villagers heard the cry and ran up the hill to help. But when they arrived, there was no wolf. The boy laughed. 'I was only joking,' he said. The villagers were angry, but they went back to their work. A few days later, the boy played the same trick. 'Wolf! Wolf!' he cried. Again the villagers ran up the hill. Again there was no wolf. They warned him, 'Do not lie to us again.' But the boy did not listen. Then one day, a real wolf came. The boy ran down the hill, shouting loudly, 'Wolf! Wolf! Please help!' But this time the villagers thought he was lying again. Nobody came. The wolf destroyed the whole flock. The moral is: a liar is not believed even when he tells the truth.",
+    "translation_zh": "从前有个小男孩，在村子附近的小山上放羊。他感到很无聊。'真希望发生点刺激的事，'他想。于是他想到了一个主意。他跑下山，大喊道：'狼来了！狼来了！狼在吃羊！'村民们听到喊声，跑上山来帮忙。但当他们到达时，根本没有狼。男孩大笑起来。'我只是开玩笑而已，'他说。村民们很生气，但还是回去干活了。几天后，男孩又玩了同样的把戏。'狼来了！狼来了！'他喊道。村民们再次跑上山，还是没有狼。他们警告他：'别再对我们撒谎了。'但男孩没有听进去。后来有一天，真的来了一只狼。男孩跑下山，大声喊道：'狼来了！狼来了！快来帮忙！'但这一次，村民们以为他又在撒谎。没有人来。狼毁掉了整群羊。这个寓言的寓意是：撒谎的人即使说真话也没人相信。"
   },
   {
     "id": 4,
     "title": "The Ant and the Grasshopper",
+    "title_zh": "蚂蚁与蚱蜢",
     "level": "beginner",
     "description": "Work today, rest tomorrow.",
-    "content": "In a field, an ant was working hard all summer. She carried food to her home every day. A grasshopper sat nearby and watched her. 'Why do you work so hard?' he asked. 'Come and sing with me. The sun is warm and the day is beautiful.' 'I am saving food for the winter,' said the ant. 'When winter comes, there will be no food to find.' But the grasshopper only laughed. 'Winter is far away. Why worry about it now?' He went on singing. When winter came, the snow covered everything. The grasshopper had no food and was very hungry. He went to the ant's house and asked for help. 'Please give me something to eat.' The ant looked at him. 'I worked all summer while you sang,' she said. 'Now you must dance.' The moral is: we should prepare for the future, and not waste our time on pleasure alone."
+    "description_zh": "今天努力工作，明天安心休息。",
+    "content": "In a field, an ant was working hard all summer. She carried food to her home every day. A grasshopper sat nearby and watched her. 'Why do you work so hard?' he asked. 'Come and sing with me. The sun is warm and the day is beautiful.' 'I am saving food for the winter,' said the ant. 'When winter comes, there will be no food to find.' But the grasshopper only laughed. 'Winter is far away. Why worry about it now?' He went on singing. When winter came, the snow covered everything. The grasshopper had no food and was very hungry. He went to the ant's house and asked for help. 'Please give me something to eat.' The ant looked at him. 'I worked all summer while you sang,' she said. 'Now you must dance.' The moral is: we should prepare for the future, and not waste our time on pleasure alone.",
+    "translation_zh": "在一片田野里，一只蚂蚁整个夏天都在辛勤工作。她每天把食物搬回家。一只蚱蜢坐在旁边看着她。'你为什么工作这么辛苦？'他问道，'来和我一起唱歌吧。阳光温暖，天气美好。'我在为冬天储存食物，'蚂蚁说，'冬天来了，就找不到食物了。'但蚱蜢只是笑了笑。'冬天还远着呢。现在担心什么？'他继续唱着歌。冬天来了，大雪覆盖了一切。蚱蜢没有食物，饿极了。他来到蚂蚁的家，请求帮助。'请给我一点吃的吧。'蚂蚁看着他。'我整个夏天都在工作，而你却在唱歌，'她说，'现在你只能跳舞了。'这个寓言的寓意是：我们应该为未来做好准备，不能只贪图眼前的享乐。"
   },
   {
     "id": 5,
     "title": "The North Wind and the Sun",
+    "title_zh": "北风与太阳",
     "level": "beginner",
     "description": "Gentleness wins over force.",
-    "content": "One day, the North Wind and the Sun had a quarrel. 'I am stronger than you,' said the North Wind. 'No, I am stronger,' said the Sun. They decided to have a contest. Whoever could make a traveler take off his coat would be the winner. The North Wind went first. He blew and blew with all his might. But the harder he blew, the tighter the traveler held his coat. The cold wind made him pull it close to his body. At last, the North Wind gave up. Then the Sun began to shine. He shone warmly on the traveler. Soon the traveler felt warm. He took off his coat because the day was pleasant. The Sun was the winner. The moral is: gentleness and kindness are stronger than force and anger."
+    "description_zh": "温和胜过暴力。",
+    "content": "One day, the North Wind and the Sun had a quarrel. 'I am stronger than you,' said the North Wind. 'No, I am stronger,' said the Sun. They decided to have a contest. Whoever could make a traveler take off his coat would be the winner. The North Wind went first. He blew and blew with all his might. But the harder he blew, the tighter the traveler held his coat. The cold wind made him pull it close to his body. At last, the North Wind gave up. Then the Sun began to shine. He shone warmly on the traveler. Soon the traveler felt warm. He took off his coat because the day was pleasant. The Sun was the winner. The moral is: gentleness and kindness are stronger than force and anger.",
+    "translation_zh": "有一天，北风和太阳争吵起来。'我比你强，'北风说。'不，我更强，'太阳说。他们决定比试一下——谁能让一个旅人脱下外套，谁就是赢家。北风先来。他用尽全力使劲吹。但他吹得越猛，旅人就把外套裹得越紧。寒风让他把外套紧紧地裹在身上。最后，北风放弃了。接着，太阳开始照耀。他暖暖地照在旅人身上。很快，旅人感到暖和了。因为天气变得宜人，他脱下了外套。太阳赢了。这个寓言的寓意是：温和与善意比暴力和愤怒更有力量。"
   }
 ]

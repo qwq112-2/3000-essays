@@ -365,6 +365,63 @@
   [data-theme="dark"] .s-reviewing { background: #2a1b30; color: #ce93d8; }
   [data-theme="dark"] .s-mastered { background: #1b2e1d; color: #a5d6a7; }
 
+  /* ===== Dictionary ===== */
+  .dict-search {
+    width: 100%; padding: 14px 20px;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: var(--bg-card); color: var(--ink);
+    font-size: 16px; font-family: var(--sans);
+    margin-bottom: 20px;
+  }
+  .dict-search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .dict-search::placeholder { color: var(--ink-dim); }
+  .dict-count { font-size: 13px; color: var(--ink-muted); margin-bottom: 16px; }
+  .dict-list { border-top: 1px solid var(--line); }
+  .dict-row-clickable {
+    display: grid; grid-template-columns: 160px 1fr;
+    gap: 16px; align-items: baseline;
+    padding: 16px 20px; border-bottom: 1px solid var(--line-soft);
+    cursor: pointer; transition: background 0.15s;
+  }
+  .dict-row-clickable:hover { background: var(--bg-card); }
+  .dict-word-main { display: flex; align-items: baseline; gap: 8px; }
+  .dict-word-text {
+    font-family: var(--serif); font-size: 18px; font-weight: 500;
+    color: var(--ink); font-variation-settings: 'opsz' 72;
+  }
+  .dict-word-pos { font-size: 12px; color: var(--ink-dim); font-style: italic; }
+  .dict-word-freq { display: flex; gap: 4px; margin-top: 4px; }
+  .dict-word-freq .pill {
+    font-size: 10px; padding: 2px 8px; border-radius: 999px;
+    background: var(--bg-elev); color: var(--ink-muted);
+    font-weight: 600; letter-spacing: 0.04em;
+  }
+  .dict-translations { display: flex; flex-direction: column; gap: 4px; }
+  .dict-zh-line {
+    font-family: 'Source Han Serif SC', 'Songti SC', 'Noto Serif CJK SC', serif;
+    font-size: 16px; color: var(--ink); line-height: 1.4;
+  }
+  .dict-en-line {
+    font-family: var(--serif); font-size: 14px; color: var(--ink-muted);
+    font-style: italic; line-height: 1.4;
+    font-variation-settings: 'opsz' 24;
+  }
+  .dict-pagination {
+    display: flex; gap: 4px; justify-content: center;
+    margin-top: 24px; flex-wrap: wrap;
+  }
+  .dict-pagination button {
+    padding: 8px 14px; border-radius: 6px;
+    font-size: 13px; color: var(--ink-muted);
+    border: 1px solid var(--line); background: transparent;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .dict-pagination button:hover { background: var(--bg-elev); color: var(--ink); }
+  .dict-pagination button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  @media (max-width: 720px) {
+    .dict-row-clickable { grid-template-columns: 1fr; gap: 6px; }
+  }
+
   /* ===== Review ===== */
   .review-stage {
     text-align: center; padding: 80px 32px;
@@ -600,6 +657,7 @@
     <a class="tab" href="#/guide" data-tab="guide">Guide</a>
     <a class="tab" href="#/blog" data-tab="blog">Blog</a>
     <a class="tab" href="#/words" data-tab="words">Library</a>
+    <a class="tab" href="#/dictionary" data-tab="dictionary">词典</a>
     <a class="tab" href="#/review" data-tab="review">Review</a>
     <a class="tab" href="#/settings" data-tab="settings">Settings</a>
   </nav>
@@ -733,6 +791,7 @@ function render() {
   if (h === '#/blog/new') return renderBlogEdit(null);
   if (h.startsWith('#/blog/')) return renderBlogEdit(h.split('/')[2]);
   if (h === '#/words') return renderWords();
+  if (h === '#/dictionary') return renderDictionary();
   if (h === '#/review') return renderReview();
   if (h === '#/settings') return renderSettings();
   renderStories();
@@ -1019,6 +1078,101 @@ function renderWordList() {
       <span class="s s-${w.status}">${statusLabel(w.status)}</span>
     </div>`;
   }).join('')}</div>`;
+}
+
+function renderDictionary() {
+  const main = document.getElementById('main');
+  const allWords = Object.entries(WORDLIST).sort(([a], [b]) => a.localeCompare(b));
+  const PER_PAGE = 50;
+
+  // Read state from URL hash
+  const hash = currentHash();
+  const params = new URLSearchParams(hash.includes('?') ? hash.split('?')[1] : '');
+  const query = params.get('q') || '';
+  const page = Math.max(1, parseInt(params.get('p')) || 1);
+
+  // Filter
+  let filtered = allWords;
+  if (query) {
+    const q = query.toLowerCase();
+    filtered = allWords.filter(([word, info]) => {
+      if (word.includes(q)) return true;
+      if (info.zh && info.zh.includes(q)) return true;
+      if (info.e && info.e.toLowerCase().includes(q)) return true;
+      return false;
+    });
+  }
+
+  const totalPages = Math.ceil(filtered.length / PER_PAGE);
+  const start = (page - 1) * PER_PAGE;
+  const pageWords = filtered.slice(start, start + PER_PAGE);
+
+  const updateUrl = (newQuery, newPage) => {
+    const p = new URLSearchParams();
+    if (newQuery) p.set('q', newQuery);
+    if (newPage > 1) p.set('p', newPage);
+    const qs = p.toString();
+    navigate(qs ? '#/dictionary?' + qs : '#/dictionary');
+  };
+
+  main.innerHTML = `
+    <div class="page-head">
+      <div class="page-eyebrow">Longman Communication 3000</div>
+      <h1 class="page-title">全部 <em>3000</em> 词</h1>
+      <p class="page-sub">共 ${allWords.length} 个词条，含中文释义与英文定义。点击任意词查看详情或加入学习库。</p>
+    </div>
+    <input class="dict-search" id="dict-search" type="text" placeholder="搜索英文词或中文释义…" value="${escapeAttr(query)}" autofocus />
+    <div class="dict-count">${filtered.length === allWords.length ? `全部 ${allWords.length} 个词` : `找到 ${filtered.length} 个词（共 ${allWords.length} 个）`}</div>
+    <div class="dict-list">
+      ${pageWords.map(([word, info]) => `
+        <div class="dict-row-clickable" onclick="openWordPopup('${word}')">
+          <div>
+            <div class="dict-word-main">
+              <span class="dict-word-text">${escapeHtml(word)}</span>
+              <span class="dict-word-pos">${info.p || ''}</span>
+            </div>
+            <div class="dict-word-freq">
+              ${info.s ? `<span class="pill">${info.s}</span>` : ''}
+              ${info.w ? `<span class="pill">${info.w}</span>` : ''}
+            </div>
+          </div>
+          <div class="dict-translations">
+            ${info.zh ? `<div class="dict-zh-line">${escapeHtml(info.zh)}</div>` : '<div class="dict-zh-line" style="color:var(--ink-dim);">暂无释义</div>'}
+            ${info.e ? `<div class="dict-en-line">${escapeHtml(info.e)}</div>` : ''}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+    ${totalPages > 1 ? `
+    <div class="dict-pagination">
+      ${Array.from({length: totalPages}, (_, i) => i + 1).map(p => `
+        <button class="${p === page ? 'active' : ''}" onclick="updateDictPage(${p}, '${escapeAttr(query)}')">${p}</button>
+      `).join('')}
+    </div>` : ''}
+  `;
+
+  // Search input handler
+  const input = document.getElementById('dict-search');
+  if (input) {
+    input.oninput = () => {
+      const val = input.value.trim();
+      updateUrl(val, 1);
+    };
+    input.focus();
+    // If there's a query, move cursor to end
+    if (query) {
+      input.setSelectionRange(input.value.length, input.value.length);
+    }
+  }
+}
+
+// Helper for pagination clicks (avoids inline onclick issues)
+function updateDictPage(page, query) {
+  const p = new URLSearchParams();
+  if (query) p.set('q', query);
+  if (page > 1) p.set('p', page);
+  const qs = p.toString();
+  navigate(qs ? '#/dictionary?' + qs : '#/dictionary');
 }
 
 /* === Review === */

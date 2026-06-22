@@ -371,55 +371,56 @@
     border: 1px solid var(--line); border-radius: 8px;
     background: var(--bg-card); color: var(--ink);
     font-size: 16px; font-family: var(--sans);
-    margin-bottom: 20px;
+    margin-bottom: 16px; position: sticky; top: 72px; z-index: 10;
   }
   .dict-search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
   .dict-search::placeholder { color: var(--ink-dim); }
   .dict-count { font-size: 13px; color: var(--ink-muted); margin-bottom: 16px; }
-  .dict-list { border-top: 1px solid var(--line); }
-  .dict-row-clickable {
-    display: grid; grid-template-columns: 160px 1fr;
-    gap: 16px; align-items: baseline;
-    padding: 16px 20px; border-bottom: 1px solid var(--line-soft);
-    cursor: pointer; transition: background 0.15s;
+  .dict-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 1px;
+    background: var(--line-soft);
+    border: 1px solid var(--line-soft);
+    border-radius: 4px;
+    overflow: hidden;
   }
-  .dict-row-clickable:hover { background: var(--bg-card); }
-  .dict-word-main { display: flex; align-items: baseline; gap: 8px; }
-  .dict-word-text {
-    font-family: var(--serif); font-size: 18px; font-weight: 500;
+  .dict-card {
+    background: var(--bg);
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background 0.12s;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .dict-card:hover { background: var(--bg-card); }
+  .dict-card-top { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+  .dict-card-word {
+    font-family: var(--serif); font-size: 16px; font-weight: 550;
     color: var(--ink); font-variation-settings: 'opsz' 72;
+    line-height: 1.2;
   }
-  .dict-word-pos { font-size: 12px; color: var(--ink-dim); font-style: italic; }
-  .dict-word-freq { display: flex; gap: 4px; margin-top: 4px; }
-  .dict-word-freq .pill {
-    font-size: 10px; padding: 2px 8px; border-radius: 999px;
+  .dict-card-pos { font-size: 11px; color: var(--ink-dim); font-style: italic; }
+  .dict-card-zh {
+    font-family: 'Source Han Serif SC', 'Songti SC', 'Noto Serif CJK SC', serif;
+    font-size: 15px; color: var(--ink); line-height: 1.35;
+  }
+  .dict-card-en {
+    font-family: var(--serif); font-size: 13px; color: var(--ink-muted);
+    font-style: italic; line-height: 1.35;
+    font-variation-settings: 'opsz' 24;
+  }
+  .dict-card-freq { display: flex; gap: 3px; margin-top: 2px; }
+  .dict-card-freq .pill {
+    font-size: 9px; padding: 1px 7px; border-radius: 999px;
     background: var(--bg-elev); color: var(--ink-muted);
     font-weight: 600; letter-spacing: 0.04em;
   }
-  .dict-translations { display: flex; flex-direction: column; gap: 4px; }
-  .dict-zh-line {
-    font-family: 'Source Han Serif SC', 'Songti SC', 'Noto Serif CJK SC', serif;
-    font-size: 16px; color: var(--ink); line-height: 1.4;
-  }
-  .dict-en-line {
-    font-family: var(--serif); font-size: 14px; color: var(--ink-muted);
-    font-style: italic; line-height: 1.4;
-    font-variation-settings: 'opsz' 24;
-  }
-  .dict-pagination {
-    display: flex; gap: 4px; justify-content: center;
-    margin-top: 24px; flex-wrap: wrap;
-  }
-  .dict-pagination button {
-    padding: 8px 14px; border-radius: 6px;
-    font-size: 13px; color: var(--ink-muted);
-    border: 1px solid var(--line); background: transparent;
-    cursor: pointer; transition: all 0.15s;
-  }
-  .dict-pagination button:hover { background: var(--bg-elev); color: var(--ink); }
-  .dict-pagination button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
   @media (max-width: 720px) {
-    .dict-row-clickable { grid-template-columns: 1fr; gap: 6px; }
+    .dict-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+    .dict-card { padding: 10px 12px; }
+    .dict-card-word { font-size: 14px; }
+    .dict-card-zh { font-size: 13px; }
+    .dict-card-en { font-size: 12px; }
   }
 
   /* ===== Review ===== */
@@ -1088,26 +1089,22 @@ function renderDictionary() {
     <div class="page-head">
       <div class="page-eyebrow">Longman Communication 3000</div>
       <h1 class="page-title">All <em>3000</em> words</h1>
-      <p class="page-sub">${allWords.length} entries with Chinese &amp; English definitions. Click any word to see details or add to your library.</p>
+      <p class="page-sub">${allWords.length} entries &mdash; click any card to see details or add to your library.</p>
     </div>
-    <input class="dict-search" id="dict-search" type="text" placeholder="Search English word or Chinese definition..." autofocus />
+    <input class="dict-search" id="dict-search" type="text" placeholder="Search English or Chinese..." autofocus />
     <div class="dict-count" id="dict-count">Showing all ${allWords.length} words</div>
-    <div class="dict-list" id="dict-list">
+    <div class="dict-grid" id="dict-grid">
       ${allWords.map(([word, info]) => `
-        <div class="dict-row-clickable" data-dict-word="${escapeAttr(word)}">
-          <div>
-            <div class="dict-word-main">
-              <span class="dict-word-text">${escapeHtml(word)}</span>
-              <span class="dict-word-pos">${info.p || ''}</span>
-            </div>
-            <div class="dict-word-freq">
-              ${info.s ? `<span class="pill">${info.s}</span>` : ''}
-              ${info.w ? `<span class="pill">${info.w}</span>` : ''}
-            </div>
+        <div class="dict-card" data-dict-word="${escapeAttr(word)}">
+          <div class="dict-card-top">
+            <span class="dict-card-word">${escapeHtml(word)}</span>
+            <span class="dict-card-pos">${info.p || ''}</span>
           </div>
-          <div class="dict-translations">
-            ${info.zh ? `<div class="dict-zh-line">${escapeHtml(info.zh)}</div>` : '<div class="dict-zh-line" style="color:var(--ink-dim);">--</div>'}
-            ${info.e ? `<div class="dict-en-line">${escapeHtml(info.e)}</div>` : ''}
+          ${info.zh ? `<div class="dict-card-zh">${escapeHtml(info.zh)}</div>` : ''}
+          ${info.e ? `<div class="dict-card-en">${escapeHtml(info.e)}</div>` : ''}
+          <div class="dict-card-freq">
+            ${info.s ? `<span class="pill">${info.s}</span>` : ''}
+            ${info.w ? `<span class="pill">${info.w}</span>` : ''}
           </div>
         </div>
       `).join('')}
@@ -1115,23 +1112,23 @@ function renderDictionary() {
   `;
 
   // Attach click handlers
-  document.querySelectorAll('.dict-row-clickable').forEach(row => {
-    row.onclick = () => openWordPopup(row.dataset.dictWord);
+  document.querySelectorAll('.dict-card').forEach(card => {
+    card.onclick = () => openWordPopup(card.dataset.dictWord);
   });
 
-  // Search: client-side filter, no page reload
+  // Search: client-side filter
   const input = document.getElementById('dict-search');
   const countEl = document.getElementById('dict-count');
   if (input) {
     input.oninput = () => {
       const q = input.value.trim().toLowerCase();
       let visible = 0;
-      document.querySelectorAll('.dict-row-clickable').forEach(row => {
-        const word = (row.dataset.dictWord || '').toLowerCase();
-        const zh = (row.querySelector('.dict-zh-line')?.textContent || '').toLowerCase();
-        const en = (row.querySelector('.dict-en-line')?.textContent || '').toLowerCase();
+      document.querySelectorAll('.dict-card').forEach(card => {
+        const word = (card.dataset.dictWord || '').toLowerCase();
+        const zh = (card.querySelector('.dict-card-zh')?.textContent || '').toLowerCase();
+        const en = (card.querySelector('.dict-card-en')?.textContent || '').toLowerCase();
         const match = !q || word.includes(q) || zh.includes(q) || en.includes(q);
-        row.style.display = match ? '' : 'none';
+        card.style.display = match ? '' : 'none';
         if (match) visible++;
       });
       if (countEl) {

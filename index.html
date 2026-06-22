@@ -378,7 +378,7 @@
   .dict-count { font-size: 13px; color: var(--ink-muted); margin-bottom: 16px; }
   .dict-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 1px;
     background: var(--line-soft);
     border: 1px solid var(--line-soft);
@@ -387,31 +387,31 @@
   }
   .dict-card {
     background: var(--bg);
-    padding: 14px 16px;
+    padding: 10px 12px;
     cursor: pointer;
     transition: background 0.12s;
-    display: flex; flex-direction: column; gap: 6px;
+    display: flex; flex-direction: column; gap: 4px;
   }
   .dict-card:hover { background: var(--bg-card); }
-  .dict-card-top { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+  .dict-card-top { display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; }
   .dict-card-word {
-    font-family: var(--serif); font-size: 16px; font-weight: 550;
+    font-family: var(--serif); font-size: 14px; font-weight: 550;
     color: var(--ink); font-variation-settings: 'opsz' 72;
     line-height: 1.2;
   }
-  .dict-card-pos { font-size: 11px; color: var(--ink-dim); font-style: italic; }
+  .dict-card-pos { font-size: 10px; color: var(--ink-dim); font-style: italic; }
   .dict-card-zh {
     font-family: 'Source Han Serif SC', 'Songti SC', 'Noto Serif CJK SC', serif;
-    font-size: 15px; color: var(--ink); line-height: 1.35;
+    font-size: 13px; color: var(--ink); line-height: 1.3;
   }
   .dict-card-en {
-    font-family: var(--serif); font-size: 13px; color: var(--ink-muted);
-    font-style: italic; line-height: 1.35;
+    font-family: var(--serif); font-size: 11px; color: var(--ink-muted);
+    font-style: italic; line-height: 1.3;
     font-variation-settings: 'opsz' 24;
   }
-  .dict-card-freq { display: flex; gap: 3px; margin-top: 2px; }
+  .dict-card-freq { display: flex; gap: 3px; margin-top: 1px; }
   .dict-card-freq .pill {
-    font-size: 9px; padding: 1px 7px; border-radius: 999px;
+    font-size: 8px; padding: 1px 6px; border-radius: 999px;
     background: var(--bg-elev); color: var(--ink-muted);
     font-weight: 600; letter-spacing: 0.04em;
   }

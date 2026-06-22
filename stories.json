@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "The Fox and the Grapes",
+    "level": "beginner",
+    "description": "An Aesop fable about wanting what we cannot have.",
+    "content": "One hot summer day, a fox was walking through a garden. He was very hungry. Soon he came to a wall with green grapes growing over it. The grapes looked sweet and juicy. The fox's mouth began to water. He jumped high to reach the grapes, but they were too high. He jumped again and again, but he could not reach them. At last, he was tired and gave up. As he walked away, he said to himself, 'These grapes are sour. I do not want them after all.' The grapes were, in fact, very sweet. But the fox did not want to admit that he could not get them. So he told himself a small lie. The story teaches us: it is easy to hate what we cannot have."
+  },
+  {
+    "id": 2,
+    "title": "The Tortoise and the Hare",
+    "level": "beginner",
+    "description": "Slow and steady wins the race.",
+    "content": "A hare was always making fun of a tortoise because he was so slow. 'You are the slowest animal in the world,' said the hare. 'I can run faster than you, and I can do everything better.' The tortoise was tired of the hare's words. 'Let us have a race,' said the tortoise. 'I am sure I can beat you.' The hare laughed. 'A race? With you? That will be easy!' They found a long road and started the race. The hare ran very fast. Soon he was far ahead of the tortoise. 'I have plenty of time,' thought the hare. 'I will rest under this tree for a while.' So the hare lay down in the soft grass and soon fell fast asleep. The tortoise walked on, slowly but surely. He did not stop. He walked past the sleeping hare. When the hare woke up, he saw the tortoise near the end of the road. The hare ran as fast as he could, but it was too late. The tortoise had already won the race. The moral is: slow and steady wins the race."
+  },
+  {
+    "id": 3,
+    "title": "The Boy Who Cried Wolf",
+    "level": "beginner",
+    "description": "A lesson about telling the truth.",
+    "content": "There was once a young boy who looked after sheep on a hill near a village. He was very bored. 'I wish something exciting would happen,' he thought. Then he had an idea. He ran down the hill and shouted, 'Wolf! Wolf! A wolf is attacking the sheep!' The villagers heard the cry and ran up the hill to help. But when they arrived, there was no wolf. The boy laughed. 'I was only joking,' he said. The villagers were angry, but they went back to their work. A few days later, the boy played the same trick. 'Wolf! Wolf!' he cried. Again the villagers ran up the hill. Again there was no wolf. They warned him, 'Do not lie to us again.' But the boy did not listen. Then one day, a real wolf came. The boy ran down the hill, shouting loudly, 'Wolf! Wolf! Please help!' But this time the villagers thought he was lying again. Nobody came. The wolf destroyed the whole flock. The moral is: a liar is not believed even when he tells the truth."
+  },
+  {
+    "id": 4,
+    "title": "The Ant and the Grasshopper",
+    "level": "beginner",
+    "description": "Work today, rest tomorrow.",
+    "content": "In a field, an ant was working hard all summer. She carried food to her home every day. A grasshopper sat nearby and watched her. 'Why do you work so hard?' he asked. 'Come and sing with me. The sun is warm and the day is beautiful.' 'I am saving food for the winter,' said the ant. 'When winter comes, there will be no food to find.' But the grasshopper only laughed. 'Winter is far away. Why worry about it now?' He went on singing. When winter came, the snow covered everything. The grasshopper had no food and was very hungry. He went to the ant's house and asked for help. 'Please give me something to eat.' The ant looked at him. 'I worked all summer while you sang,' she said. 'Now you must dance.' The moral is: we should prepare for the future, and not waste our time on pleasure alone."
+  },
+  {
+    "id": 5,
+    "title": "The North Wind and the Sun",
+    "level": "beginner",
+    "description": "Gentleness wins over force.",
+    "content": "One day, the North Wind and the Sun had a quarrel. 'I am stronger than you,' said the North Wind. 'No, I am stronger,' said the Sun. They decided to have a contest. Whoever could make a traveler take off his coat would be the winner. The North Wind went first. He blew and blew with all his might. But the harder he blew, the tighter the traveler held his coat. The cold wind made him pull it close to his body. At last, the North Wind gave up. Then the Sun began to shine. He shone warmly on the traveler. Soon the traveler felt warm. He took off his coat because the day was pleasant. The Sun was the winner. The moral is: gentleness and kindness are stronger than force and anger."
+  }
+]

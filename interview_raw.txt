@@ -1,44 +1,54 @@
-[music]
-How much are you sleeping?
-You know, I've never been someone who slept all that well. Let's just say I'm learning the art of finding ways to relax and sleep through moments of unusual pressure.
+**Emily Chang:** How much are you sleeping?
 
-It is all moving so fast. How does it feel on the inside?
-It's this feeling of like the exponential. Suppose you were to accelerate away from earth on a spaceship at relativistic speed. The way special relativity works is you go to sleep and you wake up and two days have gone by on earth, so you have to deal with two days in one day. And then you go to sleep and because you've continued to accelerate, three days have gone by on earth. And then the next day, four days have gone by. That's a little bit what it feels like.
+**Dario Amodei:** You know, I've never been someone who slept all that well. Let's just say I'm learning the art of finding ways to relax and sleep through moments of unusual pressure.
 
-I mean, do you go to bed constantly paranoid about what you'll wake up to?
-There are enough clear and present issues that we have to deal with that I'm constantly dealing with those while thinking about how we can prepare. But I don't think paranoia or worrying about what you'll wake up to is productive. I've looked at people in history who've dealt with these very high pressure situations. You need to learn to respond rationally and not put dangers out of proportion to each other. This yo-yoing between "I'm not worried" and "oh my god, we need to panic today" — I think that's a hallmark of immature decision-making. The actual mature decision-making is: you can't ignore this. We can't be complacent. In fact, it's getting to be a bigger and bigger risk. But we have to respond rationally. Like a surgeon would deal with an operation, or a military officer would deal with a military operation. Someone making decisions that affect a lot of people has to make those decisions rationally and they have to understand the risk. But they have to maintain a basic sense of calm.
+**Emily Chang:** It is all moving so fast. How does it feel on the inside?
 
-So my son yesterday was like, "Can I use your Claude Co-Work account?" And I was like, "Absolutely not. I need my tokens." [laughter]
+**Dario Amodei:** It's this feeling of like the exponential. Suppose you were to accelerate away from earth on a spaceship at relativistic speed. The way special relativity works is you go to sleep and you wake up and two days have gone by on earth, so you have to deal with two days in one day. And then you go to sleep and because you've continued to accelerate, three days have gone by on earth. And then the next day, four days have gone by. That's a little bit what it feels like.
 
-We're seeing more and more of them even in the consumer space. We wanted to be more of an enterprise company, but even consumer, without us putting that much effort, is starting to grow fast.
+**Emily Chang:** I mean, do you go to bed constantly paranoid about what you'll wake up to?
 
-You are at the center of the AI universe right now. What does that feel like?
-The interesting thing is that the experience I've had for my whole career, and certainly the whole time at Anthropic, is that there's this kind of smooth exponential. And the experience of the smooth exponential is: nothing's happening, nothing's happening, nothing's happening. A little things happen, and then zoom — it goes crazy. That's the experience of the world. That's the experience of the scale of the company compared to the other companies and compared to the world. I was watching this graph for a while and I said, "Oh yeah, we'll probably become the AI company with the most revenue and the most valuation sometime around this time." And indeed it has happened. In one sense, I'm not surprised because this is just a smooth line on the graph, but of course, when things actually happen, you see so much more detail and color to it. We're just keeping in mind all the things we usually keep in mind: how do we train good models? How do we put them in good products? How do we make sure that everything's safe? How do we help people but also manage the societal risks around the technology? It's all the same questions, just under a bigger microscope.
+**Dario Amodei:** There are enough clear and present issues that we have to deal with that I'm constantly dealing with those while thinking about how we can prepare. But I don't think paranoia or worrying about what you'll wake up to is productive. I've looked at people in history who've dealt with these very high pressure situations. You need to learn to respond rationally and not put dangers out of proportion to each other. This yo-yoing between "I'm not worried" and "oh my god, we need to panic today" — I think that's a hallmark of immature decision-making. The actual mature decision-making is: you can't ignore this. We can't be complacent. In fact, it's getting to be a bigger and bigger risk. But we have to respond rationally. Like a surgeon would deal with an operation, or a military officer would deal with a military operation. Someone making decisions that affect a lot of people has to make those decisions rationally and they have to understand the risk. But they have to maintain a basic sense of calm.
 
-What were you like as a kid growing up in San Francisco? I know your dad was a leather craftsman, your mom worked in libraries. How did that shape you?
-The whole first internet revolution was happening around me and I had absolutely no interest in it. I was just interested in doing math and understanding the universe. I was interested in science fiction. I think I just felt a lot of curiosity about the world.
+**Emily Chang:** So my son yesterday was like, "Can I use your Claude Co-Work account?" And I was like, "Absolutely not. I need my tokens." (laughter)
 
-You grew up in the town that is the center of technology and right now it's the center of AI. Is there anything about this place that informed your worldview?
-I think the general spirit of nonconformism and individualism — and "it's okay to be crazy" — a good deal of that probably did rub off on me. You hear these stories about countries in Europe or even other parts of this country where it's just discouraged or considered weird to think about things in some different way. There's a lot of things I'm actually very critical about with Silicon Valley. But one thing that I think is good about it is this encouragement: it doesn't matter if all the experts are against you. If you have a coherent vision and a coherent worldview, you should go and pursue it. Maybe it just won't work at all. But if it does, there's this kind of long-tailedness to it — there are certain places you can search certain veins where you might find a huge gold mine. I think that spirit is very important.
+**Dario Amodei:** We're seeing more and more of them even in the consumer space. We wanted to be more of an enterprise company, but even consumer, without us putting that much effort, is starting to grow fast.
 
-You, Daniela, your sister, and her husband Holden Karnofsky lived in a group house together back in 2016. What were you debating back then?
-That was the time when Open Philanthropy Project was first being started up, which Holden was the lead of. I was at that time a biological scientist. I was helping them with some of the stuff they were doing around developing world health or biological research. I advised on what were the areas that were promising and what were the areas that were less promising.
+**Emily Chang:** You are at the center of the AI universe right now. What does that feel like?
 
-Your decision to leave OpenAI has become Silicon Valley lore. What really happened? Beyond the narrative, what were the issues? What did you disagree on?
-Look, I'm going to say it very simply. There are many difficult issues that you face when you're building powerful technology — that Anthropic faces every day — where we don't know whether we're making the right decision or the wrong decision. There are many valid disagreements to be had on safety. We certainly had some of those disagreements with them. But that alone is not sufficient to leave. People here have had disagreements with me. People here have disagreements with each other.
+**Dario Amodei:** The interesting thing is that the experience I've had for my whole career, and certainly the whole time at Anthropic, is that there's this kind of smooth exponential. And the experience of the smooth exponential is: nothing's happening, nothing's happening, nothing's happening. A little things happen, and then zoom — it goes crazy. That's the experience of the world. That's the experience of the scale of the company compared to the other companies and compared to the world. I was watching this graph for a while and I said, "Oh yeah, we'll probably become the AI company with the most revenue and the most valuation sometime around this time." And indeed it has happened. In one sense, I'm not surprised because this is just a smooth line on the graph, but of course, when things actually happen, you see so much more detail and color to it. We're just keeping in mind all the things we usually keep in mind: how do we train good models? How do we put them in good products? How do we make sure that everything's safe? How do we help people but also manage the societal risks around the technology? It's all the same questions, just under a bigger microscope.
+
+**Emily Chang:** What were you like as a kid growing up in San Francisco? I know your dad was a leather craftsman, your mom worked in libraries. How did that shape you?
+
+**Dario Amodei:** The whole first internet revolution was happening around me and I had absolutely no interest in it. I was just interested in doing math and understanding the universe. I was interested in science fiction. I think I just felt a lot of curiosity about the world.
+
+**Emily Chang:** You grew up in the town that is the center of technology and right now it's the center of AI. Is there anything about this place that informed your worldview?
+
+**Dario Amodei:** I think the general spirit of nonconformism and individualism — and "it's okay to be crazy" — a good deal of that probably did rub off on me. You hear these stories about countries in Europe or even other parts of this country where it's just discouraged or considered weird to think about things in some different way. There's a lot of things I'm actually very critical about with Silicon Valley. But one thing that I think is good about it is this encouragement: it doesn't matter if all the experts are against you. If you have a coherent vision and a coherent worldview, you should go and pursue it. Maybe it just won't work at all. But if it does, there's this kind of long-tailedness to it — there are certain places you can search certain veins where you might find a huge gold mine. I think that spirit is very important.
+
+**Emily Chang:** You, Daniela, your sister, and her husband Holden Karnofsky lived in a group house together back in 2016. What were you debating back then?
+
+**Dario Amodei:** That was the time when Open Philanthropy Project was first being started up, which Holden was the lead of. I was at that time a biological scientist. I was helping them with some of the stuff they were doing around developing world health or biological research. I advised on what were the areas that were promising and what were the areas that were less promising.
+
+**Emily Chang:** Your decision to leave OpenAI has become Silicon Valley lore. What really happened? Beyond the narrative, what were the issues? What did you disagree on?
+
+**Dario Amodei:** Look, I'm going to say it very simply. There are many difficult issues that you face when you're building powerful technology — that Anthropic faces every day — where we don't know whether we're making the right decision or the wrong decision. There are many valid disagreements to be had on safety. We certainly had some of those disagreements with them. But that alone is not sufficient to leave. People here have had disagreements with me. People here have disagreements with each other.
 
 But when you feel that you can't trust someone, when you feel that their values are not what they say they are, when you feel that they're not honest, when you feel that they're not in it for the reasons that they say, when you see disturbing patterns of behavior, dishonesty — that makes it very hard to continue to work with a company, to continue to trust the company.
 
 And look, at the end of the day, why argue with someone when you don't have the same vision and you don't trust them? The way to resolve it is you go off and do your thing, they go off and do their thing. I am completely at peace with the idea that we're doing things our way and they're doing things their way. We'll see who wins in the market and we'll see who wins in the court of public opinion. Those things speak louder than any drama about who left what. We're providing an example of how to deploy this technology in what we think is a responsible way. If they disagree, they should make that argument. That's really all there is to say about it.
 
-There was a moment at India's AI summit where you and Sam Altman appeared to refuse to hold hands on stage. What happened there?
-What happened is that the summit was extremely disorganized. We all came up at the last minute and then they changed the order in which we were standing, and then they took a picture of us, and then they ordered us all to hold hands. If you've ever been to one of these summits — I'm not saying anything bad about India in particular — but all of these kind of international type summits that have heads of state are super disorganized.
+**Emily Chang:** There was a moment at India's AI summit where you and Sam Altman appeared to refuse to hold hands on stage. What happened there?
 
-Okay. But everyone else held hands. Come on.
-Look, I don't know what to tell you. There was Narendra Modi up there suddenly telling everyone to hold hands. [laughter]
+**Dario Amodei:** What happened is that the summit was extremely disorganized. We all came up at the last minute and then they changed the order in which we were standing, and then they took a picture of us, and then they ordered us all to hold hands. If you've ever been to one of these summits — I'm not saying anything bad about India in particular — but all of these kind of international type summits that have heads of state are super disorganized.
 
-All right. Look, Sam and Elon are suing each other. You don't like Sam? If the people building the most important technology in the world can't hold hands on stage, how can we trust you'll cooperate on existential risk?
-Here's what I will tell you. There is a wide variance in the quality and the trustworthiness of the people building this technology. I think this meme that no one trusts each other — I don't think it's right. I've known Demis Hassabis, who builds the Gemini models that are a competitor to Claude models — I've known him for 15 years. We've worked together on a number of issues. We buy compute from Google. We swap safety ideas all the time.
+**Emily Chang:** Okay. But everyone else held hands. Come on.
+
+**Dario Amodei:** Look, I don't know what to tell you. There was Narendra Modi up there suddenly telling everyone to hold hands. (laughter)
+
+**Emily Chang:** All right. Look, Sam and Elon are suing each other. You don't like Sam? If the people building the most important technology in the world can't hold hands on stage, how can we trust you'll cooperate on existential risk?
+
+**Dario Amodei:** Here's what I will tell you. There is a wide variance in the quality and the trustworthiness of the people building this technology. I think this meme that no one trusts each other — I don't think it's right. I've known Demis Hassabis, who builds the Gemini models that are a competitor to Claude models — I've known him for 15 years. We've worked together on a number of issues. We buy compute from Google. We swap safety ideas all the time.
 
 My view of this is that there are some players who are more trustworthy than others. There are players outside Anthropic who I trust, who I see as trustworthy. What I think needs to happen is that the trustworthy actors need to get together and put the untrustworthy actors in a position where they kind of have to adopt the same standards.
 
@@ -46,8 +56,9 @@ There's the positive version of it where you inspire other people. That's like D
 
 Then there's the stick side where you're like, okay, these guys are doing the right thing. Those guys will look bad if they don't do the right thing. Often we see behaviors where they kind of grudgingly do the right thing while trying to pretend they're doing something different and there's something bad or sinister about us. That is to be expected. But I think that's the way we get the industry together and that's the way we get the industry to cooperate.
 
-Now, early on others focused on fun, splashy consumer apps. You made a bet on coding and enterprise, and Claude Code is a hit. Claude Co-Work is a hit. Why did you make that bet? Was it a values decision or a business decision?
-When we started Anthropic, the base thing that mattered — the thing that always matters — is we want to do this right. But then you have to ask yourself: in order to fund the very expensive creation of these models, it needs to be a company that needs to have a business model. Does the business model get in the way of the values?
+**Emily Chang:** Now, early on others focused on fun, splashy consumer apps. You made a bet on coding and enterprise, and Claude Code is a hit. Claude Co-Work is a hit. Why did you make that bet? Was it a values decision or a business decision?
+
+**Dario Amodei:** When we started Anthropic, the base thing that mattered — the thing that always matters — is we want to do this right. But then you have to ask yourself: in order to fund the very expensive creation of these models, it needs to be a company that needs to have a business model. Does the business model get in the way of the values?
 
 If you pick a business model that fundamentally conflicts with your values, you're going to have a hard time. Either you betray your own values or you become irrelevant. It's far better to pick a business model that is compatible with your values.
 
@@ -57,11 +68,13 @@ Whereas if we look at enterprise — we want to make these models useful to peop
 
 And then there's another factor: enterprises care a lot about trust and long-term relationships. Consumer can have this almost gimmicky aspect to it. With enterprise, what matters is you build a relationship where you work with a company for many years. You deliver on what you say, they deliver on what they say, and they basically trust you. It's very synergistic with our goal of deploying these models in a positive and safe way. It serves us well to have this business model that largely aligns with our values. Not that there aren't conflicts sometimes, not that there aren't hard choices we have to make, but the number of such choices is much lower than it would be otherwise.
 
-A developer can switch from Claude to GPT or Gemini in an afternoon. Is it really possible to have a long-term lead in this industry? How long would it take a serious competitor to replicate what you've done?
-Model quality is the most important thing. We're very far ahead right now on model quality. There is some amount of inertia, but I've never relied on that. Anthropic has never relied on "oh, this is sticky and people won't switch." You want to have a better model. You want to have a better product. We see the growth rates haven't inflected at all. If anything, they've gone up.
+**Emily Chang:** A developer can switch from Claude to GPT or Gemini in an afternoon. Is it really possible to have a long-term lead in this industry? How long would it take a serious competitor to replicate what you've done?
 
-Soon after Claude Co-Work was released, $285 billion in market value vanished overnight. Traders called it the "SaaS Apocalypse." If AI continues improving at this pace, how much of traditional software gets replaced and how fast?
-This is one of these questions that's very hard to predict in advance. If you could predict it perfectly, people would make a huge amount of money on the market and they'd always be right. No one knows exactly what's going to happen.
+**Dario Amodei:** Model quality is the most important thing. We're very far ahead right now on model quality. There is some amount of inertia, but I've never relied on that. Anthropic has never relied on "oh, this is sticky and people won't switch." You want to have a better model. You want to have a better product. We see the growth rates haven't inflected at all. If anything, they've gone up.
+
+**Emily Chang:** Soon after Claude Co-Work was released, $285 billion in market value vanished overnight. Traders called it the "SaaS Apocalypse." If AI continues improving at this pace, how much of traditional software gets replaced and how fast?
+
+**Dario Amodei:** This is one of these questions that's very hard to predict in advance. If you could predict it perfectly, people would make a huge amount of money on the market and they'd always be right. No one knows exactly what's going to happen.
 
 But I would note a few things. All of these traditional software companies have a number of moats. I think some of these moats are going to go away, but others are going to stay around. The ability to quickly write software — I definitely think that's going away. If your moat is "we wrote this complex software that no one else can write" — good luck. You're not going to be able to defend that.
 
@@ -71,49 +84,60 @@ I think those that deftly respond — that lean into the list of moats that are 
 
 At the end of the day, I would guess that the software industry gets larger, not smaller — although there will be some big losers.
 
-Explain that.
-I just think the pie is getting bigger. With AI, the pie is getting bigger. The existing incumbents may be smaller in relative terms. Some of them may go down in value. Some of them may even go out of business if they don't adapt in the right way. But you see this often when growth is really fast — if what's possible with AI grows by 10x, it's very easy for an existing incumbent industry to go up by 1.5x. Not as much as the whole pie is growing. But I think those who don't adapt, who put their heads in the sand, who don't see what's coming — they're going to have a really hard time.
+**Emily Chang:** Explain that.
 
-Your biggest backers are companies like Amazon, Google, Microsoft, and Nvidia. These are companies that all have their own agendas. They are partners and rivals. You have huge commercial milestones tied to funding. Who's really calling the shots?
-There have been a number of cases where we've really spoken our minds about what we think. I've been very outspoken about the need for export controls on chips to China. I say this because I think it would be really bad for America, for the state of democracy in the world, for China to be ahead in AI capabilities. Some of the chip makers obviously don't agree with that view, but it hasn't stopped me from saying it. What they know is that we always work with them. We've been good partners. We can work together. I'm sure they wish we didn't say these things, but these things are what I believe. At the end of the day, they benefit from these deals as much as we do. We're all adults here. We can work together on one thing while disagreeing about another thing.
+**Dario Amodei:** I just think the pie is getting bigger. With AI, the pie is getting bigger. The existing incumbents may be smaller in relative terms. Some of them may go down in value. Some of them may even go out of business if they don't adapt in the right way. But you see this often when growth is really fast — if what's possible with AI grows by 10x, it's very easy for an existing incumbent industry to go up by 1.5x. Not as much as the whole pie is growing. But I think those who don't adapt, who put their heads in the sand, who don't see what's coming — they're going to have a really hard time.
 
-Bloomberg's reported that you're at valuations that are higher than OpenAI. We're talking nearly a trillion dollars for a 5-year-old startup. How do you make sense of that number? And why do you need that much money if you're more disciplined on compute and have a faster path to profit?
-The compute is ramping up very quickly. It can both be the case that the fundamentals of the business look good, but in a year you'll have three or four times as much compute. These compute ramps are very fast, and we have every expectation that the revenue ramp will meet and exceed those. But raising money is kind of the buffer against this cone of uncertainty. It's a totally rational thing to do. It's a very small dilution to the business. It's compatible with the opposite of there being anything wrong with the fundamentals of the business.
+**Emily Chang:** Your biggest backers are companies like Amazon, Google, Microsoft, and Nvidia. These are companies that all have their own agendas. They are partners and rivals. You have huge commercial milestones tied to funding. Who's really calling the shots?
 
-There have been reports of server strain, reliability issues, people complaining about running out of tokens. You've said other companies are "YOLOing" on infrastructure. Do you actually have what you need or are you playing catch-up?
-One of these things about compute is there's a market in compute. My view is that over a period of time, we can get large amounts of compute. I don't think we bought too little compute by any reasonable standard. We were planning for a 10x a year growth in compute. 10x a year is what we expect. That isn't what we've seen over the first quarter of 2026. We saw a greater than 3x growth in revenue quarterly — not annualized, 3x in the quarter. Three to the fourth power is 80x over the course of the year. We didn't plan for 80x annualized growth. It would not have been rational to plan for 80x annualized growth, because that means if you only get 10x, you have eight times less.
+**Dario Amodei:** There have been a number of cases where we've really spoken our minds about what we think. I've been very outspoken about the need for export controls on chips to China. I say this because I think it would be really bad for America, for the state of democracy in the world, for China to be ahead in AI capabilities. Some of the chip makers obviously don't agree with that view, but it hasn't stopped me from saying it. What they know is that we always work with them. We've been good partners. We can work together. I'm sure they wish we didn't say these things, but these things are what I believe. At the end of the day, they benefit from these deals as much as we do. We're all adults here. We can work together on one thing while disagreeing about another thing.
+
+**Emily Chang:** Bloomberg's reported that you're at valuations that are higher than OpenAI. We're talking nearly a trillion dollars for a 5-year-old startup. How do you make sense of that number? And why do you need that much money if you're more disciplined on compute and have a faster path to profit?
+
+**Dario Amodei:** The compute is ramping up very quickly. It can both be the case that the fundamentals of the business look good, but in a year you'll have three or four times as much compute. These compute ramps are very fast, and we have every expectation that the revenue ramp will meet and exceed those. But raising money is kind of the buffer against this cone of uncertainty. It's a totally rational thing to do. It's a very small dilution to the business. It's compatible with the opposite of there being anything wrong with the fundamentals of the business.
+
+**Emily Chang:** There have been reports of server strain, reliability issues, people complaining about running out of tokens. You've said other companies are "YOLOing" on infrastructure. Do you actually have what you need or are you playing catch-up?
+
+**Dario Amodei:** One of these things about compute is there's a market in compute. My view is that over a period of time, we can get large amounts of compute. I don't think we bought too little compute by any reasonable standard. We were planning for a 10x a year growth in compute. 10x a year is what we expect. That isn't what we've seen over the first quarter of 2026. We saw a greater than 3x growth in revenue quarterly — not annualized, 3x in the quarter. Three to the fourth power is 80x over the course of the year. We didn't plan for 80x annualized growth. It would not have been rational to plan for 80x annualized growth, because that means if you only get 10x, you have eight times less.
 
 We're in a locally extreme explosion of compute. That's not going to continue. If that continued, you just get to revenue numbers that no company on Earth — I don't think that's going to happen. But you can have these short periods where it's like, "oh my god, this is faster growth than we ever possibly anticipated." You saw the compute deals with Google, you saw the compute deals with Amazon. There are more that we can and will do. The market's liquid. If you're able to use compute really well and there's the demand, you'll get your compute. It might just take a month or two.
 
-Does it feel good to surpass your arch rival?
-Look, we have a lot of difficult challenges in front of us. There's this "race to the top" idea that we're trying to pull other companies along with us. We've seen that we have pulled them along with us. Sometimes they don't admit that's what they're doing. Sometimes they copy us while they're attacking us. But this pull is very valuable. The value of being the preeminent company both commercially and in terms of models — it's not about beating rivals for the sake of beating rivals. It's about having the ability to pull the ecosystem along with us.
+**Emily Chang:** Does it feel good to surpass your arch rival?
+
+**Dario Amodei:** Look, we have a lot of difficult challenges in front of us. There's this "race to the top" idea that we're trying to pull other companies along with us. We've seen that we have pulled them along with us. Sometimes they don't admit that's what they're doing. Sometimes they copy us while they're attacking us. But this pull is very valuable. The value of being the preeminent company both commercially and in terms of models — it's not about beating rivals for the sake of beating rivals. It's about having the ability to pull the ecosystem along with us.
 
 But winning has to feel just a little bit good.
 Look, we're always trying to succeed. We're not trying to fail here. I'm not someone who believes we should shut this technology down. We exist within a free enterprise system. There's nothing wrong with this. We just have to mitigate the risks of the models. It's always been the balance between the two.
 
-For most of Anthropic's history, you were the underdog. I imagine it's easier to take the moral high ground when you have nothing to lose. At this scale, how hard is it to stay true to your values?
-I've put a lot of time into thinking about how that's the case. As companies scale, I've been paranoid at every scale. At every scale of the company, there's some new challenge — some new way the company can lose either its will to win commercially or the core of its values. I'm worried about both because I see them as synergistic. I actually see the fact that we've been able to make such good models as the thing that allows us to assert our values in a way that works as the company grows.
+**Emily Chang:** For most of Anthropic's history, you were the underdog. I imagine it's easier to take the moral high ground when you have nothing to lose. At this scale, how hard is it to stay true to your values?
+
+**Dario Amodei:** I've put a lot of time into thinking about how that's the case. As companies scale, I've been paranoid at every scale. At every scale of the company, there's some new challenge — some new way the company can lose either its will to win commercially or the core of its values. I'm worried about both because I see them as synergistic. I actually see the fact that we've been able to make such good models as the thing that allows us to assert our values in a way that works as the company grows.
 
 There are lots of pitfalls here. Not because my or the co-founders' values change, but because the composition of the company changes very fast. I spend probably half of my time just talking to the company about the culture of Anthropic and how the culture works. When you're growing this fast, you're hiring a bunch of people from big tech companies. If you don't tell them how Anthropic operates, they'll simply recapitulate the only thing they know, which is how to operate at the companies that they came from. This is a constant struggle. Me and Daniela's number one top priority is figuring out how to preserve this, because we recognize that this is the core of who we are in the long run.
 
-Your product velocity is insane. You're shipping so much so fast. How are you doing it?
-Two things. First, we have a unified company, a unified culture. We've grown larger while still being incredibly efficient, everyone's still on the same page. The cultural and organizational unity — that's the biggest factor. Second, Claude itself. We're now using Claude to help develop our models and make them more efficient and quickly develop products. It's producing a lot of acceleration, increasingly reliable acceleration.
+**Emily Chang:** Your product velocity is insane. You're shipping so much so fast. How are you doing it?
 
-Will you tell me the most wild thing you've seen AI do?
-Some of the wildest stuff I've seen is around biology and medicine. I've seen a number of cases, including Daniela actually, where Claude diagnosed a medical problem that a bunch of fancy doctors had missed. On the biology side, the models are starting to get surprisingly good at tasks like drug design or computational chemistry. As someone who used to be a biologist, I look at it and I'm like, "Wow, that's hard. You need a lot of training to do that." And Claude is getting good at it. That's one area where we're going to get a hell of a lot of benefit. That's the positive for AI — we're going to get these huge enormous benefits. Life is going to get better. The quality of human experience is going to get better.
+**Dario Amodei:** Two things. First, we have a unified company, a unified culture. We've grown larger while still being incredibly efficient, everyone's still on the same page. The cultural and organizational unity — that's the biggest factor. Second, Claude itself. We're now using Claude to help develop our models and make them more efficient and quickly develop products. It's producing a lot of acceleration, increasingly reliable acceleration.
+
+**Emily Chang:** Will you tell me the most wild thing you've seen AI do?
+
+**Dario Amodei:** Some of the wildest stuff I've seen is around biology and medicine. I've seen a number of cases, including Daniela actually, where Claude diagnosed a medical problem that a bunch of fancy doctors had missed. On the biology side, the models are starting to get surprisingly good at tasks like drug design or computational chemistry. As someone who used to be a biologist, I look at it and I'm like, "Wow, that's hard. You need a lot of training to do that." And Claude is getting good at it. That's one area where we're going to get a hell of a lot of benefit. That's the positive for AI — we're going to get these huge enormous benefits. Life is going to get better. The quality of human experience is going to get better.
 
 A century of scientific progress. A century of progress in what it's like to be human. Go back to 1900. Think of all the problems we had in the 1900s, all the reasons people died prematurely, all the material deprivation that we don't have to deal with today. Then think of another hundred years of that. I really believe this century of scientific and medical progress — if we can get through this, and I think we will, I'm increasingly optimistic — we're going to have a much, much better world.
 
-I know how much you love writing. You're known for your essays. Do you use Claude to help write?
-I do. I have not gotten to the point where I actually allow text directly written by Claude in, because I have such a specific style that I'm a little picky about it. But I use Claude to help me brainstorm, to help me think through the themes, to help me with references. It plays a supportive role. I don't know how far we are from Claude being able to write better than me. We're not quite there yet, but certainly it's coming.
+**Emily Chang:** I know how much you love writing. You're known for your essays. Do you use Claude to help write?
 
-I love writing too. Writing helps you struggle through ideas. There is a lot of critical thinking involved. Do we lose that if we let Claude do it for us?
-I'm a little worried about that. That's half the reason I write myself. It certainly is for external audiences — many people read what I write — but it is just as much to clarify my own thinking so that I know what to do next and to create a common reference point across me and others. I think we're still grappling with how exactly to use AI in a way that preserves those benefits. The thing I'm doing now does that — using Claude for research, helping organize my own thoughts. If we just used it end-to-end — "write an essay about the risks of AI" — first of all, it wouldn't write the things that I think, but also I would exactly lose that benefit. As the models get better, there's probably some way to use them much more directly in the writing and yet still preserve those benefits. It's going to be subtle. We'll have to figure it out over time.
+**Dario Amodei:** I do. I have not gotten to the point where I actually allow text directly written by Claude in, because I have such a specific style that I'm a little picky about it. But I use Claude to help me brainstorm, to help me think through the themes, to help me with references. It plays a supportive role. I don't know how far we are from Claude being able to write better than me. We're not quite there yet, but certainly it's coming.
 
-I think we could have this very unusual combination of very fast GDP growth and high unemployment — or at least underemployment, a lot of low-wage jobs, high inequality.
+**Emily Chang:** I love writing too. Writing helps you struggle through ideas. There is a lot of critical thinking involved. Do we lose that if we let Claude do it for us?
 
-You've been really direct about job loss. AI could eliminate half of all entry-level white collar jobs in the next 1 to 5 years. That was a year ago. AI has moved incredibly fast. Is it still 50% or is it higher?
-I've always said — and if you go back to those original clips, they always get cut out of context in the 3 seconds — the real statement was always: I don't know what's going to happen, but this is an order of magnitude for how crazy things could be. Also, I always talk about all the things we can do in response. I've talked about token tax and working with enterprises to adjust people. Macroeconomic policy. Even from the beginning, I always talked about solutions.
+**Dario Amodei:** I'm a little worried about that. That's half the reason I write myself. It certainly is for external audiences — many people read what I write — but it is just as much to clarify my own thinking so that I know what to do next and to create a common reference point across me and others. I think we're still grappling with how exactly to use AI in a way that preserves those benefits. The thing I'm doing now does that — using Claude for research, helping organize my own thoughts. If we just used it end-to-end — "write an essay about the risks of AI" — first of all, it wouldn't write the things that I think, but also I would exactly lose that benefit. As the models get better, there's probably some way to use them much more directly in the writing and yet still preserve those benefits. It's going to be subtle. We'll have to figure it out over time.
+
+**Emily Chang:** I think we could have this very unusual combination of very fast GDP growth and high unemployment — or at least underemployment, a lot of low-wage jobs, high inequality.
+
+**Emily Chang:** You've been really direct about job loss. AI could eliminate half of all entry-level white collar jobs in the next 1 to 5 years. That was a year ago. AI has moved incredibly fast. Is it still 50% or is it higher?
+
+**Dario Amodei:** I've always said — and if you go back to those original clips, they always get cut out of context in the 3 seconds — the real statement was always: I don't know what's going to happen, but this is an order of magnitude for how crazy things could be. Also, I always talk about all the things we can do in response. I've talked about token tax and working with enterprises to adjust people. Macroeconomic policy. Even from the beginning, I always talked about solutions.
 
 But somehow there's this tendency in human psychology to clip the 3 seconds of "doom is coming." My message is definitely not "doom is coming." My message is: this is something we should see coming, that we're worried about, and that we need to actually respond to positively.
 
@@ -121,18 +145,24 @@ I don't know exactly, but I'm still pretty concerned. I'm still the same order o
 
 I don't know about the long run. I'm truly uncertain about that. But I do think there are types of adaptation. Software engineers within Anthropic — we're going through this transition right now. Right now AI makes the software engineers more productive even though AI writes all the code or almost all the code. But we're already starting to see the beginning of — there may be some people that it's not making more productive, that it's better for the AI to just do the thing.
 
-On the other side, what do we need more demand for? There's something we call a "forward deployed engineer" or "applied AI solutions architect" — their job is a mix of technical work and talking to customers. There's a lot of demand for that because there's a lot of customers and we're growing very quickly. Does every person who is in the pure software engineering role fit that? No. It's not perfect, it's not one to one. But that gives you a flavor — there's going to be a hell of a lot of disruption, but things will also adjust. Which wins out, I don't know.
+**Emily Chang:** On the other side, what do we need more demand for?
+
+**Dario Amodei:** There's something we call a "forward deployed engineer" or "applied AI solutions architect" — their job is a mix of technical work and talking to customers. There's a lot of demand for that because there's a lot of customers and we're growing very quickly. Does every person who is in the pure software engineering role fit that? No. It's not perfect, it's not one to one. But that gives you a flavor — there's going to be a hell of a lot of disruption, but things will also adjust. Which wins out, I don't know.
 
 But the reason it's important to warn about it is that that's how we can respond. That's how we can make policy — both within Anthropic and macroeconomically for the whole world. We want to put out carefully considered thoughts. We don't want to say things that are half-baked. We want to think carefully about what should actually be done about these problems.
 
 You put out this chart showing potential job disruption — sales, finance. Which jobs go away, who gets replaced, and what new jobs are created.
 No one knows for sure, because the economy is unpredictable — the same as the stock market. You don't really know ahead of time what are the pieces of the job that people are still going to be able to do. But broadly, anywhere that you have entry-level white collar — whether it's banking, whether it's finance — there's going to be a lot of potential for AI to first make people more productive, but then there's going to be wholesale "AI can do the job," and then we're going to have to think about what it is that people can do. We need to plan about that ahead of time.
 
-We're already doing it when we talk to enterprise customers. They face the choice of: should I save cost, which often means hiring less people — basically do the same thing with less resources — or should we do more things with the same amount of resources? We always, when we can, try to push them to doing more with the same amount of resources, because that means hire the same number of people or maybe even more people, but just do new things. Pushing them towards the positive sum.
+**Emily Chang:** We're already doing it when we talk to enterprise customers. They face the choice of: should I save cost, which often means hiring less people — basically do the same thing with less resources — or should we do more things with the same amount of resources?
+
+**Dario Amodei:** We always, when we can, try to push them to doing more with the same amount of resources, because that means hire the same number of people or maybe even more people, but just do new things. Pushing them towards the positive sum.
 
 The thing that we have going for us here is the pie is going to expand a lot. Because the pie is going to expand a lot, there are probably going to be places where people can go. It's just a matter of finding them fast enough. It's the size of the disruption — it's going to be big, and that's what I'm warning people about. We have to solve that matching problem.
 
-So play this out for me. You wake up in 5 years. What does this country look like? What are those people doing? Because if there's that much unemployment, is that not how revolutions start?
+**Emily Chang:** So play this out for me. You wake up in 5 years. What does this country look like?
+
+**Dario Amodei:** What are those people doing? Because if there's that much unemployment, is that not how revolutions start?
 This is the outcome we want to prevent. This is absolutely the outcome we want to prevent. There's a few places. None of them are guaranteed.
 
 There's the physical world. Things that are in the physical world. Yes, there's a robotics revolution as well, but it's a lot slower than what's happening in AI. People always talk about building data centers, but when processing information of any type becomes a lot easier, maybe the restriction is going to be things in the physical world. We need a lot more people to make, build, manufacture things in the physical world.
@@ -146,9 +176,9 @@ I want to be really clear and push back hard against this. The whole picture is:
 
 But social media — which I detest as a category — people have these 3-second clips from a year ago. They don't actually read the essays. The idea that this is "cheap marketing" is itself cheap marketing. This is laziness. This is failure to engage with serious intellectual work. It's part of the disease of Silicon Valley. It's been caught up in this social media world of 3 seconds, and so people only respond to it. It's very dangerous, and we've failed to have a mature conversation. Instead, people just lazily see this 3-second clip and they're like, "Oh, this is what Dario was saying." It's so stupid. It's so unserious. Whenever someone says something like that, I take them less seriously.
 
-One of the leading AI companies in the world is deeply embedded in many different aspects of US national security. The standoff between Anthropic and the Pentagon over AI military safeguards is ramping up.
+**Emily Chang:** One of the leading AI companies in the world is deeply embedded in many different aspects of US national security. The standoff between Anthropic and the Pentagon over AI military safeguards is ramping up.
 
-You've had a long-standing anti-war stance dating all the way back to your days at Caltech. And yet, you were one of the first AI companies to sign a contract with the Department of Defense to operate on classified networks that the US uses to fight wars. Explain that.
+**Dario Amodei:** You've had a long-standing anti-war stance dating all the way back to your days at Caltech. And yet, you were one of the first AI companies to sign a contract with the Department of Defense to operate on classified networks that the US uses to fight wars. Explain that.
 The world changes. When I see Russia invading Ukraine, when I see the risk of China invading Taiwan, it worries me that we have a kind of resurgent authoritarian bloc that is very aggressive and that we need to defend ourselves. That is something that I have believed for a while now and continue to believe. That's why across both administrations — I may not agree with every policy of either administration, but that's why we've generally been supportive of this.
 
 We don't want a world where China and Russia can analyze all the intelligence with AI, can use AI for attacking Taiwan and Ukraine, and we can't defend them. That's why we worked with them. We certainly don't do it for the money. It's a huge pain — even putting aside the lawfare, it's just a huge pain to get up on government networks for not that much money. We did it because we cared about it.
@@ -157,21 +187,27 @@ But similarly, because we're doing it because we cared about it, there need to b
 
 You need to pick a stand and stand your ground. I don't get this idea of companies that seesaw from "we won't do anything with the government" to suddenly "we're doing absolutely everything with the government." You should pick your principles and stick with them.
 
-You've been working with Palantir since 2024. Their technology is used by ICE, police departments, in Gaza. Is Claude being used for surveillance in other ways?
-We don't work with ICE — either through Palantir or anyone else. We don't work with CBP. I don't believe we work in Gaza. We're very careful about scoping our engagements to things that we believe in.
+**Emily Chang:** You've been working with Palantir since 2024. Their technology is used by ICE, police departments, in Gaza. Is Claude being used for surveillance in other ways?
 
-The president banned you from the federal government. The Pentagon labeled you a supply chain risk. OpenAI jumped in and signed the contract that you wouldn't. What does winning this fight actually look like?
-I don't think there's any winning this fight for a private company. This isn't a fight Anthropic is trying to win. This is more a debate about what the proper use of AI by the government is. AI is an emerging new technology. We don't understand the ways in which it's reliable or unreliable. We don't understand the ways in which it promotes our values or undermines our values. One of the things that I thought was important was to establish a precedent on some of the use cases we think are good — which frankly is most of them — and some of the use cases that we're concerned about.
+**Dario Amodei:** We don't work with ICE — either through Palantir or anyone else. We don't work with CBP. I don't believe we work in Gaza. We're very careful about scoping our engagements to things that we believe in.
+
+**Emily Chang:** The president banned you from the federal government. The Pentagon labeled you a supply chain risk. OpenAI jumped in and signed the contract that you wouldn't. What does winning this fight actually look like?
+
+**Dario Amodei:** I don't think there's any winning this fight for a private company. This isn't a fight Anthropic is trying to win. This is more a debate about what the proper use of AI by the government is. AI is an emerging new technology. We don't understand the ways in which it's reliable or unreliable. We don't understand the ways in which it promotes our values or undermines our values. One of the things that I thought was important was to establish a precedent on some of the use cases we think are good — which frankly is most of them — and some of the use cases that we're concerned about.
 
 You can only do so much with a contract. Someone else can sign a contract that doesn't respect your same red lines. But what it has done is raised awareness for the issue. We have serious bipartisan efforts in Congress attempting to ban some of the things we're concerned about and attempting to set guardrails. That's kind of winning — the effort to get our country to think more carefully about what is appropriate use of this technology.
 
-Do you mind being called an ideological lunatic or a bunch of left-wing nut jobs?
-I've been called worse things than that all the time. People can call me or Anthropic whatever they want. The two things that matter are: we're successful as a company, and we stand up for our values. In some ways, my life is really easy because when those are the two things you're trying to do, it's really simple. You always know where you stand.
+**Emily Chang:** Do you mind being called an ideological lunatic or a bunch of left-wing nut jobs?
 
-A US official has said with the help of LLMs, the US military has gone from being able to hit a thousand targets a day to 5,000 targets a day. That means Claude can help kill more people more quickly. Are you comfortable with that?
-There's two things here. There is the ability of the United States to be more effective militarily. I am supportive of that ability. I think having that ability be stronger doesn't cause wars — it deters wars. Do you believe in this country? Do you want this country to be a more powerful actor rather than a less powerful actor on the world stage? I do. I'm a patriot.
+**Dario Amodei:** I've been called worse things than that all the time. People can call me or Anthropic whatever they want. The two things that matter are: we're successful as a company, and we stand up for our values. In some ways, my life is really easy because when those are the two things you're trying to do, it's really simple. You always know where you stand.
 
-There's a separate question: are there particular policies that the US government is engaged in that I might support or not support? Obviously I support some and don't support others. It's not up to me — if we provide a technology, it's not up to us to say you can do this military operation and you can't do that military operation. You have to leave policy in the hands of the military decision makers. What you can do is assert some high-level boundaries that prevent the use cases that seem inconsistent with our values and promote the use cases that encourage our values.
+**Emily Chang:** A US official has said with the help of LLMs, the US military has gone from being able to hit a thousand targets a day to 5,000 targets a day. That means Claude can help kill more people more quickly. Are you comfortable with that?
+
+**Dario Amodei:** There's two things here. There is the ability of the United States to be more effective militarily. I am supportive of that ability. I think having that ability be stronger doesn't cause wars — it deters wars. Do you believe in this country? Do you want this country to be a more powerful actor rather than a less powerful actor on the world stage? I do. I'm a patriot.
+
+There's a separate question: are there particular policies that the US government is engaged in that I might support or not support?
+
+Obviously I support some and don't support others. It's not up to me — if we provide a technology, it's not up to us to say you can do this military operation and you can't do that military operation. You have to leave policy in the hands of the military decision makers. What you can do is assert some high-level boundaries that prevent the use cases that seem inconsistent with our values and promote the use cases that encourage our values.
 
 Bloomberg has reported that Claude is being used by the US military in the war in Iran to do AI-assisted targeting via a platform made by Palantir, Maven Smart System. In February, a US missile reportedly hit a girls' school in Iran, killing more than 150 people, most of them children. Did Claude play a role in that strike?
 We don't have access to — we don't know exactly how these models were used. These mistakes that happen in warfare are really, really terrible. If that doesn't make clear why we have to stand up for use cases that we don't support... We were willing to risk the future of our company to limit how these models are used. What you're talking about is a use case that doesn't even violate our red lines. We're worried that there will be a hundred times as much with use cases that do violate our red lines.
@@ -180,11 +216,16 @@ Overall, the use of these models is appropriate. I think it's good on net. But m
 
 What we've seen here is Claude assists, but a human makes the final call. A human made that final call, not Claude. Imagine if you had a world in which — not Claude, because we haven't allowed it — but someone else's AI model, the AI model just makes the decision and the human never sees it. That's what we were standing up for. That's what we were fighting against.
 
-This school had a website — you could have found it in a Google search. Shouldn't an AI have spotted that? And does it speak to a scarier issue about using technology as a shortcut in war?
+**Emily Chang:** This school had a website — you could have found it in a Google search. Shouldn't an AI have spotted that?
+
+**Dario Amodei:** And does it speak to a scarier issue about using technology as a shortcut in war?
 The principle that we have established — and I think the principle that was obeyed here — is a human makes the final decision. I don't know what role Claude or any other AI had. But if this isn't an illustration of why that principle is so important, I don't know what is.
 
-Is AI warfare more likely to stop World War III — a war between the US and China — or is it more likely to make it happen?
-On balance, it is more likely to stop it. But if we have no limits on how it's used, then it could be more likely to cause it. You've seen Dr. Strangelove, right? The premise of it was: you have a doomsday device that automatically fires nuclear weapons when it thinks nuclear weapons are being fired at it. What could go wrong?
+**Emily Chang:** Is AI warfare more likely to stop World War III — a war between the US and China — or is it more likely to make it happen?
+
+**Emily Chang:** On balance, it is more likely to stop it. But if we have no limits on how it's used, then it could be more likely to cause it. You've seen Dr. Strangelove, right?
+
+**Dario Amodei:** The premise of it was: you have a doomsday device that automatically fires nuclear weapons when it thinks nuclear weapons are being fired at it. What could go wrong?
 
 The way conflicts happen is that the two sides jump at each other. They misunderstand each other. When we don't have proper oversight of this technology, those kinds of accidents are more likely to happen.
 
@@ -199,28 +240,35 @@ Now, to be clear — because things always get distorted in the world of social 
 
 A concern is: today's cyber safeguards — which we did release on Opus 4.7, which is a good cyber model but a substantially weaker one — these can be jailbroken. We're a little concerned about some of the other companies who think this is a sufficient defense. It works sometimes, but we all know that these classifiers can be jailbroken or gone around. Our own testing, as well as our assessment of the defenses that other companies have put in place, suggest that these defenses are not strong enough yet. That's what we're waiting for — getting the defenses to the point where we really have confidence in them.
 
-There was a lot of pushback on it. You have researchers saying they were able to replicate it using cheaper open source models. Some folks say OpenAI has these capabilities already. What do you say to folks who say this is a grand PR stunt?
-The claim that it could be replicated with open-source models — that's just incredibly false. The idea is Mythos looks across the whole codebase and finds something. Some guy went on Twitter and said, "Well, if you point an open source model at exactly the line of code that Mythos finds, then it finds the same issue." That isn't the prompt. That isn't the question. That is not the same thing.
+**Emily Chang:** There was a lot of pushback on it. You have researchers saying they were able to replicate it using cheaper open source models. Some folks say OpenAI has these capabilities already. What do you say to folks who say this is a grand PR stunt?
+
+**Dario Amodei:** The claim that it could be replicated with open-source models — that's just incredibly false. The idea is Mythos looks across the whole codebase and finds something. Some guy went on Twitter and said, "Well, if you point an open source model at exactly the line of code that Mythos finds, then it finds the same issue." That isn't the prompt. That isn't the question. That is not the same thing.
 
 The ultimate test of this is: we go to companies, we go to open source repos. We found 271 new vulnerabilities in Firefox. We've found many thousands within private companies who haven't fixed them yet or can't disclose them yet. No one found those 271 vulnerabilities with the previous models. The actual workflow of what actually works in practice — as opposed to "I found the exact line that Mythos found, I found the needle in the haystack, something else can now pick up the needle."
 
-But what about the folks who say this was just good marketing?
-We have suffered enormously commercially from not releasing this model. This model has incredibly accelerated research within Anthropic and production and next models. It would do the same in the outside world if we were to release it. This has hurt us enormously commercially.
+**Emily Chang:** But what about the folks who say this was just good marketing?
 
-If this helps defenders, it also helps attackers. Can we defend anything anymore?
-The reason we're giving Mythos to defenders before we give it to attackers is to patch all the bugs. As the models get better, there may be more and more bugs to be found, but there's only so many — they're finite. You have this surface and there's only so many holes in it. You patch all the holes, and then the surface becomes very hard to attack. As well as the code itself being written with the powerful models, it then becomes very hard to find flaws in or break into.
+**Dario Amodei:** We have suffered enormously commercially from not releasing this model. This model has incredibly accelerated research within Anthropic and production and next models. It would do the same in the outside world if we were to release it. This has hurt us enormously commercially.
+
+**Emily Chang:** If this helps defenders, it also helps attackers. Can we defend anything anymore?
+
+**Dario Amodei:** The reason we're giving Mythos to defenders before we give it to attackers is to patch all the bugs. As the models get better, there may be more and more bugs to be found, but there's only so many — they're finite. You have this surface and there's only so many holes in it. You patch all the holes, and then the surface becomes very hard to attack. As well as the code itself being written with the powerful models, it then becomes very hard to find flaws in or break into.
 
 Hopefully 6 months or a year from now, we have a much more secure internet ecosystem than we had in the past. We're trying to get to that world, and we're doing the best we can to open up Mythos to new cyber defenders. We've been talking to the government. We're very respectful of their recommendations. They're slowing the pace at which we open it up because they're worried about counterintelligence risk. I think that's sensible.
 
 We see a lot of sniping from people on Twitter and from other AI companies. You look at what they're saying and the inconsistency with what they're doing. They're not serious people. They're not seriously engaging with the serious tradeoffs that we have here. I have customers calling me up every day saying, "I want access to Mythos." I have countries calling me up saying, "I want access to Mythos." And I have the US government and my security team saying, "No, wait a minute. There's risk to it." Both sides have valid points. But there's a real challenge here, and we need to face it together as a society. Not accuse things of being cheap marketing, not use cheap marketing to try and counter-position. It all shows an incredible lack of gravitas and maturity.
 
-Have you had to make trade-offs already that you're not entirely comfortable with?
-Throughout the entire history of Anthropic, it's been trade-offs. In some ideal world, before you release the first chatbot, you could spend years studying every possible thing that could go wrong with it. We did delay the initial release of Claude, but we did it for a few months. Everything is a trade-off. The extreme ends of the spectrum are completely insane.
+**Emily Chang:** Have you had to make trade-offs already that you're not entirely comfortable with?
+
+**Dario Amodei:** Throughout the entire history of Anthropic, it's been trade-offs. In some ideal world, before you release the first chatbot, you could spend years studying every possible thing that could go wrong with it. We did delay the initial release of Claude, but we did it for a few months. Everything is a trade-off. The extreme ends of the spectrum are completely insane.
 
 Now that we're in what I would describe as a commercially leading position, Daniela and I are actually doing all we can to move the dial even further towards being careful. That's what the Mythos release was about. It's very hard to do something like that if you're not the leading player. I think you're going to see more things like that.
 
-You know, there's this argument — why wouldn't the government take you over? Why would they let a private company control technology that's so powerful?
-That's a very serious question, and I share those concerns. I don't think the government should outright take us over. But let me back up and describe the situation. Every previous powerful technology we've seen in history was either built by the government or originated with the government. Nuclear weapons, obviously. But even the internet, GPS, cell phones — all the R&D was done in the federal labs and the universities.
+**Emily Chang:** You know, there's this argument — why wouldn't the government take you over?
+
+**Emily Chang:** Why would they let a private company control technology that's so powerful?
+
+**Dario Amodei:** That's a very serious question, and I share those concerns. I don't think the government should outright take us over. But let me back up and describe the situation. Every previous powerful technology we've seen in history was either built by the government or originated with the government. Nuclear weapons, obviously. But even the internet, GPS, cell phones — all the R&D was done in the federal labs and the universities.
 
 AI is the first technology that's been built in the private sector, where government has not really had a serious role and is coming in late to the game. I think that's actually a dangerous and unstable situation. It is not the situation I would have chosen. There's not really an alternative — this technology is possible to build, our adversaries are building it, it has economic value. It's going to get built. The issue is the government not doing it, not the private sector doing it.
 
@@ -230,8 +278,9 @@ On the government side, we need checks and balances. There are efforts in Congre
 
 It's very funny to me how there's a particular group of people in Silicon Valley who started with a position of "even transparency around this technology, even export control — this will apocalyptically destroy our potential to create the technology, it'll kill innovation." And then as soon as they see the first real danger, which I've been expecting all along, there's all this talk of nationalization and "the government should just seize it." Come on, folks. You're yo-yoing from the most extreme anti-regulatory to "this completely communist, the government should grab it all." We need a more sensible, moderate approach. That's the one we've been favoring all along, because we've understood the power of this technology. We're not panicking. We're not denying it. We see the smooth exponential, and we're responding to it appropriately.
 
-So, how was your visit back to the White House?
-We always try to work together with whoever we can in government. We have this simple approach: we have a set of principles, we follow those principles, and we hope that folks on the other side are reasonable. Honestly, the government has taken Mythos very seriously. We've had good conversations with Secretary Bessent, with Chief of Staff Susie Wiles. I think they really understand the nature of the risks here. Mythos has helped them to feel much more concretely where these risks are. As with any administration, there are parts who we get along with very well and who understand it, and there are other parts that are harder to get along with. I think that's normal. We just try to navigate it as best we can.
+**Emily Chang:** So, how was your visit back to the White House?
+
+**Dario Amodei:** We always try to work together with whoever we can in government. We have this simple approach: we have a set of principles, we follow those principles, and we hope that folks on the other side are reasonable. Honestly, the government has taken Mythos very seriously. We've had good conversations with Secretary Bessent, with Chief of Staff Susie Wiles. I think they really understand the nature of the risks here. Mythos has helped them to feel much more concretely where these risks are. As with any administration, there are parts who we get along with very well and who understand it, and there are other parts that are harder to get along with. I think that's normal. We just try to navigate it as best we can.
 
 You worked at Baidu earlier in your career — big Chinese tech company. You worked at the Silicon Valley outpost. You've been clear on your views on China. Strong open source models are coming out of China, and you have US companies building on them for free. Is that a threat?
 One of the things we've seen with this technology is that there's really a premium to how intelligent the models are. We very rarely see that people would prefer to use models with lower intelligence. There's a thriving ecosystem — lots of challenges and problems that are much easier than the ones we need frontier models for. But it's an exponential. These far-from-frontier models may have economic value comparable to what we saw in 2023 and 2024. But we have this 10x a year growth. What's on the frontier is always much, much larger than what is away from the frontier.
@@ -240,43 +289,52 @@ This is something that people who are used to building products in the previous 
 
 Now, what I do worry about with some of these laggard models is the risks of them. We have Mythos-class cyber capabilities. 12 months from now we'll have much better cyber capabilities, but the Mythos-class cyber capabilities may just be available for anyone to download. Hopefully we'll have patched everything before then. I don't think there's anything we can do to stop it, but it's a serious concern.
 
-Did what you saw at Baidu shape your views on China?
-Not really. I worked there for a year. I probably learned more about speech recognition. Maybe the only thing that concerned me was — part of how we got all the speech recognition data was, they said ominously, "We don't care about privacy in China, so we have all this speech recognition data."
+**Emily Chang:** Did what you saw at Baidu shape your views on China?
+
+**Dario Amodei:** Not really. I worked there for a year. I probably learned more about speech recognition. Maybe the only thing that concerned me was — part of how we got all the speech recognition data was, they said ominously, "We don't care about privacy in China, so we have all this speech recognition data."
 
 Aside from that, my worries here are geopolitical. The things that most worried me about what happened in China are what we saw happen to the Uyghurs, what we saw with suppression of criticism even in the US with what happened with Hong Kong. The fact that the CCP could reach into the US business network and suppress criticism — that's an authoritarian state, and a high-tech authoritarian state. When I see how that combines with AI, you really get a dystopia here — like 1984 or worse.
 
 My focus is on trying to prevent that. I think we have an opportunity for AI to be a pro-democracy technology — that makes people freer, that delivers on the promise of equal justice for all. Or it could go the other way. Which way it goes depends on the actions of the AI companies, the actions of the government, the actions of all of us. We have responsibility here.
 
-There's a moment that people in your field talk about where AI gets good enough to improve itself and then the improved version improves itself, and so on. Some of your researchers think that moment is close. How far away is it?
-I don't think it's a moment in time. I think it's a continuous process. We're already seeing it in some ways where the AI is able to suggest architectures for the next AI. A year ago we were seeing 10 to 15% increase in total factor productivity due to AI. That's probably up to 20 or 30% now. It might be doubling. As with all things, we're on the exponential.
+**Emily Chang:** There's a moment that people in your field talk about where AI gets good enough to improve itself and then the improved version improves itself, and so on. Some of your researchers think that moment is close. How far away is it?
 
-There's no moment where AI improves itself or runs out of control or becomes unsafe. What we have is an accelerating exponential. At each point on the exponential, we have to assess: is this a time to slow down? Is this a time to put more controls on this technology? More and more of that is going to be required.
+**Dario Amodei:** I don't think it's a moment in time. I think it's a continuous process. We're already seeing it in some ways where the AI is able to suggest architectures for the next AI. A year ago we were seeing 10 to 15% increase in total factor productivity due to AI. That's probably up to 20 or 30% now. It might be doubling. As with all things, we're on the exponential.
+
+**Emily Chang:** There's no moment where AI improves itself or runs out of control or becomes unsafe. What we have is an accelerating exponential. At each point on the exponential, we have to assess: is this a time to slow down?
+
+**Dario Amodei:** Is this a time to put more controls on this technology? More and more of that is going to be required.
 
 I think the Rosetta Stone to all of this is the smooth exponential. There's an object lesson in the people who were against all AI regulation and then they saw one thing and they wanted to nationalize. There's an object lesson in the people who dismissed the power of AI and then said, "Oh my god, it's improving itself. It's running out of control. We have to shut it all down." Yo-yoing between those extreme reactions is incredibly unhelpful. The right response, the wise response, is to say: "We're not going to panic. Our countermeasures will smoothly ratchet up with the power of the technology." If you see someone having this kind of crazy yo-yo reaction, that's a sign that they were caught by surprise and that they're not serious.
 
-I understand one of your favorite books is The Making of the Atomic Bomb. Do you see parallels between yourself and Oppenheimer?
-The figure I most identified with was Leo Szilard, who was the one who first basically had the idea that there could be a kind of chain reaction. We're not going to get through this with larger-than-life personalities or figures who try and be at the center of everything. There needs to be a balance of power here. There's a lot of powerful actors who have interests here, and the only way it's going to end well for everyone is if there are basically checks and balances everywhere. In some ways, I actually see Oppenheimer as a failure case — as what should not happen.
+**Emily Chang:** I understand one of your favorite books is The Making of the Atomic Bomb. Do you see parallels between yourself and Oppenheimer?
 
-You've said there's roughly a 10 to 25% chance of civilizational collapse. That is not insignificant. Is there a scenario where it's something that Anthropic built that caused that?
-I certainly hope not. The actions that we have taken lower that probability rather than increasing it. That probability comes from the very straightforward recipe of the technology: the existence of many countries in the world, the existence of many companies within an economy, and new ones created if the void isn't filled. That's a dilemma that we're in. We are trying to act to lower that probability. I think we lower it a lot more than we raise it.
+**Dario Amodei:** The figure I most identified with was Leo Szilard, who was the one who first basically had the idea that there could be a kind of chain reaction. We're not going to get through this with larger-than-life personalities or figures who try and be at the center of everything. There needs to be a balance of power here. There's a lot of powerful actors who have interests here, and the only way it's going to end well for everyone is if there are basically checks and balances everywhere. In some ways, I actually see Oppenheimer as a failure case — as what should not happen.
+
+**Emily Chang:** You've said there's roughly a 10 to 25% chance of civilizational collapse. That is not insignificant. Is there a scenario where it's something that Anthropic built that caused that?
+
+**Dario Amodei:** I certainly hope not. The actions that we have taken lower that probability rather than increasing it. That probability comes from the very straightforward recipe of the technology: the existence of many countries in the world, the existence of many companies within an economy, and new ones created if the void isn't filled. That's a dilemma that we're in. We are trying to act to lower that probability. I think we lower it a lot more than we raise it.
 
 But the inherent property of this technology is that it's unpredictable. We try to build something and test it a lot before it's released. The models released today are not dangerous — or at least not really dangerous outside of cyber. Then we try and iterate and learn from that. There's like a zillion defense mechanisms. Half of what we do within the company is try and reduce the risk as much as we can. But it's never going to be zero.
 
 Suppose there are a bunch of airline companies out there, and you're like, "Well, I'm going to make an airline company that's safer." It can both be the case that your airline company is 10 times safer than all the other airline companies. But if someone comes and asks, "Can you guarantee that your airplane will never crash?" — how could you possibly? But if there was a 25% chance of an airplane crashing, you wouldn't get on that plane.
 
-That's right. 25% is too high. We're trying to make that probability much, much lower. That is the goal.
+**Emily Chang:** That's right. 25% is too high. We're trying to make that probability much, much lower. That is the goal.
 
-You are building something incredibly powerful and stand to gain enormously from it. Why should we trust you?
-When any company starts out — and particularly what we've seen with the behavior of Silicon Valley as an entity over the last couple of years — starting from a position of distrust, if you don't know anything about me or Anthropic, is pretty rational. Silicon Valley has lost a lot of the world's trust and has to re-earn it.
+**Emily Chang:** You are building something incredibly powerful and stand to gain enormously from it. Why should we trust you?
+
+**Dario Amodei:** When any company starts out — and particularly what we've seen with the behavior of Silicon Valley as an entity over the last couple of years — starting from a position of distrust, if you don't know anything about me or Anthropic, is pretty rational. Silicon Valley has lost a lot of the world's trust and has to re-earn it.
 
 The message we're trying to send is: we're actually different. And that has to be earned in things that we actually do. We stood up for our values. The thing with Mythos — it's really hampered us commercially not to put this very powerful model out. We put our money where our mouth is on China. We cut off access to models. We didn't have to do that. No one told us to do that. That cost us several hundred million — back when several hundred million was a significant fraction of our revenue. The delay of Claude 2 — we have a long history of it.
 
-We aren't perfect. We make mistakes. But what I would ask is for people to look at the overall history and say: if you add up that overall history, what is the hypothesis about us that is most consistent with that overall history? People have to decide for themselves. But I think the hypothesis that's consistent is: we are genuinely trying to do the right thing. We're imperfect. Organizations are always dysfunctional. We're always trying to fix them and make them work better. Many footfalls, many things that go wrong. But at basis, we have an honest and earnest picture of how to do the right thing. And we're trying to execute on that picture.
+**Emily Chang:** We aren't perfect. We make mistakes. But what I would ask is for people to look at the overall history and say: if you add up that overall history, what is the hypothesis about us that is most consistent with that overall history?
 
-We will see you on the other side of the exponential.
-Hopefully. [laughter]
+**Dario Amodei:** People have to decide for themselves. But I think the hypothesis that's consistent is: we are genuinely trying to do the right thing. We're imperfect. Organizations are always dysfunctional. We're always trying to fix them and make them work better. Many footfalls, many things that go wrong. But at basis, we have an honest and earnest picture of how to do the right thing. And we're trying to execute on that picture.
 
-You always wanted to be a Hollywood star.
-That's one surprising thing that I didn't understand about the CEO job — is how often you have to wear makeup. [laughter] That was not on my bingo card.
+**Emily Chang:** We will see you on the other side of the exponential.
+Hopefully. (laughter)
 
-Just a little powder.
+**Dario Amodei:** You always wanted to be a Hollywood star.
+That's one surprising thing that I didn't understand about the CEO job — is how often you have to wear makeup. (laughter) That was not on my bingo card.
+
+**Emily Chang:** Just a little powder.
